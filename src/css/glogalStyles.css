@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #FBFAFA;
+}
+/* Menu horizontal estilos, Nota: cambiar los colores */
+.menuHorizontal{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #0054AA;
+    color: cornsilk;
+    padding: 1%;
+    margin: 0;
+}
+.iniciarSesion{
+    color: #FFB932;
+}
+/* Agregar la imagen del logo y cambiar tamaño */
+.logoMenu{
+    margin-right: 8%;
+}
+
+.azul{
+    color: #0054AA;
+}
+.naranja{
+    color: #FFB932;
+}
