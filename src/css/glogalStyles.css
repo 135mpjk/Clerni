@@ -5,21 +5,34 @@ html, body{
 }
 /* Menu horizontal estilos, Nota: cambiar los colores */
 .menuHorizontal{
+    align-items: center;
+    justify-content: center;
     list-style: none;
     display: flex;
     width: 100%;
     justify-content: space-around;
     background-color: #0054AA;
-    color: cornsilk;
-    padding: 1%;
+    color: #FBFAFA;
+    padding: 0.5%;
     margin: 0;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FBFAFA;
+    font-family: roboto-medium;
+    font-size: 18px;
 }
 .iniciarSesion{
     color: #FFB932;
+    font-size: 24px;
+    font-family: roboto-medium;
 }
 /* Agregar la imagen del logo y cambiar tamaño */
 .logoMenu{
-    margin-right: 8%;
+    margin-top: 1%;
+    margin-right: 0%;
 }
 
 .azul{
@@ -27,4 +40,16 @@ html, body{
 }
 .naranja{
     color: #FFB932;
+}
+@font-face {
+    font-family: "roboto-medium";
+    src: url("../utils/fonts/roboto/Roboto-Medium.woff");
+}
+@font-face {
+    font-family: "roboto-bold-italic";
+    src: url("../utils/fonts/roboto/Roboto-BoldItalic.woff");
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../utils/fonts/roboto/Roboto-Bold.woff");
 }
