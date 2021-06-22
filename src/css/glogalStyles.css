@@ -1,0 +1,58 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #FBFAFA;
+    width: 100%;
+}
+/* Menu horizontal estilos, Nota: cambiar los colores */
+.menuHorizontal{
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0054AA;
+    color: #FBFAFA;
+    padding: 0.5%;
+    margin: 0;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a{
+    color: #FBFAFA;
+    font-family: roboto-medium;
+    font-size: 18px;
+    text-decoration-line: none
+}
+.iniciarSesion{
+    color: #FFB932;
+    font-size: 24px;
+    font-family: roboto-medium;
+}
+/* Agregar la imagen del logo y cambiar tamaño */
+.logoMenu{
+    margin-top: 1%;
+    margin-right: 0%;
+}
+
+.azul{
+    color: #0054AA;
+}
+.naranja{
+    color: #FFB932;
+}
+@font-face {
+    font-family: "roboto-medium";
+    src: url("../utils/fonts/roboto/Roboto-Medium.woff");
+}
+@font-face {
+    font-family: "roboto-bold-italic";
+    src: url("../utils/fonts/roboto/Roboto-BoldItalic.woff");
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../utils/fonts/roboto/Roboto-Bold.woff");
+}
