@@ -10,6 +10,7 @@ html, body{
     justify-content: center;
     list-style: none;
     display: flex;
+    width: 99%;
     justify-content: space-around;
     background-color: #0054AA;
     color: #FBFAFA;

@@ -2,6 +2,7 @@
 function materialDeApoyo(){
     introMaterial = document.getElementsByClassName("MaterialdeApoyoInicio")[0];
     introMaterial.style.display = "flex";
+    console.log("hola");
     principal = document.getElementsByClassName("MaterialdeApoyoNivelIntro")[0];
     principal.style.display = "none";
     segundo = document.getElementsByClassName("MaterialdeApoyoNivelA1")[0];
