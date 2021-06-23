@@ -44,28 +44,28 @@
 }
 /* imagen de los botones laterales */
 .imagenLadoBoton{
-    top: 25%;
+    top: 24.6%;
     left: 1%;
 }
 .imagenLadoBoton1{
-    top: 37.8%;
+    top: 36.8%;
     left: 1%;
 }
 .imagenLadoBoton2{
-    top: 50.2%;
+    top: 49.2%;
     left: 1%;
 }
 .imagenLadoBoton3{
-    top: 62.8%;
+    top: 61.8%;
     left: 1%;
 }
 .imagenLadoBoton4{
-    top: 75.4%;
+    top: 74%;
     left: 1%;
     box-shadow: 20%;
 }
 .botonmenuImagen img{
-position: fixed;
+position:static;
 }
 .CaraPrincipalMaterial{
     background-color: #FBFAFA;
