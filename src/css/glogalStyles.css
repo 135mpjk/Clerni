@@ -2,6 +2,7 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: #FBFAFA;
+    width: 100%;
 }
 /* Menu horizontal estilos, Nota: cambiar los colores */
 .menuHorizontal{
@@ -20,9 +21,12 @@ button{
     background: none;
     border: none;
     cursor: pointer;
+}
+a{
     color: #FBFAFA;
     font-family: roboto-medium;
     font-size: 18px;
+    text-decoration-line: none
 }
 .iniciarSesion{
     color: #FFB932;
