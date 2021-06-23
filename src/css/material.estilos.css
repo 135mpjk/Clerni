@@ -30,6 +30,7 @@
 }
 /* opciones del menu lateral */
 .opcionesBotonMenu{
+    
     width: 80%;
     padding: 3%;
     background-color: #FFB932;
@@ -108,35 +109,35 @@ position:static;
     width: 100%;
 }
 .MaterialdeApoyoNivelIntro{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 .MaterialdeApoyoNivelA1{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 .MaterialdeApoyoNivelA2{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 .MaterialdeApoyoNivelB1{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 .MaterialdeApoyoNivelB2{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
