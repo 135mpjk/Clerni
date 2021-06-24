@@ -24,7 +24,7 @@ button{
 }
 a{
     color: #FBFAFA;
-    font-family: roboto-medium;
+    font-family:roboto-medium;
     font-size: 18px;
     text-decoration-line: none
 }
@@ -45,15 +45,15 @@ a{
 .naranja{
     color: #FFB932;
 }
-@font-face {
+@font-face{
     font-family: "roboto-medium";
-    src: url("../utils/fonts/roboto/Roboto-Medium.woff");
+    src: url("../fonts/roboto/Roboto-Medium.woff");
 }
 @font-face {
     font-family: "roboto-bold-italic";
-    src: url("../utils/fonts/roboto/Roboto-BoldItalic.woff");
+    src: url("../fonts/roboto/Roboto-BoldItalic.woff");
 }
 @font-face {
     font-family: "roboto-bold";
-    src: url("../utils/fonts/roboto/Roboto-Bold.woff");
+    src: url("../fonts/roboto/Roboto-Bold.woff");
 }
