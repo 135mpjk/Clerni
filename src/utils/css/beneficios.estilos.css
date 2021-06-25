@@ -69,6 +69,12 @@ html, body{
     width: 92%;
     height: auto;
 }
+.titulo_porque{
+    text-align: center;
+    background-color:#FFFDFD;
+    margin: 0;
+    padding: 0;
+}
 
 .razones{
     display: flex;
@@ -80,19 +86,54 @@ html, body{
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
-
-.imagenes_porque_clerni{
+.circulos{
     display: flex;
-    width: 30%;
+    width: 25%;
 }
-.imagenes_porque_clerni img{
+.circulos img{
     border-radius: 50%;
+    width: 60%;
+    height: auto;
+}
+.derecha img{
+    width: 70%;
+    height: auto;
 
 }
+.izquierda{
+    justify-content: flex-end;
+    padding-right:3%;
+}
+.razones_izquierda{
+    width: 75%;
+    padding-left: 1%;
+    padding-right:5%;
+    font-size:22px;
+}
+.derecha{
+   
+}
+.razones_derecha{
+    width: 85%;
+    text-align: end;
+    margin-left: 8%;
+    padding-right: 4%;
+    font-size:22px;
+}
 
+.pago_beneficios{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    
+}
 .abajo_beneficios{
-    margin-bottom: 0;
-    padding-bottom: 0;
+    display: flex;
+    width: 100%;
+}
+.contenedor3{
+    position: absolute;
+    display: flex;
+    width: 100%;
     height: auto;
 }
