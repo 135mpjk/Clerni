@@ -57,3 +57,7 @@ a{
     font-family: "roboto-bold";
     src: url("../fonts/roboto/Roboto-Bold.woff");
 }
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/poppins/poppins.woff");
+}

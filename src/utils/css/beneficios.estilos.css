@@ -2,8 +2,8 @@ html, body{
     padding: 0;
     margin: 0;
 }
-
-.cabecera_beneficios{
+/*parte de arriba hasta el boton*/
+.cabecera_beneficios, .abajo_beneficios{
     position: relative;
     justify-content: center;
     width: 100%;
@@ -27,11 +27,23 @@ html, body{
    
 }
 .imagen1 img{
-    width: 85.2%;
+    width: 92%;
     height: auto;
 }
 .texto1{
     padding-right: 10%;
+    padding-top: 3%;
+    
+}
+.texto1 p{
+    font-family:roboto-medium;
+}
+.texto1 h1{
+    font-family:roboto-medium;
+    font-size: 20px;
+}
+.espacio_entretexto1{
+    padding-bottom: 2%;
 }
 .contenedor2{
     position: absolute;
@@ -48,7 +60,8 @@ html, body{
 }
 .texto2 p{
     color: white;
-    font-size: 150%;
+    font-size: 130%;
+    font-family:roboto-medium;
 }
 .primer_boton{
     font-size: 160%;
@@ -69,11 +82,17 @@ html, body{
     width: 92%;
     height: auto;
 }
+
+/*seccion por que clerni*/
 .titulo_porque{
     text-align: center;
     background-color:#FFFDFD;
     margin: 0;
     padding: 0;
+    font-size: 160%;
+    font-family:poppins;
+    letter-spacing: 1px;
+    font-weight:bold;
 }
 
 .razones{
@@ -85,6 +104,15 @@ html, body{
     align-items: center;
     padding-top: 3%;
     padding-bottom: 3%;
+}
+.razones p{
+    font-family:roboto-medium;
+    font-size: 20px;
+}
+.razones h1{
+    font-family:poppins;
+    font-size: 23px;
+    color:#0054AA;
 }
 .circulos{
     display: flex;
@@ -121,19 +149,47 @@ html, body{
     font-size:22px;
 }
 
-.pago_beneficios{
-    position: relative;
-    justify-content: center;
-    width: 100%;
-    
-}
-.abajo_beneficios{
-    display: flex;
-    width: 100%;
-}
+/*seccion pagos clerni*/
 .contenedor3{
     position: absolute;
     display: flex;
     width: 100%;
     height: auto;
+}
+.imagenpagos{
+    margin-left: 13.5%;
+    margin-top: 1%;
+    width: 40%;
+}
+.imagenpagos img{
+    width: 103%;
+    height: auto;
+    border-radius: 50px;
+
+}
+
+.textopagos{
+    width: 60%;
+    margin-right: 18%;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.textopagos h1{
+    font-size: 200%;
+    font-family:poppins;
+    font-weight:bold;
+}
+.textopagos p{
+    font-family:roboto-medium;
+    font-size: 20px;
+    padding-right: 90px;
+}
+.boton_pagos{
+    font-size: 160%;
+    font-weight: 600;
+    color: #0054AA;
+    background-color:#FFB932 ;
+    border-radius:60px;
+    padding:4% 10%;
+    margin-top: 35%;
 }
