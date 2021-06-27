@@ -13,61 +13,66 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.logoClerni{
-    width: 80%;
+    justify-self: center;
+    justify-content: space-between;
 }
 /* titulo del menu lateral */
 .TituloNivel{
     display: flex;
-    padding: 0;
     align-items: center;
     justify-content: center;
-    margin-left: 0%;
-    margin-right: 0%;
     font-size: 30px;
     font-family: roboto-bold-italic;
 }
 /* opciones del menu lateral */
-.opcionesBotonMenu{
-    
-    width: 80%;
-    padding: 3%;
-    background-color: #FFB932;
-    border: 2px solid #FFB932;
-    color: #0054AA;
-    margin: 6.2%;
-    margin-left: 12%;
-    border-radius: 30px;
-    font-size: 21px;
+.botonMenu{
+    display: flex;
+    width: auto;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: 64px;
+    margin: 10%;
+    margin-left: 15%;
+    margin-right: 10%;
+    border-radius:25px;
     cursor: pointer;
+    color: #0054AA;
+    font-size: 21px;
     font-family: roboto-medium;
+    background-color: #FFB932;
+    border: 2px solid #f5a60a;
+}
+.botonMenu:hover{
+    background-color: #f8a500;
+}
+.botonMenu:active{
+    background-color: #fdd074;
 }
 /* imagen de los botones laterales */
 .imagenLadoBoton{
-    top: 24.6%;
-    left: 1%;
+    width: 30%;
+    height: auto;
+    margin-left: -12%;
 }
-.imagenLadoBoton1{
-    top: 36.8%;
-    left: 1%;
+/* Nombre de los botones laterales */
+.nombreBotonMenu{
+    display: flex;
+    width: inherit;
+    margin-left: 27%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}   /*Introduccion*/
+.nombreBotonMenu1{
+    display: flex;
+    width: inherit;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
-.imagenLadoBoton2{
-    top: 49.2%;
-    left: 1%;
-}
-.imagenLadoBoton3{
-    top: 61.8%;
-    left: 1%;
-}
-.imagenLadoBoton4{
-    top: 74%;
-    left: 1%;
-    box-shadow: 20%;
-}
-.botonmenuImagen img{
-position:static;
-}
+/*Pagina principal estilos*/
 .CaraPrincipalMaterial{
     background-color: #FBFAFA;
     align-items: center;
@@ -76,19 +81,23 @@ position:static;
     height: 100%;
     margin-left: 20%;
 }
+/*Pagina de los PDF*/
 .TituloPdfs{
     color: #0054AA;
+    font-family: roboto-medium;
     margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/*Contenedor de los PDF*/
 .guardarPDFs{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+/*Estilos de cada PDF*/
 .opcionesBotonPDF{
     width: 70%;
     padding: 0.5%;
@@ -101,6 +110,7 @@ position:static;
     cursor: pointer;
     font-family: roboto-bold;
 }
+/*Dom Pagina Inicial*/
 .MaterialdeApoyoInicio{
     display: flex;
     align-items: center;
@@ -108,35 +118,8 @@ position:static;
     flex-direction: column;
     width: 100%;
 }
-.MaterialdeApoyoNivelIntro{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-.MaterialdeApoyoNivelA1{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-.MaterialdeApoyoNivelA2{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-.MaterialdeApoyoNivelB1{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-.MaterialdeApoyoNivelB2{
+/*Dom de las Paginaa*/
+.MaterialdeApoyoNivelIntro, .MaterialdeApoyoNivelA1, .MaterialdeApoyoNivelA2, .MaterialdeApoyoNivelB1, .MaterialdeApoyoNivelB2{
     display: none;
     align-items: center;
     justify-content: center;
