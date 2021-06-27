@@ -39,7 +39,6 @@ a{
     margin-right: 0%;
     width: 17%;
 }
-
 .azul{
     color: #0054AA;
 }
@@ -57,4 +56,7 @@ a{
 @font-face {
     font-family: "roboto-bold";
     src: url("../utils/fonts/roboto/Roboto-Bold.woff");
+}
+@media screen and (min-width:300px) and (max-width:500px){
+    
 }
