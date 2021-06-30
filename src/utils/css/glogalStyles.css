@@ -45,6 +45,14 @@ a{
 .naranja{
     color: #FFB932;
 }
+.piedePagina{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(41, 38, 38);
+    color: rgb(233, 229, 229);
+    font-family: roboto-medium;
+    font-size: 13px;
+}
 @font-face{
     font-family: "roboto-medium";
     src: url("../fonts/roboto/Roboto-Medium.woff");
