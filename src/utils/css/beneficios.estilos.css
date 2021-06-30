@@ -158,12 +158,11 @@ html, body{
     justify-content: center;
 }
 .imagenpagos{
-    margin-left: 13.5%;
-    margin-top: 1%;
+    margin-left: 15%;
     width: 40%;
 }
 .imagenpagos img{
-    width: 103%;
+    width: 95%;
     height: auto;
     border-radius: 50px;
 
