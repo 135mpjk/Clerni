@@ -1,0 +1,288 @@
+*{
+
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(/src/utils/fonts/roboto/Roboto-Light.ttf);
+}
+
+/*-----------------Slider------------*/ 
+.contenedor_carousel{
+    margin-top: 10px;
+    margin: auto;
+    width: 60%;
+    height: 10%;
+}
+
+
+.carousel{
+    margin-top: 10px;
+}
+
+.carousel_texto{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 45px;
+}
+
+
+.carousel_texto:hover{
+    cursor: pointer;
+    color: rgb(211, 227, 240);
+}
+
+
+.carousel_texto_empresarial{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 45px;
+}
+
+
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #0054AA;
+	opacity: 1;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	color: #FFB932;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #0054AA;
+	opacity: .5;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .3;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+    background: #FFB932;
+}
+
+
+
+
+
+
+
+/*---------------modal---------------*/
+
+.container_m {
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px;
+    font-family: Roboto-Light;
+    opacity: .8;
+}
+
+.container_modal{
+    height: 478px ;
+    width: 780px;
+    display: flex;
+    border: 1px solid #0054AA;
+    background-color: #F4F4F4;   
+    box-shadow: 1px 0px 5px -1px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+}
+
+.niños_ados{
+    width: 250px;
+    top:0;
+    background-color: #0054AA;
+    color: cornsilk;
+    font-size: 40px;
+    padding: 11px;
+    text-align: center;
+}
+
+.container_derecho{
+    
+}
+
+.container_izquierdo{
+
+}
+
+.texto_modal {
+    padding-left:40px;
+    padding-right: 25px;
+
+}
+
+.imagen_niñosmodal{
+    width: 100%;
+}
+
+.textoModalInformacion{
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 13%;
+
+}
+
+.boton_quieresabermas{
+    font-size: 130%;
+    color: #0054AA;
+    background-color:#FFB932 ;
+    border-radius:60px;
+    padding: 0% 1%;
+    margin-left:55%;
+    width: 200px;
+    height: 50px;
+    transform: translate(-0%, -140%); 
+    margin-top: 0%;
+    position: relative;
+}
+
+.abajo_beneficios_niños {
+    transform: translate(-0%, -43.1%); 
+}
+
+/*---------------modal2---------------*/
+
+
+.imagen_adultos{
+    width: 100%;
+    height: 71.2vh;
+}
+
+.abajo_beneficios_adultos {
+    transform: translate(-0%, -29.8%); 
+}
+
+/*---------------modal3---------------*/
+
+.imagen_instituciones{
+    width: 100%;
+    height: 63.5vh;
+}
+
+.texto_modal_ins {
+    padding-left:40px;
+    padding-right: 25px;
+
+}
+
+.textoModalInformacion_ins{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 8%;
+
+}
+
+.abajo_beneficios_instituciones {
+    transform: translate(-0%, -41.5%); 
+}
+
+/*---------------modal4---------------*/
+
+.imagen_empresarial{
+    width: 100%;
+    height: 71.2vh;
+}
+
+.texto_modal_em {
+    padding-left:40px;
+    padding-right: 25px;
+
+}
+
+.textoModalInformacion_em{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 8%;
+
+}
+
+.abajo_beneficios_empresarial {
+    transform: translate(-0%, -40.9%); 
+}
+/*media*/ 
+
+@media screen and (max-width: 999px) and ( min-width: 750px) {
+    
+    .carousel_texto{
+        font-size: 33px;
+    }
+
+    .carousel_texto_empresarial{
+        font-size: 33px;
+}
+    
+} 
+
+@media screen and (max-width: 750px){
+    
+    .carousel_texto{
+        font-size: 27px;
+    }
+
+    .carousel_texto_empresarial{
+        font-size: 27px;
+}
+    
+} 
+
+@media screen and (max-width: 600px){
+    
+    .carousel_texto{
+        font-size: 23px;
+    }
+
+    .carousel_texto_empresarial{
+        font-size: 23px;
+}
+    
+} 
+
+
