@@ -57,6 +57,10 @@ a{
     font-family: "roboto-bold";
     src: url("../utils/fonts/roboto/Roboto-Bold.woff");
 }
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/poppins/poppins.woff");
+}
 @media screen and (min-width:300px) and (max-width:500px){
     
 }

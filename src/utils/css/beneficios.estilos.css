@@ -155,6 +155,7 @@ html, body{
     display: flex;
     width: 100%;
     height: auto;
+    justify-content: center;
 }
 .imagenpagos{
     margin-left: 13.5%;
@@ -169,6 +170,7 @@ html, body{
 }
 
 .textopagos{
+    justify-content: center;
     width: 60%;
     margin-right: 18%;
     margin-left: 8%;
@@ -184,12 +186,10 @@ html, body{
     font-size: 20px;
     padding-right: 90px;
 }
-.boton_pagos{
-    font-size: 160%;
-    font-weight: 600;
-    color: #0054AA;
-    background-color:#FFB932 ;
-    border-radius:60px;
-    padding:4% 10%;
-    margin-top: 35%;
+.botones_pagos{
+    display: flex;
+}
+.botones_pagos img{
+    width: 40%;
+    height: auto;
 }
