@@ -5,16 +5,17 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Material de apoyo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/glogalStyles.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/material.estilos.css'>
-    <script src='../js/materialApoyo.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/glogalStyles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/material.estilos.css'>
+    <script src='../utils/js/materialApoyo.js'></script>
+    <script src="../utils/js/cargaDePaginas.js"></script>
 </head>
 <body onload="onMyLoad()">
     <div class="">
         <div class="">
             <div class="menuHorizontal">
                 <button type="button" class="logoMenu"><img class="logoClerni" src="../utils/images/CLERNI.svg"></button>
-                <button type="button"><a href="../clerni.html">Inicio</a></button>
+                <button type="button"><a href="../../index.html">Inicio</a></button>
                 <button type="button"><a href="../pages/metodologia.html">Metodología</a></button>
                 <button type="button"><a href="../pages/beneficios.html">Beneficios</a></button>
                 <button type="button"onclick="materialDeApoyo()"><a href='../pages/materialApoyo.html'>Material de apoyo</a></button>
@@ -25,21 +26,36 @@
     <div class="materialCompleto">
     <div class="menuLateral">
             <h2 class="TituloNivel">Selecciona tu nivel</h2>
-        <form action="" id="containerNiveles"></form>
-            <div class="botonmenuImagen"><button type="button" class="opcionesBotonMenu" onclick="intro()"><img class="imagenLadoBoton" src="../utils/images/naranja.svg">Introducción</button></div>
-            <div class="botonmenuImagen"><button type="button" class="opcionesBotonMenu" onclick="nivelA1()"><img class="imagenLadoBoton1" src="../utils/images/sombrillas.svg">A1</button></div>
-            <div class="botonmenuImagen"><button type="button" class="opcionesBotonMenu" onclick="nivelA2()"><img class="imagenLadoBoton2" src="../utils/images/paisajeMaterial.svg">A2</button></div>
-            <div class="botonmenuImagen"><button type="button" class="opcionesBotonMenu" onclick="nivelB1()"><img class="imagenLadoBoton3" src="../utils/images/marMaterial.svg">B1</button></div>
-            <div class="botonmenuImagen"><button type="button" class="opcionesBotonMenu" onclick="nivelB2()"><img class="imagenLadoBoton4" src="../utils/images/fabricaMaterial.svg">B2</button></div>
-        </form>
-    </div>
-    <div class="MaterialdeApoyoInicio">
+            <div class="botones">
+            <div class="botonMenu" onclick="intro()"> <!--Boton para material introductorio-->
+                <img class="imagenLadoBoton" src="../utils/images/materialApoyo/naranja.svg">
+                <div class="nombreBotonMenu1">Introducción</div>
+            </div>
+            <div class="botonMenu" onclick="nivelA1()"> <!--Boton para material A1-->
+                <img class="imagenLadoBoton" src="../utils/images/materialApoyo/sombrillas.svg">
+                <div class="nombreBotonMenu">A1</div>
+            </div>
+            <div class="botonMenu" onclick="nivelA2()"> <!--Boton para material A2-->
+                <img class="imagenLadoBoton" src="../utils/images/materialApoyo/paisajeMaterial.svg">
+                <div class="nombreBotonMenu">A2</div>
+            </div>
+            <div class="botonMenu" onclick="nivelB1()"> <!--Boton para material B1-->
+                <img class="imagenLadoBoton" src="../utils/images/materialApoyo/marMaterial.svg">
+                <div class="nombreBotonMenu">B1</div>
+            </div>
+            <div class="botonMenu" onclick="nivelB2()"> <!--Boton para material B2-->
+                <img class="imagenLadoBoton" src="../utils/images/materialApoyo/fabricaMaterial.svg">
+                <div class="nombreBotonMenu">B2</div></div>
+            </div>
+    </div></div>
+    <div class="MaterialdeApoyoInicio"> <!--Pagina principal-->
         <div class="">
             <h2>Que tal</h2>
             <p>Compañeros come vegetales</p>
         </div>
     </div>
-    <div class="MaterialdeApoyoNivelIntro">
+    <!--MATERIAL DE APOYO POR NIVELES-->
+    <div class="MaterialdeApoyoNivelIntro"> <!--Material nivel Introductorio-->
         <div class="CaraPrincipalMaterial">
             <h2 class="TituloPdfs">Material de apoyo - Introductorio</h2>
             <div class="guardarPDFs">
@@ -50,7 +66,7 @@
             </div>
         </div>
     </div>
-    <div class="MaterialdeApoyoNivelA1">
+    <div class="MaterialdeApoyoNivelA1"> <!--Material nivel A1-->
     <div class="CaraPrincipalMaterial">
         <h2 class="TituloPdfs">Material de apoyo - A1</h2>
         <div class="guardarPDFs">
@@ -61,7 +77,7 @@
         </div>
     </div>
 </div>
-<div class="MaterialdeApoyoNivelA2">
+<div class="MaterialdeApoyoNivelA2"><!--Material nivel A2-->
     <div class="CaraPrincipalMaterial">
         <h2 class="TituloPdfs">Material de apoyo - A2</h2>
         <div class="guardarPDFs">
@@ -72,7 +88,7 @@
         </div>
     </div>
 </div>
-<div class="MaterialdeApoyoNivelB1">
+<div class="MaterialdeApoyoNivelB1"> <!--Material nivel B1-->
     <div class="CaraPrincipalMaterial">
         <h2 class="TituloPdfs">Material de apoyo - B1</h2>
         <div class="guardarPDFs">
@@ -83,7 +99,7 @@
         </div>
     </div>
 </div>
-<div class="MaterialdeApoyoNivelB2">
+<div class="MaterialdeApoyoNivelB2"> <!--Material nivel B2-->
     <div class="CaraPrincipalMaterial">
         <h2 class="TituloPdfs">Material de apoyo - B2</h2>
         <div class="guardarPDFs">

@@ -24,7 +24,7 @@ button{
 }
 a{
     color: #FBFAFA;
-    font-family: roboto-medium;
+    font-family:roboto-medium;
     font-size: 18px;
     text-decoration-line: none
 }
@@ -37,23 +37,38 @@ a{
 .logoMenu{
     margin-top: 1%;
     margin-right: 0%;
+    width: 17%;
 }
-
 .azul{
     color: #0054AA;
 }
 .naranja{
     color: #FFB932;
 }
-@font-face {
+.piedePagina{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(41, 38, 38);
+    color: rgb(233, 229, 229);
+    font-family: roboto-medium;
+    font-size: 13px;
+}
+@font-face{
     font-family: "roboto-medium";
-    src: url("../utils/fonts/roboto/Roboto-Medium.woff");
+    src: url("../fonts/roboto/Roboto-Medium.woff");
 }
 @font-face {
     font-family: "roboto-bold-italic";
-    src: url("../utils/fonts/roboto/Roboto-BoldItalic.woff");
+    src: url("../fonts/roboto/Roboto-BoldItalic.woff");
 }
 @font-face {
     font-family: "roboto-bold";
     src: url("../utils/fonts/roboto/Roboto-Bold.woff");
+}
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/poppins/poppins.woff");
+}
+@media screen and (min-width:300px) and (max-width:500px){
+    
 }

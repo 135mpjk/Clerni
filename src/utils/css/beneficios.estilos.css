@@ -1,0 +1,195 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+/*parte de arriba hasta el boton*/
+.cabecera_beneficios, .abajo_beneficios{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+.titulo{
+    display: flex;
+    width: 100%;
+}
+.contenedor1{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4.5%;
+}
+.imagen1{
+    padding-left: 11.3%;
+   
+}
+.imagen1 img{
+    width: 92%;
+    height: auto;
+}
+.texto1{
+    padding-right: 10%;
+    padding-top: 3%;
+    
+}
+.texto1 p{
+    font-family:roboto-medium;
+}
+.texto1 h1{
+    font-family:roboto-medium;
+    font-size: 20px;
+}
+.espacio_entretexto1{
+    padding-bottom: 2%;
+}
+.contenedor2{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65%;
+}
+.texto2{
+    width: 40%;
+    margin-left:10%;
+}
+.texto2 p{
+    color: white;
+    font-size: 130%;
+    font-family:roboto-medium;
+}
+.primer_boton{
+    font-size: 160%;
+    font-weight: 600;
+    color: #0054AA;
+    background-color:#FFB932 ;
+    border-radius:60px;
+    padding:4% 10%;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.imagen2{
+    width: 60%;
+    text-align: right;
+    margin-right: 5.5%;
+}
+.imagen2 img{
+    width: 92%;
+    height: auto;
+}
+
+/*seccion por que clerni*/
+.titulo_porque{
+    text-align: center;
+    background-color:#FFFDFD;
+    margin: 0;
+    padding: 0;
+    font-size: 160%;
+    font-family:poppins;
+    letter-spacing: 1px;
+    font-weight:bold;
+}
+
+.razones{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:#FFFDFD;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.razones p{
+    font-family:roboto-medium;
+    font-size: 20px;
+}
+.razones h1{
+    font-family:poppins;
+    font-size: 23px;
+    color:#0054AA;
+}
+.circulos{
+    display: flex;
+    width: 25%;
+}
+.circulos img{
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+}
+.derecha img{
+    width: 70%;
+    height: auto;
+
+}
+.izquierda{
+    justify-content: flex-end;
+    padding-right:3%;
+}
+.razones_izquierda{
+    width: 75%;
+    padding-left: 1%;
+    padding-right:5%;
+    font-size:22px;
+}
+.derecha{
+   
+}
+.razones_derecha{
+    width: 85%;
+    text-align: end;
+    margin-left: 8%;
+    padding-right: 4%;
+    font-size:22px;
+}
+
+/*seccion pagos clerni*/
+.contenedor3{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.imagenpagos{
+    margin-left: 15%;
+    width: 40%;
+}
+.imagenpagos img{
+    width: 95%;
+    height: auto;
+    border-radius: 50px;
+
+}
+
+.textopagos{
+    justify-content: center;
+    width: 60%;
+    margin-right: 18%;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.textopagos h1{
+    font-size: 200%;
+    font-family:poppins;
+    font-weight:bold;
+}
+.textopagos p{
+    font-family:roboto-medium;
+    font-size: 20px;
+    padding-right: 90px;
+}
+.botones_pagos{
+    display: flex;
+}
+.botones_pagos img{
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+}

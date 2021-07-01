@@ -1,0 +1,28 @@
+.metodologiaSection{
+    overflow-x: hidden;
+}
+.primeraOla{
+    z-index: 0;
+    position: relative;
+}
+.explicacionMetodologia, .tituloNuestraMetodologia{
+    z-index: 3;
+    position: absolute;
+}
+.explicacionMetodologia{
+    display: flex;
+}
+.iconosIntroduc{
+    display: grid;
+    width: 99%;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+.grupo1Im{
+    display: grid;
+}
