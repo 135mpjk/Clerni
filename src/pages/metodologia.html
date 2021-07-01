@@ -7,6 +7,7 @@
     <title> Metodologia </title>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/glogalStyles.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/sliderandmodals.css'>
+    <script src="/src/js/metodologia.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 
@@ -32,21 +33,21 @@
                 </button>
 
                 <div class="carousel__lista">
-                    <div class="carousel__elemento"  onclick="">
-                        <img src="../utils/images/metodologia/Niños.png">
-                        <p class="carousel_texto"> Niños y </br> adolescentes </p>
+                    <div class="carousel__elemento"  onclick="modalChildrens()">
+                        <img src="/src/utils/images/metodologia/Niños.jpg">
+                        <p class="carousel_texto" onclick="modalChildrens()"> Niños y </br> adolescentes </p>
                     </div>
-                    <div class="carousel__elemento" onclick="">
-                        <img src="../utils/images/metodologia/Adultos.png">
+                    <div class="carousel__elemento" onclick="modalAdults()">
+                        <img src="../utils/images/metodologia/Adultos.jpg">
                         <p class="carousel_texto"> Adultos </p>
                     </div>  
-                    <div class="carousel__elemento" onclick="">
-                        <img src="../utils/images/metodologia/Instituciones.png">
+                    <div class="carousel__elemento" onclick="modalInstitutions()">
+                        <img src="../utils/images/metodologia/Instituciones.jpg">
                         <p class="carousel_texto"> Instituciones </br> Academicas </p>
                     </div> 
-                    <div class="carousel__elemento" onclick="">
-                        <img src="../utils/images/metodologia/empresarial.png">
-                        <p class="carousel_texto_empresarial"> Empresarial </p>
+                    <div class="carousel__elemento" onclick="modalBussines()">
+                        <img src="../utils/images/metodologia/empresarial.jpg">
+                        <p class="carousel_texto_empresarial">Empresarial </p>
                     </div> 
                 </div>
 
@@ -64,16 +65,17 @@
     <!--    Modals    -->
 
     <!--Modal 1 -->
-    <div class="container_m" id="ModalNiños"> 
+    <div class="container_niños" id="modalNiños"> 
         <div class="container_modal"> 
+            <div class="close"><span>&times;</span></div>
             <div class="container_izquierdo">
                 <div class="niños_ados">
                     Niños y adolescentes 
-
+                
                 </div>
 
                 <div class="imagen_modal1">
-                    <img class="imagen_niñosmodal" src="../utils/images/metodologia/Niños.png"/>
+                    <img class="imagen_niñosmodal" src="../utils/images/metodologia/modals/Niños.png"/>
                 </div>
             </div>
 
@@ -105,7 +107,7 @@
     </div>
 
     <!--Modal 2 -->
-    <div class="container_m" id="ModalAdulto"> 
+    <div class="container_adult" id="ModalAdulto"> 
         <div class="container_modal"> 
             <div class="container_izquierdo">
                 <div class="niños_ados">
@@ -113,7 +115,7 @@
                 </div>
 
                 <div class="imagen_modal1">
-                    <img class="imagen_adultos" src="../utils/images/metodologia/Adultos.png"/>
+                    <img class="imagen_adultos" src="../utils/images/metodologia/modals/Adultos.png"/>
                 </div>
             </div>
 
@@ -144,15 +146,16 @@
         </div>
     </div>
     <!--Modal 3 -->
-    <div class="container_m" id="ModalInstitucion"> 
+    <div class="container_insti" id="ModalInstitucion"> 
         <div class="container_modal"> 
+            <span class="close">&times;</span>
             <div class="container_izquierdo">
                 <div class="niños_ados">
                     Instituciones académicas
                 </div>
 
                 <div class="imagen_modal1">
-                    <img class="imagen_instituciones" src="../utils/images/metodologia/Instituciones.png"/>
+                    <img class="imagen_instituciones" src="../utils/images/metodologia/modals/Instituciones.png"/>
                 </div>
             </div>
 
@@ -187,7 +190,7 @@
     </div>
 
         <!--Modal 4 -->
-        <div class="container_m" id="ModalEmpresa"> 
+        <div class="container_empresa" id="ModalEmpresa"> 
             <div class="container_modal"> 
                 <div class="container_izquierdo">
                     <div class="niños_ados">
@@ -195,7 +198,7 @@
                     </div>
     
                     <div class="imagen_modal1">
-                        <img class="imagen_empresarial" src="../utils/images/metodologia/empresarial.png"/>
+                        <img class="imagen_empresarial" src="../utils/images/metodologia/modals/empresarial.png"/>
                     </div>
                 </div>
     
@@ -246,7 +249,7 @@
             rewind: true,
             arrows: {
                 prev: '.carousel__anterior',
-                next: '.carousel__siguiente'
+                next: '.carousel__siguiente',
             },
             responsive: [
                 {
@@ -255,14 +258,14 @@
                 settings: {
                     // Set to `auto` and provide item width to adjust to viewport
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
                 }
                 },{
                 // screens greater than >= 1024px
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
                 }
             ]
