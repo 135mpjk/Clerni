@@ -1,12 +1,9 @@
-*{
-
-}
 @font-face {
     font-family: Roboto-Light;
     src: url(/src/utils/fonts/roboto/Roboto-Light.ttf);
 }
 
-/*-----------------Slider------------*/ 
+/*-----------------Slider------------*/
 .contenedor_carousel{
     margin-top: 10px;
     margin: auto;
@@ -179,13 +176,13 @@
     margin-left:55%;
     width: 200px;
     height: 50px;
-    transform: translate(-0%, -140%); 
+    transform: translate(-0%, -140%);
     margin-top: 0%;
     position: relative;
 }
 
 .abajo_beneficios_niños {
-    transform: translate(-0%, -43.1%); 
+    transform: translate(-0%, -43.1%);
 }
 
 /*---------------modal2---------------*/
@@ -197,7 +194,7 @@
 }
 
 .abajo_beneficios_adultos {
-    transform: translate(-0%, -29.8%); 
+    transform: translate(-0%, -29.8%);
 }
 
 /*---------------modal3---------------*/
@@ -221,7 +218,7 @@
 }
 
 .abajo_beneficios_instituciones {
-    transform: translate(-0%, -41.5%); 
+    transform: translate(-0%, -41.5%);
 }
 
 /*---------------modal4---------------*/
@@ -245,12 +242,12 @@
 }
 
 .abajo_beneficios_empresarial {
-    transform: translate(-0%, -40.9%); 
+    transform: translate(-0%, -40.9%);
 }
-/*media*/ 
+/*media*/
 
 @media screen and (max-width: 999px) and ( min-width: 750px) {
-    
+
     .carousel_texto{
         font-size: 33px;
     }

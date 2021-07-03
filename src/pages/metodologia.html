@@ -5,31 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Metodologia </title>
-    <link rel='stylesheet' type='text/css' media='screen' href="../utils/css/glogalStyles.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/sliderandmodals.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href="../utils/js/metodologia.js">
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/sliderandmodals.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/metodolofgia.estilos.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/glogalStyles.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/metodolofgia.estilos.css'>
 </head>
 <body>
-    <div class="menuHorizontal">
+    <div class="menuHorizontal"> <!--Menu de Clerni-->
         <button type="button" class="logoMenu"><img class="logoClerni" src="../utils/images/CLERNI.svg"></button>
         <button type="button"><a href="../../index.html">Inicio</a></button>
         <button type="button"><a href="../pages/metodologia.html">Metodología</a></button>
         <button type="button"><a href="../pages/beneficios.html">Beneficios</a></button>
         <button type="button"onclick="materialDeApoyo()"><a href='../spages/materialApoyo.html'>Material de apoyo</a></button>
         <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
-    </div> 
-
-<!----Slider---->
+    </div>
+    <section class="metodologiaSection"><!--Toda la parte editable de la pagina-->
+        <div class="nuestraMetodologia"> <!--1ra parte "Nuestra metodologia"-->
+            <h2 class="blanco tituloNuestraMetodologia">Nuestra metodología</h2>
+            <div class="explicacionMetodologia">
+                <div class="grupo1Im">
+                    <div class="iconosIntroduc">
+                        <img src="../utils/images/metodologia/acompañamiento.svg">
+                        <h3 class="naranja tituloMetodo1">Acompañamiento</h3>
+                        <p class="blanco textoMetodo1">Estamos capacitados para resolver cualquier inquietud durante la llamada; además de realizar un seguimiento con base en los resultados obtenidos en cada llamada.</p>
+                    </div>
+                    <div class="iconosIntroduc">
+                        <img src="../utils/images/metodologia/valoracion.svg">
+                        <h3 class="naranja tituloMetodo1">Valoración</h3>
+                        <p class="blanco textoMetodo1">Estamos capacitados para resolver cualquier inquietud durante la llamada; además de realizar un seguimiento con base en los resultados obtenidos en cada llamada.</p>
+                    </div>
+                    <div class="iconosIntroduc">
+                        <img src="../utils/images/metodologia/feedback.svg">
+                        <h3 class="naranja tituloMetodo1">Feedback</h3>
+                        <p class="blanco textoMetodo1">Obtendrás detalladamente los aspectos a corregir y algunos consejos para mejorar tu vocabulario y gramática. Pero sin tareas.</p>
+                    </div>
+                </div>
+                <div class="grupo2Im">
+                    <div class="iconosIntroduc">
+                        <img src="../utils/images/metodologia/stonks.svg">
+                        <h3 class="naranja tituloMetodo1">Análisis</h3>
+                        <p class="blanco textoMetodo1">Mediante diferentes preguntas previas a la llamada evaluamos tu perfil para conocer tu nivel de inglés, gustos e intereses personales.</p>
+                    </div>
+                    <div class="iconosIntroduc">
+                        <img src="../utils/images/metodologia/preparacion.svg">
+                        <h3 class="naranja tituloMetodo1">Preparación</h3>
+                        <p class="blanco textoMetodo1">Con la información recolectada, preparamos la conversación perfecta para generar los mejores resultados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="primeraOla"> <!--Figura de fondo-->
+                <svg width="1546" height="1207" viewBox="0 0 1546 1207" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M875.026 1041.57C511.932 944.599 269.47 1273.7 0 1194.6V0H1546V276.667V858.178C1232.24 846.864 1238.12 1138.54 875.026 1041.57Z" fill="#FFB932"/>
+                    <path d="M875.026 1009.64C511.932 915.642 269.47 1234.66 0 1157.98V0H1546V268.186V831.871C1232.24 820.904 1238.12 1103.64 875.026 1009.64Z" fill="#0054AA"/>
+                    </svg></div>
+        </div>
+        <div class="PlanesAprendizaje"> <!--2da parte "Planes de aprendizaje", incluye slider y modales-->
+            <h3 class="azul tituloNuestraMetodologia">¿Cual plan se ajusta a mi aprendizaje?</h3>
+                <!----Slider---->
     <div class="contenedor_carousel">
-
         <div class="carousel">
             <div class="carousel__contenedor">
                 <button aria-label="Anterior" class="carousel__anterior">
                     <i class="fas fa-chevron-left"></i>
                 </button>
-
                 <div class="carousel__lista">
                     <div class="carousel__elemento"  onclick="">
                         <img src="../utils/images/metodologia/Niños.png">
@@ -38,15 +78,15 @@
                     <div class="carousel__elemento" onclick="">
                         <img src="../utils/images/metodologia/Adultos.png">
                         <p class="carousel_texto"> Adultos </p>
-                    </div>  
+                    </div>
                     <div class="carousel__elemento" onclick="">
                         <img src="../utils/images/metodologia/Instituciones.png">
                         <p class="carousel_texto"> Instituciones </br> Academicas </p>
-                    </div> 
+                    </div>
                     <div class="carousel__elemento" onclick="">
                         <img src="../utils/images/metodologia/empresarial.png">
                         <p class="carousel_texto_empresarial"> Empresarial </p>
-                    </div> 
+                    </div>
                 </div>
 
                 <button aria-label="Siguiente" class="carousel__siguiente">
@@ -58,7 +98,34 @@
         </div>
 
     </div>
-
+        </div>
+        <div class="tiposConversacion">
+            <h3 class="azul tituloNuestraMetodologia">Tipos de Conversación</h3>
+            <div>
+                <div>
+                    <img src="../utils/images/metodologia/natural.svg">
+                    <h4 class="azul">Natural</h4>
+                    <p>Consiste en una conversación amistosa sobre experiencias y preguntas personales enfocadas en reforzar el vocabulario cotidiano.</p>
+                </div>
+                <div>
+                    <img src="../utils/images/metodologia/professional.svg">
+                    <h4 class="azul">Profesional</h4>
+                    <p>Se compone de una serie preguntas de entrevista, exclusivamente para evaluar profesionalmente tu desempeño en el inglés.</p>
+                </div>
+                <div>
+                    <img src="../utils/images/metodologia/tecnica.svg">
+                    <h4 class="azul">Técnica</h4>
+                    <p>Consiste en una conversación técnica sobre un tema en especial seleccionado por el cliente, como: finanzas, negocios, medicina, psicología, política, entre otros.</p>
+                </div>
+                <div>
+                    <img src="../utils/images/metodologia/didactica.svg">
+                    <h4 class="azul">Didáctica</h4>
+                    <p>Cuenta con diversas actividades dinámicas y divertidas durante tu conversación para hacer más entretenida la comunicación mientras aprendes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nuestroEquipo"></div>
+    </section>
 
     <!--    Modals    -->
 
@@ -276,30 +343,6 @@
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 <script src="/src/js/metodologia.js"></script>
     </div>
-    <section class="metodologiaSection">
-        <div class="nuestraMetodologia">
-            <h2 class="tituloNuestraMetodologia">Nuestra metodología</h2>
-            <div class="explicacionMetodologia">
-                <div class="grupo1Im">
-                    <div class="iconosIntroduc"><img src="../utils/images/metodologia/acompañamiento.svg"></div>
-                    <div class="iconosIntroduc"><img src="../utils/images/metodologia/valoracion.svg"></div>
-                    <div class="iconosIntroduc"><img src="../utils/images/metodologia/feedback.svg"></div>
-                </div>
-                <div class="grupo2Im">
-                    <div class="iconosIntroduc"><img src="../utils/images/metodologia/stonks.svg"></div>
-                    <div class="iconosIntroduc"><img src="../utils/images/metodologia/preparacion.svg"></div>
-                </div>
-            </div>
-            <div class="primeraOla">
-                <svg width="1546" height="1207" viewBox="0 0 1546 1207" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M875.026 1041.57C511.932 944.599 269.47 1273.7 0 1194.6V0H1546V276.667V858.178C1232.24 846.864 1238.12 1138.54 875.026 1041.57Z" fill="#FFB932"/>
-                    <path d="M875.026 1009.64C511.932 915.642 269.47 1234.66 0 1157.98V0H1546V268.186V831.871C1232.24 820.904 1238.12 1103.64 875.026 1009.64Z" fill="#0054AA"/>
-                    </svg></div>
-        </div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class="nuestroEquipo"></div>
-    </section>
     <footer class="piedePagina">
         <h4>Bogotá D.C., Colombia</h4>
         <h4>Carrera 70 C #48 - 28 Oficina: C-21</h4>
