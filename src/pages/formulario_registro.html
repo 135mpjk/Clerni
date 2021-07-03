@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/glogalStyles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/formulario_registro.css'>
+    <title>Document</title>
+</head>
+<body onload="onMyLoad()">
+    <form>
+        <div class="menuHorizontal">
+            <button type="button" class="logoMenu"><img class="logoClerni" src="../utils/images/CLERNI.svg"></button>
+            <button type="button"><a href="../../index.html">Inicio</a></button>
+            <button type="button"><a href="../pages/metodologia.html">Metodología</a></button>
+            <button type="button"><a href="../pages/beneficios.html">Beneficios</a></button>
+            <button type="button"onclick="materialDeApoyo()"><a href='../pages/materialApoyo.html'>Material de apoyo</a></button>
+            <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
+        </div>
+        <p>Nombre: <input type="text" name="nombre" size="40"></p>
+        <p>Correo electrónico: <input type="email"></p>
+        <p>Indicativo del país: 
+            
+                <select id="indicativo">
+                    <option></option>
+                </select>
+            
+        </p>
+        <p>¿Estas interesado en algún servicio?
+          <input type="radio" name="hm" value="h"> Niños/adolecentes
+          <input type="radio" name="hm" value="m"> Adultos
+          <input type="radio" name="hm" value="m"> Instituciones educativas
+          <input type="radio" name="hm" value="m"> Empresarial
+
+        </p>
+        <p>¿Quiéres dejarnos un mensaje? <input type="text" name="nombre" size="40"></p>
+        <p>
+          <input type="submit" value="Enviar">
+        </p>
+      </form>
+      <script src="../utils/js/formulario_registro.js"></script>
+</body>
+</html>
