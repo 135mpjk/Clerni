@@ -7,22 +7,72 @@
 }
 .explicacionMetodologia, .tituloNuestraMetodologia{
     z-index: 3;
+    text-align: center;
+    display: flex;
     position: absolute;
 }
 .explicacionMetodologia{
     display: flex;
-}
-.iconosIntroduc{
-    display: grid;
-    width: 99%;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 10px;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
     justify-content: center;
+    align-content: center;
     align-items: center;
-    row-gap: 15px;
+    text-align: center;
 }
 .grupo1Im{
     display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 80px;
+    row-gap: 15px;
+}
+.grupo2Im{
+    display: grid;
+    width: 50%;
+    margin-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 100px;
+}
+.tituloMetodo1{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: roboto-medium;
+    font-size: 25px;
+}
+.textoMetodo1{
+    font-family: roboto-regular;
+    font-size: 20px;
+}
+.tituloNuestraMetodologia{
+    text-align: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 40px;
+    margin-top: 8%;
+    position: absolute;
+}
+
+.tituloNuestroPlan{
+    text-align: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 40px;
+    position: relative;
+    margin: 0;
+}
+
+.nuestraMetodologia, .tiposConversacion{
+    display: flex;
+    justify-content: center;
+}
+
+.PlanesAprendizaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\xd\\cambios\\Clerni2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Clerni"
+	}
+}
