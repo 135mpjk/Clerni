@@ -5,7 +5,7 @@
     z-index: 0;
     position: relative;
 }
-.explicacionMetodologia, .tituloNuestraMetodologia{
+.explicacionMetodologia, .tituloNuestraMetodologia, .personasEquipo{
     z-index: 3;
     text-align: center;
     display: flex;
@@ -21,7 +21,7 @@
     align-items: center;
     text-align: center;
 }
-.grupo1Im{
+.grupo1Im, .grupo1Equipo, .grupo2Equipo{
     display: grid;
     width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
@@ -56,7 +56,82 @@
     margin-top: 8%;
     position: absolute;
 }
-.nuestraMetodologia, .PlanesAprendizaje, .tiposConversacion{
+.nuestraMetodologia, .PlanesAprendizaje, .tiposConversacion, .nuestroEquipo{
     display: flex;
     justify-content: center;
+}
+.containerTiposDeConver{
+    margin-top: 15%;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 80px;
+    row-gap: 15px;
+}
+.subtituloTipos{
+    font-size: 30px;
+    font-family: poppins;
+}
+.parrafoTiposConver{
+    text-align: justify;
+    font-family: roboto-regular;
+    font-size: 20px;
+}
+.personasEquipo{
+    margin-top: 14%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+}
+.grupo1Equipo, .grupo2Equipo{
+    column-gap: 15%;
+}
+.CardPersonajes, .CardPersonajes1{
+    margin-top: 10%;
+}
+.nombreParticipante{
+    font-family: roboto-medium;
+    font-size: 25px;
+}
+.rangoParticipante{
+    font-family: roboto-light-Italic;
+    font-size: 18px;
+}
+.descripParticipante{
+    font-family: roboto-regular;
+    font-size: 20px;
+}
+.nombreParticipante, .rangoParticipante, .descripParticipante{
+    margin: 6%;
+}
+@media screen and (min-width:894px) and (max-width:1189px){
+    .personasEquipo{
+        margin-top: 30%;
+    }
+    .personasEquipo img{
+        width: 70%;
+    }
+    .grupo1Equipo, .grupo2Equipo{
+        column-gap: 7%;
+    }
+    .containerTiposDeConver{
+        margin-top: 20%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grupo1Im{
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grupo2Im{
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
 }

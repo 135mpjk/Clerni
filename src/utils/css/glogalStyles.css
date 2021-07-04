@@ -48,13 +48,24 @@ a{
 .blanco{
     color: #FBFAFA;
 }
+.azulClaro{
+    color: #85CAF1;
+}
+.gris{
+    color: #E5E5E5;
+}
 .piedePagina{
     display: flex;
+    padding: 1%;
     justify-content: space-around;
     background-color: rgb(41, 38, 38);
     color: rgb(233, 229, 229);
     font-family: roboto-medium;
     font-size: 13px;
+}
+@font-face{
+    font-family: "roboto-light-Italic";
+    src: url("../fonts/roboto/Roboto-LightItalic.woff");
 }
 @font-face{
     font-family: "roboto-medium";
