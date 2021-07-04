@@ -193,3 +193,38 @@ html, body{
     height: auto;
     border-radius: 50px;
 }
+
+
+
+
+
+/*---------------------modals -----------------*/
+
+.contenedor_modales_beneficios{
+    margin: 10px;
+}
+
+/*modal1*/
+
+.container_modal_beneficios1{
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    height: 478px;
+    width: 780px;
+    border: 1px solid #0054AA;
+    background-color: #F4F4F4;   
+    box-shadow: 1px 0px 5px -1px;
+    position: relative;
+    z-index: 1;
+}
+
+.titulo_modals_beneficios{
+    background-color: #0054AA;
+    
+}
+
+.modals_beneficios_contenido{
+    display: flex;-
+    flex-direction: row;
+}
