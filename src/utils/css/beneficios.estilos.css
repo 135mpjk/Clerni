@@ -72,6 +72,7 @@ html, body{
     padding:4% 10%;
     margin-top: 20%;
     margin-left: 20%;
+    transform: translate(0%, 50%);
 }
 .imagen2{
     width: 60%;
@@ -139,7 +140,7 @@ html, body{
     font-size:22px;
 }
 .derecha{
-   
+    
 }
 .razones_derecha{
     width: 85%;
@@ -199,7 +200,6 @@ html, body{
 
 
 /*---------------------modals -----------------*/
-
 .contenedor_modales_beneficios{
     margin: 10px;
 }
@@ -217,6 +217,12 @@ html, body{
     box-shadow: 1px 0px 5px -1px;
     position: relative;
     z-index: 1;
+    z-index: 6;
+    display: none;   
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .titulo_modals_beneficios{
@@ -227,4 +233,46 @@ html, body{
 .modals_beneficios_contenido{
     display: flex;-
     flex-direction: row;
+}
+
+/*modal2*/
+
+.container_modal_beneficios2{
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    height: 478px;
+    width: 780px;
+    border: 1px solid #0054AA;
+    background-color: #F4F4F4;   
+    box-shadow: 1px 0px 5px -1px;
+    position: relative;
+    z-index: 1;
+    z-index: 6;
+    display: none;   
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*modal3*/
+
+.container_modal_beneficios3{
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    height: 478px;
+    width: 780px;
+    border: 1px solid #0054AA;
+    background-color: #F4F4F4;   
+    box-shadow: 1px 0px 5px -1px;
+    position: relative;
+    z-index: 1;
+    z-index: 6;
+    display: none;   
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
