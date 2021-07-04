@@ -64,14 +64,16 @@ html, body{
     font-family:roboto-medium;
 }
 .primer_boton{
-    font-size: 160%;
-    font-weight: 600;
-    color: #0054AA;
     background-color:#FFB932 ;
     border-radius:60px;
     padding:4% 10%;
     margin-top: 20%;
     margin-left: 20%;
+}
+.letra_boton button{
+    font-size: 120%;
+    font-weight: 600;
+    color: #0054AA;
 }
 .imagen2{
     width: 60%;

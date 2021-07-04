@@ -70,11 +70,15 @@ a{
 }
 @font-face {
     font-family: "roboto-bold";
-    src: url("../utils/fonts/roboto/Roboto-Bold.woff");
+    src: url("../fonts/roboto/Roboto-Bold.woff");
 }
 @font-face {
     font-family: "poppins";
     src: url("../fonts/poppins/poppins.woff");
+}
+@font-face {
+    font-family: "poppins-bold";
+    src: url("../fonts/poppins/Poppins-Bold.woff");
 }
 @media screen and (min-width:300px) and (max-width:500px){
     
