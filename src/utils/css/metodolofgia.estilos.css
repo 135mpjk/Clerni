@@ -4,6 +4,8 @@
 .primeraOla{
     z-index: 0;
     position: relative;
+    width: 100%;
+    justify-content: center;
 }
 .explicacionMetodologia, .tituloNuestraMetodologia, .personasEquipo{
     z-index: 3;
@@ -112,26 +114,164 @@
 .nombreParticipante, .rangoParticipante, .descripParticipante{
     margin: 6%;
 }
-@media screen and (min-width:894px) and (max-width:1189px){
-    .personasEquipo{
-        margin-top: 30%;
+@media screen and (min-width:894px) and (max-width:1189px){ /*Organizados por orden*/
+    /*NUESTRA METODOLOGIA*/
+    .tituloNuestraMetodologia{ /*Primer titulo*/
+        font-size: 30px;
+        margin-top: 5%;
     }
-    .personasEquipo img{
-        width: 70%;
+    .grupo1Im{
+        margin-top: 0;
     }
-    .grupo1Equipo, .grupo2Equipo{
-        column-gap: 7%;
-    }
-    .containerTiposDeConver{
+    /*TIPOS DE CONVERSACION*/
+    .containerTiposDeConver{ /*Cambio de espacio de Tipos de conversacion*/
         margin-top: 20%;
         grid-template-columns: 1fr 1fr;
     }
-    .grupo1Im{
+    .grupo1Im img{ /*Tamaño de imagenes de los simbolos*/
+        width: 40%;
+    }
+    .grupo2Im img{ /*Tamaño de imagenes de los simbolos*/
+        width: 20%;
+    }
+    .explicacionMetodologia{
+        margin-top: 0;
+    }
+    /*NUESTRO EQUIPO*/
+    .grupo1Equipo, .grupo2Equipo{ /*Cambio de espacio de Nuestro equipo*/
+        column-gap: 7%;
+    }
+    .personasEquipo img{ /*Tamaño imagenes de el equipo*/
+        width: 50%;
+    }
+    .rangoParticipante{ /*Cambio tamaño letra*/
+        font-size: 14px;
+    }
+    /*VARIOS*/
+    .tituloMetodo1, .subtituloTipos, .nombreParticipante{ /*Cambio tamaño letra*/
+        font-size: 20px;
+    }
+    .textoMetodo1, .parrafoTiposConver, .descripParticipante{/*Cambio tamaño letra*/
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:760px) and (max-width:893px){ /*Organizados por orden*/
+    /*NUESTRA METODOLOGIA*/
+    .tituloNuestraMetodologia{ /*Primer titulo*/
+        font-size: 25px;
+        margin-top: 2%;
+    }
+    .grupo2Im, .grupo1Im{
+        margin-top: 0;
+    }
+    /*TIPOS DE CONVERSACION*/
+    .containerTiposDeConver{ /*Cambio de espacio de Tipos de conversacion*/
+        margin-top: 20%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .containerTiposDeConver img{
+        width: 30%;
+    }
+    .grupo1Im img{ /*Tamaño de imagenes de los simbolos*/
+        width: 40%;
+    }
+    .grupo2Im img{ /*Tamaño de imagenes de los simbolos*/
+        width: 30%;
+    }
+    .grupo2Im{ /*Tamaño de imagenes de los simbolos*/
+        width: 50%;
+    }
+    /*NUESTRO EQUIPO*/
+    .grupo1Equipo, .grupo2Equipo{ /*Cambio de espacio de Nuestro equipo*/
+        column-gap: 7%;
+    }
+    .personasEquipo img{ /*Tamaño imagenes de el equipo*/
+        width: 50%;
+    }
+    .rangoParticipante{ /*Cambio tamaño letra*/
+        font-size: 12px;
+    }
+    /*VARIOS*/
+    .tituloMetodo1, .subtituloTipos, .nombreParticipante{ /*Cambio tamaño letra*/
+        font-size: 14px;
+    }
+    .textoMetodo1, .parrafoTiposConver, .descripParticipante{/*Cambio tamaño letra*/
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:759px){ /*Organizados por orden*/
+    /*NUESTRA METODOLOGIA*/
+    .tituloNuestraMetodologia{ /*Primer titulo*/
+        font-size: 18px;
+        margin-top: 5%;
+        z-index: 300000;
+    }
+    .explicacionMetodologia{
+        background-color: #0054AA;
+        position: relative;
+    }
+    .ola_responsive{
+        margin-top: 140%
+    }
+    .grupo1Im, .grupo2Im{
+        margin-top: 20%;
         width: 80%;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        column-gap: 80px;
     }
     .grupo2Im{
-        width: 80%;
-        grid-template-columns: 1fr 1fr;
+        margin-top: 2%;
+    }
+    .grupo1Im img{ /*Tamaño de imagenes de los simbolos*/
+        width: 20%;
+    }
+    .grupo2Im img{ /*Tamaño de imagenes de los simbolos*/
+        width: 25%;
+    }
+    .grupo2Im{ /*Tamaño de imagenes de los simbolos*/
+        width: 50%;
+    }
+    /*TIPOS DE CONVERSACION*/
+    .containerTiposDeConver{ /*Cambio de espacio de Tipos de conversacion*/
+        margin-top: 20%;
+        grid-template-columns: 1fr;
+    }
+    .containerTiposDeConver img{
+        width: 20%;
+    }
+    /*NUESTRO EQUIPO*/
+    .grupo1Equipo, .grupo2Equipo{ /*Cambio de espacio de Nuestro equipo*/
+        column-gap: 7%;
+        grid-template-columns: 1fr;
+    }
+    .personasEquipo{
+        background-color: #0054AA;
+        position: relative;
+        margin-top: 30%;
+        padding: 20%;
+        padding-top: 0;
+    }
+    .personasEquipo img{ /*Tamaño imagenes de el equipo*/
+        width: 30%;
+    }
+    .rangoParticipante{ /*Cambio tamaño letra*/
+        font-size: 12px;
+        margin: 1%;
+    }
+    .nombreParticipante{
+        margin: 0;
+    }.descripParticipante{
+        margin: 0;
+    }
+    /*VARIOS*/
+    .tituloMetodo1, .subtituloTipos, .nombreParticipante{ /*Cambio tamaño letra*/
+        font-size: 13px;
+    }
+    .textoMetodo1, .parrafoTiposConver, .descripParticipante{/*Cambio tamaño letra*/
+        font-size: 12px;
+    }
+    .primeraOla{
+        width: 100%;
+        position: absolute;
     }
 }
