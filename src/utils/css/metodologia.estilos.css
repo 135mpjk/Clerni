@@ -1,0 +1,159 @@
+.metodologiaSection{
+    overflow-x: hidden;
+}
+.primeraOla{
+    z-index: 0;
+    position: relative;
+}
+.explicacionMetodologia, .tituloNuestraMetodologia, .personasEquipo{
+    z-index: 3;
+    text-align: center;
+    display: flex;
+    position: absolute;
+}
+.explicacionMetodologia{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grupo1Im, .grupo1Equipo, .grupo2Equipo{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 80px;
+    row-gap: 15px;
+}
+.grupo2Im{
+    display: grid;
+    width: 50%;
+    margin-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 100px;
+}
+.tituloMetodo1{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: roboto-medium;
+    font-size: 25px;
+}
+.textoMetodo1{
+    font-family: roboto-regular;
+    font-size: 20px;
+}
+.tituloNuestraMetodologia{
+    text-align: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 40px;
+    margin-top: 8%;
+    position: absolute;
+}
+
+.tituloNuestroPlan{
+    text-align: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 40px;
+    position: relative;
+    margin: 0;
+}
+
+.nuestraMetodologia, .tiposConversacion{
+    display: flex;
+    justify-content: center;
+}
+
+.PlanesAprendizaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.nuestraMetodologia, .PlanesAprendizaje, .tiposConversacion, .nuestroEquipo{
+    display: flex;
+    justify-content: center;
+}
+.containerTiposDeConver{
+    margin-top: 15%;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 80px;
+    row-gap: 15px;
+}
+.subtituloTipos{
+    font-size: 30px;
+    font-family: poppins;
+}
+.parrafoTiposConver{
+    text-align: justify;
+    font-family: roboto-regular;
+    font-size: 20px;
+}
+.personasEquipo{
+    margin-top: 14%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+}
+.grupo1Equipo, .grupo2Equipo{
+    column-gap: 15%;
+}
+.CardPersonajes, .CardPersonajes1{
+    margin-top: 10%;
+}
+.nombreParticipante{
+    font-family: roboto-medium;
+    font-size: 25px;
+}
+.rangoParticipante{
+    font-family: roboto-light-Italic;
+    font-size: 18px;
+}
+.descripParticipante{
+    font-family: roboto-regular;
+    font-size: 20px;
+}
+.nombreParticipante, .rangoParticipante, .descripParticipante{
+    margin: 6%;
+}
+@media screen and (min-width:894px) and (max-width:1189px){
+    .personasEquipo{
+        margin-top: 30%;
+    }
+    .personasEquipo img{
+        width: 70%;
+    }
+    .grupo1Equipo, .grupo2Equipo{
+        column-gap: 7%;
+    }
+    .containerTiposDeConver{
+        margin-top: 20%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grupo1Im{
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grupo2Im{
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
+}

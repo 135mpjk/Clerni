@@ -48,13 +48,24 @@ a{
 .blanco{
     color: #FBFAFA;
 }
+.azulClaro{
+    color: #85CAF1;
+}
+.gris{
+    color: #E5E5E5;
+}
 .piedePagina{
     display: flex;
+    padding: 1%;
     justify-content: space-around;
     background-color: rgb(41, 38, 38);
     color: rgb(233, 229, 229);
     font-family: roboto-medium;
     font-size: 13px;
+}
+@font-face{
+    font-family: "roboto-light-Italic";
+    src: url("../fonts/roboto/Roboto-LightItalic.woff");
 }
 @font-face{
     font-family: "roboto-medium";
@@ -70,11 +81,15 @@ a{
 }
 @font-face {
     font-family: "roboto-bold";
-    src: url("../utils/fonts/roboto/Roboto-Bold.woff");
+    src: url("../fonts/roboto/Roboto-Bold.woff");
 }
 @font-face {
     font-family: "poppins";
     src: url("../fonts/poppins/poppins.woff");
+}
+@font-face {
+    font-family: "poppins-bold";
+    src: url("../fonts/poppins/Poppins-Bold.woff");
 }
 @media screen and (min-width:300px) and (max-width:500px){
     
