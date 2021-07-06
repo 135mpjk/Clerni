@@ -203,7 +203,6 @@ html, body{
 /*---------------------modals -----------------*/
 .contenedor_modales_beneficios{
     
-
 }
 
 /*modal1*/
@@ -411,3 +410,170 @@ html, body{
     left: 38%;
     top: 67%;
 }
+
+
+/*responsive*/ 
+
+@media screen and (max-width:800px) {
+    .globos_texto_beneficios{
+        display: none;
+    } 
+    
+    .celular{
+        display: none;
+    }
+    
+    .texto1_contenido_pay{
+        position: relative;
+        color: white;
+        font-size: 130%;
+        font-family:roboto-medium;
+        background-color: #0054AA;
+        left: auto;
+        top: auto;
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px ;
+        letter-spacing: 1px;
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+    }
+
+    .texto2_contenido_pay{
+        position: relative;
+        color: white;
+        font-size: 130%;
+        font-family:roboto-medium;
+        background-color: #0054AA;
+        left: auto;
+        top: auto;  
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px;
+        letter-spacing: 1px;
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+    }
+
+    .texto3_contenido_pay{
+        position: relative;
+        color: white;
+        font-size: 130%;
+        font-family:roboto-medium;
+        background-color: #0054AA;
+        left: auto;
+        top: auto;
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px;
+        letter-spacing: 1px;
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+    }
+
+    .texto1_contenido_nequi{
+        position: relative;
+        color: white;
+        font-size: 130%;
+        font-family:roboto-medium;
+        background-color: #0054AA;
+        left: auto;
+        top: auto;  
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px;
+        letter-spacing: 1px;
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+    }
+
+    .texto2_contenido_nequi{
+        position: relative;
+        color: white;
+        font-size: 130%;
+        font-family:roboto-medium;
+        background-color: #0054AA;
+        left: auto;
+        top: auto;  
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px;
+        letter-spacing: 1px;
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+    }
+
+    .texto3_contenido_nequi{
+        position: relative;
+        color: white;
+        font-size: 130%;
+        font-family:roboto-medium;
+        background-color: #0054AA;
+        left: auto;
+        top: auto;
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px;
+        letter-spacing: 1px;
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+    }
+    
+    .texto1_contenido_banco{
+        position: relative;
+        color: white; 
+        font-size: 130%;
+        font-family:roboto-medium;
+        background-color: #0054AA;
+        left: auto;
+        top: auto;
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px;
+        letter-spacing: 1px;
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+    } 
+
+    .texto2_contenido_banco{
+        position: relative;
+        color: white;
+        font-size: 130%;
+        font-family:roboto-medium;
+        background-color: #0054AA;
+        left:auto;
+        top: auto;
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px;
+        letter-spacing: 1px;
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+    }
+
+    .texto3_contenido_banco{
+        position: relative;
+        color: white;
+        font-size: 130%;
+        font-family:roboto-medium; 
+        background-color: #0054AA;
+        left: auto;
+        top: auto;
+        margin-top: 3%;
+        padding: 1%;
+        border-radius: 15px;
+        text-align: center;  
+        background: rgb(79,127,176);
+        background: linear-gradient(0deg, rgba(79,127,176,1) 0%, rgba(0,84,170,1) 100%);
+
+    }
+
+    .containerImagenCelular{ 
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 6%; 
+    }
+    
+
+} 
