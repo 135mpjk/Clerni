@@ -2,7 +2,7 @@ html, body{
     padding: 0;
     margin: 0;
 }
-/*parte de arriba hasta el boton*/
+/*-----------------parte de arriba hasta el boton--------------------*/
 .cabecera_beneficios, .abajo_beneficios{
     position: relative;
     justify-content: center;
@@ -24,7 +24,7 @@ html, body{
 }
 .imagen1{
     padding-left: 11.3%;
-   
+
 }
 .imagen1 img{
     width: 92%;
@@ -37,6 +37,7 @@ html, body{
 }
 .texto1 p{
     font-family:roboto-medium;
+    
 }
 .texto1 h1{
     font-family:roboto-medium;
@@ -67,7 +68,7 @@ html, body{
     background-color:#FFB932 ;
     border-radius:60px;
     padding:4% 10%;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 20%;
     transform: translate(0%, 50%);
 }
@@ -86,7 +87,7 @@ html, body{
     height: auto;
 }
 
-/*seccion por que clerni*/
+/*----------------------seccion por que clerni------------------------------*/
 .titulo_porque{
     text-align: center;
     background-color:#FFFDFD;
@@ -152,7 +153,7 @@ html, body{
     font-size:22px;
 }
 
-/*seccion pagos clerni*/
+/*-------------------seccion pagos clerni------------------------*/
 .contenedor3{
     position: absolute;
     display: flex;
@@ -176,7 +177,7 @@ html, body{
     width: 60%;
     margin-right: 18%;
     margin-left: 8%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .textopagos h1{
     font-size: 200%;
@@ -190,6 +191,10 @@ html, body{
 }
 .botones_pagos{
     display: flex;
+    margin-top: 25%;  
+}
+.botones_pagos button{
+    margin-right: 5%;
 }
 .botones_pagos img{
     width: 80px;
@@ -410,4 +415,69 @@ html, body{
     font-family:roboto-medium;
     left: 38%;
     top: 67%;
+}
+/*-----------------responsive-----------------------*/
+/*-----------------PRIMER CORTE-----------------------*/
+@media screen and (max-width:1170px){
+    .primer_boton{
+        margin-top: -5%;
+        
+    }
+}
+/*-----------------SEGUNDO CORTE-----------------------*/
+@media screen and (max-width:1160px){
+    .textopagos{
+        margin-top: -1%;
+    }
+}
+/*-----------------TERCER CORTE-----------------------*/
+@media screen and (max-width:1060px){
+    .imagen1 img{
+        width: 89%;
+    }
+     .texto1 p{
+        font-size: 15px;
+        
+    }
+    .texto1 h1{
+        font-family:roboto-medium;
+        font-size: 20px;
+    }
+    .espacio_entretexto1{
+        padding-bottom: 1%;
+    }
+}
+/*-----------------CUARTO CORTE-----------------------*/
+@media screen and (max-width:1015px){
+    .contenedor1{
+        margin-top:4%;
+        padding-top:0;
+    }
+    .imagen1 img{
+        width: 89%;
+    }
+     .texto1 p{
+        font-size: 15px;
+        
+    }
+    .texto1 h1{
+        font-family:roboto-medium;
+        font-size: 16px;
+    }
+    .espacio_entretexto1{
+        padding-bottom: -1%;
+    }
+}
+/*-----------------QUINTO CORTE-----------------------*/
+@media screen and (max-width:970px){
+    .espacio_entretexto1{
+        padding-bottom:0;
+    }
+}
+/*-----------------SEXTO CORTE-----------------------*/
+@media screen and (max-width:890px){
+    .contenedor1{
+        margin-top:4%;
+        padding-top:0;
+}
 }
