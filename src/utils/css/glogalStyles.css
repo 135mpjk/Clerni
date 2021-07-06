@@ -1,0 +1,109 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #FBFAFA;
+    width: 100%;
+}
+/* Menu horizontal estilos, Nota: cambiar los colores */
+.menuHorizontal{
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    width: 99%;
+    justify-content: space-around;
+    background-color: #0054AA;
+    color: #FBFAFA;
+    padding: 0.5%;
+    margin: 0;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a{
+    color: #FBFAFA;
+    font-family:roboto-medium;
+    font-size: 18px;
+    text-decoration-line: none
+}
+.iniciarSesion{
+    color: #FFB932;
+    font-size: 24px;
+    font-family: roboto-medium;
+}
+/* Agregar la imagen del logo y cambiar tamaño */
+.logoMenu{
+    margin-top: 1%;
+    margin-right: 0%;
+    width: 17%;
+}
+.azul{
+    color: #0054AA;
+}
+.naranja{
+    color: #FFB932;
+}
+.blanco{
+    color: #FBFAFA;
+}
+.azulClaro{
+    color: #85CAF1;
+}
+.gris{
+    color: #E5E5E5;
+}
+.piedePagina{
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+    background-color: rgb(41, 38, 38);
+    color: rgb(233, 229, 229);
+    font-family: roboto-medium;
+    font-size: 13px;
+}
+@font-face{
+    font-family: "roboto-light-Italic";
+    src: url("../fonts/roboto/Roboto-LightItalic.woff");
+}
+@font-face{
+    font-family: "roboto-medium";
+    src: url("../fonts/roboto/Roboto-Medium.woff");
+}
+@font-face{
+    font-family: "roboto-regular";
+    src: url("../fonts/roboto/roboto_regular.woff");
+}
+@font-face {
+    font-family: "roboto-bold-italic";
+    src: url("../fonts/roboto/Roboto-BoldItalic.woff");
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../fonts/roboto/Roboto-Bold.woff");
+}
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/poppins/poppins.woff");
+}
+@font-face {
+    font-family: "poppins-bold";
+    src: url("../fonts/poppins/Poppins-Bold.woff");
+}
+@media screen and (min-width:300px) and (max-width:500px){
+    
+}
+@media screen and (min-width:760px) and (max-width:893px){
+    .piedePagina{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:759px){
+    .piedePagina{
+        text-align: center;
+        font-size: 10px;
+        flex-direction: column;
+        padding: 0;
+    }
+}

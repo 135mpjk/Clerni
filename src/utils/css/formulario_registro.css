@@ -1,0 +1,81 @@
+.titulo h1{
+    color:#0054AA ;
+    font-family:poppins-bold;
+    text-align: center;
+    
+}
+.formulario p{
+    color:#004184 ;
+    font-family:roboto-bold;
+    font-size: 18px;
+    padding-top: 0.5%;
+}
+.formulario{
+    justify-content: center;
+    justify-self: center;
+    margin-left: 16%;
+}
+.espacios{
+    border: none;
+    background-color: #85CAF1;
+    opacity: 0.35;
+    border-radius:3px;
+    margin-left: 2%;
+    color: black;
+    margin-right: 13%;
+    
+}
+.espacios option{
+    background-color: white;
+}
+.seleccionar{
+    display: flex;
+    margin-left: 5%;
+}
+.seleccionar div{
+    display: flex;
+    padding-right:0;
+    margin-right: 7%;
+    color:#004184 ;
+    font-family:roboto-bold;
+    font-size: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.botones{
+    position:absolute; 
+    left:0px; 
+    right:0px; 
+    bottom:4%;
+}
+.boton_enviar{
+    border: none;
+    background-color: #0054AA;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-family:roboto-bold;
+    font-size: 20px;
+    z-index: -5;
+}
+.boton_redireccionar{
+    border: none;
+    background-color: #FFB932;
+    width: 16%;
+    height: 60px;
+    color: #004184;
+    font-family:roboto-bold;
+    font-size: 16px;
+    border-radius: 30px;
+    padding-left:1.5%;
+    padding-right: 1.5%;
+    margin-bottom: -1%;
+    z-index: 5;
+    position:absolute;  
+    right:2%;
+    bottom: 70%; 
+}

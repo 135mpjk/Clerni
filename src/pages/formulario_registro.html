@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/glogalStyles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/formulario_registro.css'>
+    <title>Document</title>
+</head>
+<body onload="onMyLoad()">
+        <div class="menuHorizontal">
+            <button type="button" class="logoMenu"><img class="logoClerni" src="../utils/images/CLERNI.svg"></button>
+            <button type="button"><a href="../../index.html">Inicio</a></button>
+            <button type="button"><a href="../pages/metodologia.html">Metodología</a></button>
+            <button type="button"><a href="../pages/beneficios.html">Beneficios</a></button>
+            <button type="button"onclick="materialDeApoyo()"><a href='../pages/materialApoyo.html'>Material de apoyo</a></button>
+            <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
+        </div>
+        <div class="titulo"><h1>¡ Contáctanos !</h1></div>
+        <form class="formulario" action="mailto:135mariapaula@gmail.com" method="post" enctype="text/plain">
+        <p>Nombre*: <input class="espacios" type="text" name="nombre"size="110" autocomplete="off"></p>
+        <p>Correo electrónico*: <input class="espacios" type="email" size="97" autocomplete="off"></p>
+        <p>Indicativo del país*: 
+                <select class="espacios" id="indicativo">
+                    <option class="selecionar"></option>
+                </select>
+                Número celular*:<input class="espacios" type="number" autocomplete="off">
+            
+        </p>
+        <p>¿Estas interesado en algún servicio?</p>
+        <div class="seleccionar">
+          <div><input type="radio">Niños/adolecentes</div>
+          <div><input type="radio">Adultos</div>
+          <div><input type="radio">Instituciones educativas</div>
+          <div><input type="radio">Empresarial</div>
+        </div>
+        <p>¿Quiéres dejarnos un mensaje?</p>
+        <div><input class="espacios" type="text" name="nombre" size="80"></div>
+        <div class="botones">
+          <button class="boton_redireccionar">¿Ya tienes una cuenta? Entra aquí</button>
+          <button type="submit" class="boton_enviar">Enviar</button>
+        </div>
+      </form>
+      
+      <script src="../utils/js/formulario_registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+*{
+
+}
+@font-face {
+    font-family: poppins;
+    src: url(/src/utils/fonts/poppins/poppins.woff);
+}
+
+/*-----------------Slider------------*/ 
+.contenedor_carousel{
+    font-family: poppins;
+    margin-top: 10%;
+    margin: auto;
+    width: 60%;
+    height: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.carousel{
+    margin-top: 40px;
+}
+
+.carousel_texto{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F6F6F6;
+    font-size: 41px;
+    font-weight: bold;
+}
+
+
+
+.carousel_texto:hover{
+    cursor: pointer;
+    color: rgb(211, 227, 240);
+}
+
+
+.carousel_texto_empresarial{
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.carousel_texto_empresarial:hover{
+    cursor: pointer;
+    color: rgb(211, 227, 240);
+}
+
+
+
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #0054AA;
+	opacity: 1;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	color: #FFB932;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #0054AA;
+	opacity: .5;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .3;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+    background: #FFB932;
+}
+
+
+
+
+
+
+
+/*---------------modal---------------*/
+.container_modal{
+    font-family: poppins;
+    height: 478px;
+    width: 780px;
+    display: flex;
+    border: 1px solid #0054AA;
+    background-color: #F4F4F4;   
+    box-shadow: 1px 0px 5px -1px;
+    position: relative;
+    z-index: 1;
+}
+
+/*--------------modal 1------------*/
+.container_niños {
+    z-index: 6;
+    display: none;   
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.niños_ados{
+    width: 262px;
+    height: 74px;
+    top:0;
+    background-color: #0054AA;
+    color: cornsilk;
+    font-size: 36px;
+    padding: 11px;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo_adu{
+    justify-content: center;
+    font-size: 42px;
+    text-align: center;
+}
+
+.container_derecho{
+    
+}
+
+.container_izquierdo{
+
+}
+
+.texto_modal {
+    padding-left:40px;
+    padding-right: 25px;
+
+}
+
+.texto_modal_em {
+    padding-left:40px;
+    padding-right: 25px;
+
+}
+
+.imagen_niñosmodal{
+    width: 100%;
+}
+
+.imagen_modal1{
+    
+}
+
+.textoModalInformacion{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 14%;
+
+}
+
+.boton_quieresabermas{
+    font-size: 130%;
+    color: #0054AA;
+    background-color:#FFB932 ;
+    border-radius:60px;
+    padding: 0% 1%;
+    margin-left:55%;
+    width: 200px;
+    height: 50px;
+    transform: translate(-0%, -140%); 
+    margin-top: 0%;
+    position: relative;
+}
+
+.abajo_beneficios_niños {
+    transform: translate(-0%, -39.5%); 
+
+}
+
+
+/*---------------modal2---------------*/
+
+.container_adult {
+    z-index: 6;
+    font-family: Roboto-Light;
+    display: none;   
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagen_adultos{
+    width: 100%;
+    
+}
+
+.texto_modal_adult {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.textoModalInformacionAdult{
+    font-size: 19px;
+    text-align: justify;
+    margin-top: 20%;
+
+}
+
+
+.textoModalInformacionAdult{
+
+}
+
+.abajo_beneficios_adultos {
+    transform: translate(-0%, -27.5%); 
+}
+
+/*---------------modal3---------------*/
+
+.container_insti{
+    z-index: 6;
+    font-family: Roboto-Light;
+    display: none;   
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagen_instituciones{
+    width: 100%;
+    height: 53vh;
+}
+
+.texto_modal_ins {
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.textoModalInformacion_ins{
+    font-size: 17px;
+    text-align: justify;
+    margin-top: 12%;
+
+}
+
+.abajo_beneficios_instituciones {
+    transform: translate(-0%, -40%); 
+}
+
+/*---------------modal4---------------*/
+
+.container_empresa{
+    z-index: 6;
+    font-family: Roboto-Light;
+    display: none;   
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagen_empresarial{
+    width: 100%;
+    height: 53vh;
+}
+
+.texto_modal_em {
+    padding-left: 24px;
+    padding-right: 25px;
+
+}
+
+.textoModalInformacion_em{
+    font-size: 16.6px;
+    text-align: justify;
+    margin-top: 13%;
+
+}
+
+.abajo_beneficios_empresarial {
+    transform: translate(-0%, -43.5%); 
+
+}
+
+
+/* Close Button */
+.close {
+    color: #cde6e1;
+    background-color: #0054AA;
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.close2{
+    color: #cde6e1;
+    background-color: #0054AA;
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #FFB932;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #FFB932;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*media*/ 
+
+@media screen and (max-width: 1113px) and ( min-width: 750px) {
+    
+    .carousel_texto{
+        font-size: 33px;
+    }
+
+    .carousel_texto_empresarial{
+        font-size: 33px;
+}
+    
+} 
+
+@media screen and (max-width: 750px){
+    
+    .carousel_texto{
+        font-size: 27px;
+    }
+
+    .carousel_texto_empresarial{
+        font-size: 27px;
+}
+    
+} 
+
+@media screen and (max-width: 600px){
+    
+    .carousel_texto{
+        font-size: 23px;
+    }
+
+    .carousel_texto_empresarial{
+        font-size: 23px;
+}
+    
+} 
+
+
