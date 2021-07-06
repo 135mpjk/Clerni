@@ -1,11 +1,8 @@
-.titulo{
+.titulo h1{
     color:#0054AA ;
     font-family:poppins-bold;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    justify-items: center;
-    justify-content: center;
+    text-align: center;
+    
 }
 .formulario p{
     color:#004184 ;
@@ -24,10 +21,30 @@
     opacity: 0.35;
     border-radius:3px;
     margin-left: 2%;
+    color: black;
+    margin-right: 13%;
     
 }
-.selecionar{
+.espacios option{
     background-color: white;
+}
+.seleccionar{
+    display: flex;
+    margin-left: 5%;
+}
+.seleccionar div{
+    display: flex;
+    padding-right:0;
+    margin-right: 7%;
+    color:#004184 ;
+    font-family:roboto-bold;
+    font-size: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 .botones{
     position:absolute; 

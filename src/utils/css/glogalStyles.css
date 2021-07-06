@@ -94,3 +94,16 @@ a{
 @media screen and (min-width:300px) and (max-width:500px){
     
 }
+@media screen and (min-width:760px) and (max-width:893px){
+    .piedePagina{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:759px){
+    .piedePagina{
+        text-align: center;
+        font-size: 10px;
+        flex-direction: column;
+        padding: 0;
+    }
+}
