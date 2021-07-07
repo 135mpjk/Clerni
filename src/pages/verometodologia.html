@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Metodologia </title>
     <link rel='stylesheet' type='text/css' media='screen' href="../utils/js/metodologia.js">
+<<<<<<< HEAD
     <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/sliderandmodals.css'>
+=======
+    <link rel='stylesheet' type='text/css' media='screen' href="../utils/css/sliderandmodals.css">
+>>>>>>> upstream/todos
     <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/metodologia.estilos.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/glogalStyles.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
@@ -62,6 +66,7 @@
                     </svg></div>
         </div>
         <div class="PlanesAprendizaje"> <!--2da parte "Planes de aprendizaje", incluye slider y modales-->
+<<<<<<< HEAD
             <h3 class="azul tituloNuestroPlan">¿Cual plan se ajusta a mi aprendizaje?</h3>
     
     
@@ -105,6 +110,268 @@
                         <div role="tablist" class="carousel__indicadores"></div>
                     </div>
                 </div>
+=======
+            <h3 class="azul tituloNuestraMetodologia">¿Cual plan se ajusta a mi aprendizaje?</h3>
+            <!-------------------------------Slider---------------------------------->
+    <!----Slider---->
+    <div class="contenedor_carousel">
+
+        <div class="carousel">
+            <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel__lista">
+                    <div class="carousel__elemento"  onclick="modalChildrens()">
+                        <img src="../utils/images/metodologia/Niños.jpg">
+                        <p class="carousel_texto" onclick="modalChildrens()"> Niños y </br> adolescentes </p>
+                    </div>
+                    <div class="carousel__elemento" onclick="modalAdults()">
+                        <img src="../utils/images/metodologia/Adultos.jpg">
+                        <p class="carousel_texto"> Adultos </p>
+                    </div>  
+                    <div class="carousel__elemento" onclick="modalInstitutions()">
+                        <img src="../utils/images/metodologia/Instituciones.jpg">
+                        <p class="carousel_texto"> Instituciones </br> Academicas </p>
+                    </div> 
+                    <div class="carousel__elemento" onclick="modalBussines()">
+                        <img src="../utils/images/metodologia/empresarial.jpg">
+                        <p class="carousel_texto_empresarial">Empresarial </p>
+                    </div> 
+                </div>
+
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+            </div>
+            <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+
+    </div>
+
+
+    <!--    Modals    -->
+    <div class="contenedor_modales">
+        <!--Modal 1 -->
+        <div class="container_niños" id="modalNiños"> 
+            <div class="container_modal"> 
+                <div class="close"><span>&times;</span></div>
+                <div class="container_izquierdo">
+                    <div class="niños_ados">
+                        Niños y adolescentes 
+                    
+                    </div>
+    
+                    <div class="imagen_modal1">
+                        <img class="imagen_niñosmodal" src="../utils/images/metodologia/modals/Niños.png"/>
+                    </div>
+                </div>
+    
+                <div class="container_derecho" >
+                    <div class="texto_modal">
+                        <p class="textoModalInformacion"> Nuestro clases por teléfono a niños y adolescentes tienen como objetivo generar interés y 
+                        motivación por aprender idiomas pero sobretodo, disfrutar la experiencia de aprendizaje. 
+                        Esto mediante la construcción de confianza al hablar buscando así su crecimiento personal 
+                        y profesional. La metodología por está razón va orientada a crear y entender conversaciones 
+                        de diversos temas enfocado a sus gustos personales. Además, buscamos desde la primera clase 
+                        crear un ambiente seguro para potencializar la confianza.</p>
+                        
+    
+                    </div>
+    
+                    <div>
+                        <div class="abajo_beneficios_niños">
+                            <svg viewBox="0 0 1286 696" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M603 450 C1166 450 850 285 1286 290 V695 H0 C-50 850 0 490 603 450 Z" fill="#85CAF1"/>
+                                <path d="M733 500 C1104 500 900 335 1486 340 V695 H23 C0 850 0 500 733 500 Z" fill="#0054AA"/>
+                            </svg>
+                            <button class="boton_quieresabermas"> ¿Quiere saber </br> más? </button>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Modal 2 -->
+        <div class="container_adult" id="ModalAdulto"> 
+            <div class="container_modal"> 
+                <div class="close"><span>&times;</span></div>
+                <div class="container_izquierdo">
+                    <div class="niños_ados">
+                        Adultos
+                    </div>
+    
+                    <div class="imagen_modal1">
+                        <img class="imagen_adultos" src="../utils/images/metodologia/modals/Adultos.png"/>
+                    </div>
+                </div>
+    
+                <div class="container_derecho" >
+                    <div class="texto_modal">
+                        <p class="textoModalInformacion"> Nuestro clases por teléfono a los adultos tienen como 
+                            objetivo generar confianza de hablar y comprender cualquier pregunta en inglés buscando
+                            un crecimiento personal y profesional de cada persona, es de esta forma que podrá mantener
+                            y entender conversaciones en diferentes tiempos gramaticales a través de vocabulario variado.
+                            Además, de verte retado con diferentes actividades para potencializar tu agilidad al 
+                            responder en inglés.</p>
+                        
+    
+                    </div>
+    
+                    <div>
+                        <div class="abajo_beneficios_adultos">
+                            <svg viewBox="0 0 1286 696" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M603 450 C1166 450 850 285 1286 290 V695 H0 C-50 850 0 490 603 450 Z" fill="#85CAF1"/>
+                                <path d="M733 500 C1104 500 900 335 1486 340 V695 H23 C0 850 0 500 733 500 Z" fill="#0054AA"/>
+                            </svg>
+                            <button class="boton_quieresabermas"> ¿Quiere saber </br> más? </button>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal 3 -->
+        <div class="container_insti" id="ModalInstitucion"> 
+            <div class="container_modal"> 
+                <div class="close"><span>&times;</span></div>
+                <div class="container_izquierdo">
+                    <div class="niños_ados">
+                        Instituciones académicas
+                    </div>
+    
+                    <div class="imagen_modal1">
+                        <img class="imagen_instituciones" src="../utils/images/metodologia/modals/Instituciones.png"/>
+                    </div>
+                </div>
+    
+                <div class="container_derecho" >
+                    <div class="texto_modal_ins">
+                        <p class="textoModalInformacion_ins"> Nuestros planes educativos por teléfono buscan 
+                            complementar la educación de los estudiantes mediante clases por teléfono que 
+                            potencialicen el habla y la escucha del inglés, pero sobretodo con el objetivo 
+                            de generar interés y motivación por parte de los estudiantes por aprender idiomas
+                            disfrutando la experiencia de aprendizaje. Esto mediante la construcción de confianza
+                            al hablar buscando así su crecimiento personal y profesional. La metodología por está
+                            razón va orientada a complementar las veces educativas que se han brindado en la
+                            organización. Además de buscar desde la primera clase crear un ambiente seguro para 
+                            potencializar la confianza con cada estudiante.</p>
+                        
+    
+                    </div>
+    
+                    <div>
+                        <div class="abajo_beneficios_instituciones">
+                            <svg viewBox="0 0 1286 696" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M603 450 C1166 450 850 285 1286 290 V695 H0 C-50 850 0 490 603 450 Z" fill="#85CAF1"/>
+                                <path d="M733 500 C1104 500 900 335 1486 340 V695 H23 C0 850 0 500 733 500 Z" fill="#0054AA"/>
+                            </svg>
+                            <button class="boton_quieresabermas"> ¿Quiere saber </br> más? </button>
+    
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            <!--Modal 4 -->
+            <div class="container_empresa" id="ModalEmpresa"> 
+                <div class="container_modal"> 
+                    <div class="close"><span>&times;</span></div>
+                    <div class="container_izquierdo">
+                        <div class="niños_ados">
+                            Empresarial
+                        </div>
+        
+                        <div class="imagen_modal1">
+                            <img class="imagen_empresarial" src="../utils/images/metodologia/modals/empresarial.png"/>
+                        </div>
+                    </div>
+        
+                    <div class="container_derecho" >
+                        <div class="texto_modal_em">
+                            <p class="textoModalInformacion_em"> Nuestros planes corporativos tienen dos focos: 
+                                1. Entrevistas para evaluación del nivel de inglés según competencias requeridas.
+                                Tiene como objetivo que la empresa pueda tener la tranquilidad de contar con un equipo 
+                                bilingüe que puede responder a diferentes circunstancias al interior de la empresa y
+                                contar con un agente experto que evalúa esta habilidad en los candidatos. 
+                                2. Proceso de aprendizaje a trabajadores al interior de la organización. 
+                                Tiene como objetivo generar confianza de los trabajadores a hablar y comprender buscando 
+                                proyectar una empresa internacional y dándoles las herramientas para utilizar sus 
+                                conocimientos con clientes o proveedores internacionales. </p>
+                            
+        
+                        </div>
+        
+                        <div>
+                            <div class="abajo_beneficios_empresarial">
+                                <svg viewBox="0 0 1286 696" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M603 450 C1166 450 850 285 1286 290 V695 H0 C-50 850 0 490 603 450 Z" fill="#85CAF1"/>
+                                    <path d="M733 500 C1104 500 900 335 1486 340 V695 H23 C0 850 0 500 733 500 Z" fill="#0054AA"/>
+                                </svg>
+                                <button class="boton_quieresabermas"> ¿Quiere saber </br> más? </button>
+        
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    <!--Instituciones Academicas-->
+    
+    <!--Empresarial-->
+    
+    
+    <!--Js de slider-->
+    <script>
+        window.addEventListener('load', function(){
+            new Glider(document.querySelector('.carousel__lista'), {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: '.carousel__indicadores',
+                rewind: true,
+                arrows: {
+                    prev: '.carousel__anterior',
+                    next: '.carousel__siguiente',
+                },
+                responsive: [
+                    {
+                    // screens greater than >= 775px
+                    breakpoint: 450,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                    },{
+                    // screens greater than >= 1024px
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                    }
+                ]
+            });
+        });
+    </script>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="../utils/js/metodologia.js"></script>
+    </div>
+>>>>>>> upstream/todos
         </div>
         <!--vero-->
         <div class="tiposConversacion">
