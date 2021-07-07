@@ -14,7 +14,7 @@
     <div class="menuHorizontal">
         <button type="button" class="logoMenu"><img class="logoClerni" src="../utils/images/CLERNI.svg"></button>
         <button type="button"><a href="../../index.html">Inicio</a></button>
-        <button type="button"><a href="../pages/metodologia.html">Metodología</a></button>
+        <button type="button"><a href="../pages/verometodologia.html">Metodología</a></button>
         <button type="button"><a href="../pages/beneficios.html">Beneficios</a></button>
         <button type="button"onclick="materialDeApoyo()"><a href='../pages/materialApoyo.html'>Material de apoyo</a></button>
         <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
@@ -26,6 +26,11 @@
             <rect y="1219" width="1291" height="145" fill="#FFFDFD"/>
             <rect x="551" y="102" width="658" height="611" fill="#FBFAFA"/>
             </svg></div>
+            <div class="parche1_responsive"></div>
+            <div class="fondo_responsive1"><svg viewBox="0 0 1211 1590" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M123.001 1487.98C439.496 1682.22 764.5 1175.5 1211 1589.5V204H0.00109863V1104.43C0.0020752 1313.14 -1.70422 1411.45 123.001 1487.98Z" fill="#FFB932"/>
+                <path d="M496.499 1424.87C742.499 1356.66 960 1296.9 1211 1517V0H0L0.000976562 1095.37C14 1482.42 250.499 1493.08 496.499 1424.87Z" fill="#0054AA"/>
+                </svg></div>
             <div class="contenedor1">
                 <div class="imagen1"><img src="../utils/images/beneficios/imagen_1.png"></div>
                 <div class="texto1">
@@ -62,12 +67,10 @@
                         inquietud que tengas.Estamos aquí para facilitar tu
                         proceso de aprendizaje de nuevos idiomas, cuéntanos si te gustaría ser parte de Clerni.
                     </p>
-                    <div><button class="primer_boton">Regístrate</button></div>
+                    <a class="letra_boton" href="../pages/formulario_registro.html"><button type="button" class="primer_boton">Regístrate</button></a>
                 </div>
-                <div class="imagen2"><img src="../utils/images/beneficios/imagen_2.png"></div>
-                    <div><a class="letra_boton" href="../pages/formulario_registro.html"><button type="button" class="primer_boton">Regístrate</button></a></div>
+                <div class="imagen2"><img src="../utils/images/beneficios/imagen_2.png"></div>    
                  </div>
-                 <div class="imagen2"><img src="../utils/images/beneficios/imagen_2.png"></div>
             </div>
     </div>
     <div class="titulo_porque"><h1 class="titulo_porque">¿Por qué Clerni?</h1></div>
@@ -109,7 +112,7 @@
         <div class="circulos derecha"><img src="../utils/images/beneficios/circulo_4.png"></div>
     </div>
             <div class="abajo_beneficios">
-                <div class="titulo"><svg viewBox="0 0 1211 578" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="titulo2"><svg viewBox="0 0 1211 578" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M568.012 327.441C1098.36 301.371 900.839 78.4572 1211 84.1055V578H0C0 578 37.6671 353.511 568.012 327.441Z" fill="#FFB932"/>
                     <path d="M596.165 360.74C1134.33 339.262 924.37 172.842 1211 177.08V578H22C22 578 57.9965 382.218 596.165 360.74Z" fill="#0054AA"/>
                     <rect x="168" y="15" width="250" height="542" rx="45" fill="#0054AA"/>
@@ -117,17 +120,17 @@
                     </div>
                     <div class="contenedor3">
                         <div class="imagenpagos"><img src="../utils/images/beneficios/prueba2_cel.svg"></div>
-                        <div class="textopagos">
-                                <h1>¡Pruébalo ahora!</h1>
-                                <p>Ten una conversación con nuestros profesores en inglés donde identificaremos 
-                                    tu nivel de fluidez, entendimiento gramatical y de vocabulario. Mientras te 
-                                    decimos más tips de aprendizaje.
-                                    </p>
-                                <div class="botones_pagos">
-                                    <button><img src="../utils/images/beneficios/paypal.jpg" onclick="paypal()"></button>
-                                    <button><img src="../utils/images/beneficios/nequi.jpg" onclick="Nequi()"></button>
-                                    <button><img src="../utils/images/beneficios/bancolombia.jpg" onclick="BanColom()"></button>
-                                </div>
+                        <div class="textopagos">       
+                                    <h1>¡Pruébalo ahora!</h1>
+                                    <p>Ten una conversación con nuestros profesores en inglés donde identificaremos 
+                                        tu nivel de fluidez, entendimiento gramatical y de vocabulario. Mientras te 
+                                        decimos más tips de aprendizaje.
+                                        </p>
+                                    <div class="botones_pagos">
+                                        <button><img src="../utils/images/beneficios/paypal.jpg" onclick="paypal()"></button>
+                                        <button><img src="../utils/images/beneficios/nequi.jpg" onclick="Nequi()"></button>
+                                        <button><img src="../utils/images/beneficios/bancolombia.jpg" onclick="BanColom()"></button>
+                                    </div>
                         </div>
                     </div>
                 
@@ -143,24 +146,25 @@
     <!--modal 1-->
     <div class="container_modal_beneficios1"  id="modal_paypal"> 
         <div class="close"><span>&times;</span></div>
+        <img src="../utils/images/beneficios/paypal.png" class="iconos_pagos">
         <div class="titulo_modals_beneficios"> 
             Metodos de pago
-        </div>
+        </div> 
 
         <div class="modals_beneficios_contenido" > 
             <div class="containerImagenCelular"> 
                 <img src="../utils/images/beneficios/celular_paypal.svg" class="celular">
                 <img src="../utils/images/beneficios/pagos_gerald.svg"  class="globos_texto_beneficios">
                 
-                <div class="texto1_contenido_pay">Número celular de la cuenta: 3046699930</div>
+                <div class="texto1_contenido_pay">Número celular de la cuenta: 3046699930.</div>
                 <div class="texto2_contenido_pay">
-                    Nombre del titular: Diego Buitrago <br>
+                    Nombre del titular : Diego Buitrago <br>
                     Link de pago: paypal.me/clernipago
-                </div>
+                </div>  
                 <div class="texto3_contenido_pay">
                     Válido para: México, España
                     Argentina, Chile, Ecuador, Bolivia, Paraguay,
-                    Uruguay, Nicaragua, Republica Dominicana, Honduras y EE UU.
+                    Uruguay, Nicaragua Republica Dominicana, Honduras y EE UU.
                 </div>
 
 
@@ -172,6 +176,7 @@
     <!--modal 2-->
     <div class="container_modal_beneficios2" id="modal_nequi"> 
         <div class="close"><span>&times;</span></div>
+        <img src="../utils/images/beneficios/nequi.png" class="iconos_pagos">
         <div class="titulo_modals_beneficios"> 
             Metodos de pago
         </div>
@@ -199,6 +204,7 @@
     <!--modal 3-->
     <div class="container_modal_beneficios3" id="modal_bancolombia">
         <div class="close"><span>&times;</span></div>
+        <img src="../utils/images/beneficios/bancolombia.png" class="iconos_pagos">
         <div class="titulo_modals_beneficios"> 
             Metodos de pago
         </div>

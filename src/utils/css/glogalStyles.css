@@ -6,32 +6,42 @@ html, body{
 }
 /* Menu horizontal estilos*/
 .menuHorizontal{
+    padding: 0;
+    margin: 0;
     align-items: center;
     justify-content: center;
     list-style: none;
     display: flex;
-    width: 99%;
+    width: 100%;
     justify-content: space-around;
     background-color: #0054AA;
     color: #FBFAFA;
-    padding: 0.5%;
-    margin: 0;
 }
-button{
+button{ /*Botones*/
+    width: 18%;
     background: none;
     border: none;
     cursor: pointer;
+    padding: 1%;
 }
-a{
+button:hover, button:active{
+    background-color: #85CAF1;
+    transition: .4s;
+}
+a{ /*Botones*/
     color: #FBFAFA;
     font-family:roboto-medium;
     font-size: 18px;
     text-decoration-line: none
 }
-.iniciarSesion{
+.iniciarSesion{ /*Boton, iniciar sesion*/
     color: #FFB932;
-    font-size: 24px;
+    font-size: 22px;
     font-family: roboto-medium;
+}
+.iniciarSesion:hover, .iniciarSesion:active{
+    background-color: #fdc75a;
+    color: #0054AA;
 }
 /* Agregar la imagen del logo y cambiar tamaño */
 .logoMenu{
@@ -91,6 +101,10 @@ a{
 @font-face {
     font-family: "poppins-bold";
     src: url("../fonts/poppins/Poppins-Bold.woff");
+}
+
+@media screen and (min-width:300px) and (max-width:500px){
+    
 }
 @media screen and (min-width:760px) and (max-width:893px){
     .piedePagina{ /*Footer*/
