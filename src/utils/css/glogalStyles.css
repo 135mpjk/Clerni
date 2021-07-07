@@ -92,6 +92,10 @@ a{
     font-family: "poppins-bold";
     src: url("../fonts/poppins/Poppins-Bold.woff");
 }
+
+@media screen and (min-width:300px) and (max-width:500px){
+    
+}
 @media screen and (min-width:760px) and (max-width:893px){
     .piedePagina{ /*Footer*/
         font-size: 10px;
