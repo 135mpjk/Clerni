@@ -416,7 +416,6 @@ html, body{
     left: 38%;
     top: 67%;
 }
-<<<<<<< HEAD
 
 .iconos_pagos{
     display: none;
@@ -591,7 +590,7 @@ html, body{
         display: flex;
         position: absolute;
         width: 12%;
-        top: 0.2%;
+        top: 0.5%;
         left: 0.5%;
     }
 
@@ -612,7 +611,10 @@ html, body{
     }
 
 } 
-=======
+
+/*---*/
+
+
 /*-----------------responsive-----------------------*/
 /*-----------------PRIMER CORTE-----------------------*/
 @media screen and (max-width:1170px){
@@ -632,7 +634,7 @@ html, body{
     .imagen1 img{
         width: 89%;
     }
-     .texto1 p{
+    .texto1 p{
         font-size: 15px;
         
     }
@@ -653,7 +655,7 @@ html, body{
     .imagen1 img{
         width: 89%;
     }
-     .texto1 p{
+    .texto1 p{
         font-size: 15px;
         
     }
@@ -678,4 +680,3 @@ html, body{
         padding-top:0;
 }
 }
->>>>>>> upstream/todos
