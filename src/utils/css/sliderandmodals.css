@@ -380,30 +380,36 @@
     cursor: pointer;
 }
 
+/*container centro*/
+
+.container_centro{
+    display: none;
+}
 
 
 /*media*/ 
 
+/*slider*/
 @media screen and (max-width: 1113px) and ( min-width: 750px) {
     
     .carousel_texto{
-        font-size: 33px;
+        font-size: 23px;
     }
 
     .carousel_texto_empresarial{
-        font-size: 33px;
-}
+        font-size: 23px;
+    }
     
 } 
 
 @media screen and (max-width: 750px){
     
     .carousel_texto{
-        font-size: 27px;
+        font-size: 18px;
     }
 
     .carousel_texto_empresarial{
-        font-size: 27px;
+        font-size: 18px;
 }
     
 } 
@@ -411,13 +417,589 @@
 @media screen and (max-width: 600px){
     
     .carousel_texto{
-        font-size: 23px;
+        font-size: 14px;
     }
 
     .carousel_texto_empresarial{
-        font-size: 23px;
-}
+        font-size: 14px;
+    }
     
 } 
 
+/* ------ modals responsive ------ */
 
+@media screen and (max-width:900px){
+
+    /*fondo*/
+    .imagen_modal_centro1{
+        background-image: url("../images/metodologia/Niños.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(5px);
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        opacity: .8;
+    }
+    .imagen_modal_centro2{
+        background-image: url("../images/metodologia/Adultos.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(5px);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: .8; 
+    }
+    .imagen_modal_centro3{
+        background-image: url("../images/metodologia/Instituciones.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(5px);
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        opacity: .7;
+    }
+    .imagen_modal_centro4{
+        background-image: url("../images/metodologia/empresarial.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(5px);
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+        opacity: .8; 
+    }
+    /*--*/
+
+    /*responsive general modals metodologia*/ 
+    .container_centro{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo_modal_centro{
+        position: relative;
+        color: #FFB932;
+        font-size: 240%;
+        font-family:roboto-medium;
+        text-align: center;
+        margin-top: 6%;
+        font-weight: bold;
+    }
+    
+    .container_izquierdo{
+        display: none;
+    }
+
+    .container_derecho{
+        display: none;
+    }
+
+    .boton_quieresabermas{
+        margin-top:auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        font-size: 120%;
+        font-weight: bold;  
+        transform: none; 
+
+    }
+
+    .container_centro{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .close{
+        top: 3%;
+        right: 2.5%;
+    }
+    .container_modal{
+        width: 100%;
+    } 
+
+    /*modal1*/
+    .texto_modal_centro{
+        position: relative;
+        color: #000000;
+        font-size: 115%;
+        font-family:roboto-medium;
+        text-align: center;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: justify;
+        left: auto;
+        top: auto;
+    }
+    /*modal2*/
+    .texto_modal_centro2{
+        position: relative;
+        color: #000000;
+        font-size: 115%;
+        font-family:roboto-medium;
+        text-align: center;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: justify;
+        left: auto;
+        top: auto;
+    }
+
+    /*modal3*/
+    .texto_modal_centro3{
+        position: relative;
+        color: #000000;
+        font-size: 100%;
+        font-family:roboto-medium;
+        text-align: center;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: justify;
+        left: auto;
+        top: auto;
+    }
+
+    .titulo_modal_centro3{
+        position: relative;
+        color: #FFB932;
+        font-size: 250%;
+        font-family:roboto-medium;
+        text-align: center;
+        margin-top: 1%;
+        font-weight: bold;
+    }
+    
+    /*modal4*/
+    .texto_modal_centro4{
+        position: relative;
+        color: #000000;
+        font-size: 105%;
+        font-family:roboto-medium;
+        text-align: center;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: justify;
+        left: auto;
+        top: auto;
+    }
+
+}
+
+
+@media screen and (max-width:800px){
+
+
+    .texto_modal_centro{
+/*modal1*/
+        color: #000000;
+        font-size: 115%;
+        margin-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+/*modal2*/
+    .texto_modal_centro2{
+        color: #000000;
+        font-size: 115%;
+        margin-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+/*modal3*/
+    .texto_modal_centro3{
+        color: #000000;
+        font-size: 93%;
+        margin-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .titulo_modal_centro3{
+        font-size: 220%;
+    }
+/*modal4*/
+.texto_modal_centro4{
+    color: #000000;
+    font-size: 96%;
+    margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+    /*general*/
+
+    .titulo_modal_centro{
+        font-size: 180%;
+    }
+
+}
+
+@media screen and (max-width:700px){
+/*modal1*/
+    .texto_modal_centro{
+        color: #000000;
+        font-size: 110%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+/*modal2*/
+    .texto_modal_centro2{
+        color: #000000;
+        font-size: 110%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+/*modal3*/
+
+.texto_modal_centro3{
+    color: #000000;
+    font-size: 90%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.titulo_modal_centro3{
+    font-size: 220%;
+}
+
+/*modal4*/
+.texto_modal_centro4{
+    color: #000000;
+    font-size: 90%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*general*/
+    .titulo_modal_centro{
+        font-size: 160%;
+    }
+}
+
+@media screen and (max-width:630px){
+/*modal1*/
+    .texto_modal_centro{
+        color: #000000;
+        font-size: 105%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .imagen_modal_centro1{
+        opacity: .6;
+    }
+/*modal2*/    
+    .texto_modal_centro2{
+        color: #000000;
+        font-size: 105%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .imagen_modal_centro2{
+        opacity: .6;
+    }
+
+/*modal3*/
+
+.texto_modal_centro3{
+    color: #000000;
+    font-size: 85%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.imagen_modal_centro3{
+    opacity: .6;
+}
+
+.titulo_modal_centro3{
+    font-size: 210%;
+}
+
+/*modal4*/
+.texto_modal_centro4{
+    color: #000000;
+    font-size: 87%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*general*/
+    .titulo_modal_centro{
+        font-size: 150%;
+        margin-top: 5%;
+    }
+
+    .boton_quieresabermas{
+        width: 150px;
+        height: 50px;
+    }
+
+/*close*/
+    .close{
+        top: 2.5%;
+        right: 2.5%;
+        background: none;
+        color: #0054AA;
+    }
+}
+
+@media screen and (max-width:590px){
+
+
+.container_modal{
+    height: auto;
+}
+/*modal1*/
+    .texto_modal_centro{
+        color: #000000;
+        font-size: 85%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+/*modal2*/    
+    .texto_modal_centro2{
+        color: #000000;
+        font-size: 103%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+/*modal3*/
+.texto_modal_centro3{
+    color: #000000;
+    font-size: 79%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*modal4*/
+.texto_modal_centro4{
+    color: #000000;
+    font-size: 79%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*general*/
+
+    .titulo_modal_centro{
+        font-size: 120%;
+        margin-top: 2%;
+    }
+
+    .boton_quieresabermas{
+        font-size: 80%;
+        width: 100px;
+        height: 30px;
+        padding: 2px;
+        margin-top: 8px;
+    }
+
+/*close*/
+    .close{
+        top: 1%;
+        right: 1%;
+        background: none;
+        color: #0054AA;
+    }
+
+    
+    
+
+}
+
+@media screen and (max-width:485px){
+
+/*modal1*/
+    .texto_modal_centro{
+        color: #000000;
+        font-size: 90%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+/*modal2*/
+    .texto_modal_centro2{
+        color: #000000;
+        font-size: 93%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+/*modal3*/
+.texto_modal_centro3{
+    color: #000000;
+    font-size: 78%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.titulo_modal_centro3{
+    font-size: 160%;
+}
+
+/*modal4*/
+.texto_modal_centro4{
+    color: #000000;
+    font-size: 78%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+/*general*/
+    .titulo_modal_centro{
+        font-size: 130%;
+        margin-top: 5%;
+    }
+
+    .boton_quieresabermas{
+        font-size: 98%;
+    }
+    
+}
+
+
+@media screen and (max-width:400px){
+
+    /*modal1*/
+    .texto_modal_centro{
+        color: #000000;
+        font-size: 70%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+/*modal2*/    
+    .texto_modal_centro2{
+        color: #000000;
+        font-size: 90%;
+        margin-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+/*modal3*/
+.texto_modal_centro3{
+    color: #000000;
+    font-size: 73%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+/*modal4*/
+.texto_modal_centro4{
+    color: #000000;
+    font-size: 73%;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+/*general*/
+    .titulo_modal_centro{
+        font-size: 153%;
+        margin-top: 5%;
+    }
+
+    .boton_quieresabermas{
+        width: 100px;
+        height: 30px;
+        font-size: 75%;
+        padding: 1px;
+    }
+    
+
+}
+
+@media screen and (max-width:300px){
+/*modal1*/
+    .texto_modal_centro{
+        color: #000000;
+        font-size: 20%;
+        margin-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+/*modal2*/
+    .texto_modal_centro2{
+        color: #000000;
+        font-size: 78%;
+        margin-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+/*modal3*/
+.texto_modal_centro3{
+    color: #000000;
+    font-size: 72%;
+    margin-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+/*modal4*/
+.texto_modal_centro4{
+    color: #000000;
+    font-size: 72%;
+    margin-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+/*general*/
+    .titulo_modal_centro{
+        font-size: 153%;
+        margin-top: 3%;
+    }
+
+    .boton_quieresabermas{
+        width: 120px;
+        height: 24px;
+        font-size: 70%;
+    }
+    
+
+}
