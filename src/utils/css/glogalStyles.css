@@ -39,6 +39,7 @@ a{
     margin-right: 0%;
     width: 17%;
 }
+/*colores*/
 .azul{
     color: #0054AA;
 }
@@ -87,8 +88,6 @@ a{
     font-family: "poppins";
     src: url("../fonts/poppins/poppins.woff");
 }
-<<<<<<< HEAD
-=======
 @font-face {
     font-family: "poppins-bold";
     src: url("../fonts/poppins/Poppins-Bold.woff");
@@ -96,7 +95,6 @@ a{
 @media screen and (min-width:300px) and (max-width:500px){
     
 }
->>>>>>> upstream/todos
 @media screen and (min-width:760px) and (max-width:893px){
     .piedePagina{
         font-size: 10px;
