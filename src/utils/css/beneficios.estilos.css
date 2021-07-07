@@ -7,11 +7,17 @@ html, body{
     position: relative;
     justify-content: center;
     width: 100%;
+    height: auto;
     display: flex;
 }
-.titulo{
+.titulo, .titulo2{
     display: flex;
     width: 100%;
+}
+.fondo_responsive1{
+    display: none;
+    width: 100%;
+    background-size: cover;
 }
 .contenedor1{
     position: absolute;
@@ -60,7 +66,7 @@ html, body{
     margin-left:10%;
 }
 .texto2 p{
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
 }
@@ -90,7 +96,7 @@ html, body{
 /*----------------------seccion por que clerni------------------------------*/
 .titulo_porque{
     text-align: center;
-    background-color:#FFFDFD;
+    background-color:#FBFAFA;
     margin: 0;
     padding: 0;
     font-size: 160%;
@@ -103,7 +109,7 @@ html, body{
     display: flex;
     width: 100%;
     height: auto;
-    background-color:#FFFDFD;
+    background-color:#FBFAFA;
     justify-content: space-between;
     align-items: center;
     padding-top: 3%;
@@ -220,7 +226,7 @@ html, body{
     height: 478px;
     width: 780px;
     border: 1px solid #0054AA;
-    background-color: #F4F4F4;   
+    background-color: #FBFAFA;   
     box-shadow: 1px 0px 5px -1px;
     position: relative;
     z-index: 1;
@@ -259,7 +265,7 @@ html, body{
     height: 478px;
     width: 780px;
     border: 1px solid #0054AA;
-    background-color: #F4F4F4;   
+    background-color: #FBFAFA;   
     box-shadow: 1px 0px 5px -1px;
     position: relative;
     z-index: 1;
@@ -280,7 +286,7 @@ html, body{
     height: 478px;
     width: 780px;
     border: 1px solid #0054AA;
-    background-color: #F4F4F4;   
+    background-color: #FBFAFA;   
     box-shadow: 1px 0px 5px -1px;
     position: relative;
     z-index: 1;
@@ -342,7 +348,7 @@ html, body{
 
 .texto1_contenido_pay{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
@@ -350,7 +356,7 @@ html, body{
 }
 .texto2_contenido_pay{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
@@ -358,7 +364,7 @@ html, body{
 }
 .texto3_contenido_pay{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
@@ -369,7 +375,7 @@ html, body{
 
 .texto1_contenido_nequi{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
@@ -377,7 +383,7 @@ html, body{
 }
 .texto2_contenido_nequi{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
@@ -385,7 +391,7 @@ html, body{
 }
 .texto3_contenido_nequi{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
@@ -394,7 +400,7 @@ html, body{
 
 .texto1_contenido_banco{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
@@ -402,7 +408,7 @@ html, body{
 }
 .texto2_contenido_banco{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
@@ -410,13 +416,13 @@ html, body{
 }
 .texto3_contenido_banco{
     position: fixed;
-    color: white;
+    color: #FBFAFA;
     font-size: 130%;
     font-family:roboto-medium;
     left: 38%;
     top: 67%;
 }
-/*-----------------responsive-----------------------*/
+/*-----------------RESPONSIVE PANTALLAS MAS PEQUEÑAS-----------------------*/
 /*-----------------PRIMER CORTE-----------------------*/
 @media screen and (max-width:1170px){
     .primer_boton{
@@ -475,9 +481,134 @@ html, body{
     }
 }
 /*-----------------SEXTO CORTE-----------------------*/
+/*-------RESPONSIVE (CAMBIA EL DISEÑO DE LOS SVG)---------*/
 @media screen and (max-width:890px){
     .contenedor1{
-        margin-top:4%;
+        margin-top:-1%;
         padding-top:0;
+    }
+    .titulo{
+        display:none;
+        width: 100%;
+    }
+    .fondo_responsive1{
+        display:flex;
+        width: 100%;
+    }
+    .imagen1{
+        padding-left: 11.3%;
+    
+    }
+    .imagen1 img{
+        width: 92%;
+        height: auto;
+        display: none;
+    }
+    .texto1{
+        padding-right: 10%;
+        padding-top: 3%;
+        
+    }
+    .texto1 p{
+        text-align: center;
+        color: #FBFAFA;
+        font-size: 106%;
+        
+    }
+    .texto1 h1{
+        font-size: 20px;
+        text-align: center;
+        color: #FFB932;
+    }
+    .espacio_entretexto1{
+        padding-bottom: 2%;
+    }
+    .contenedor2{
+        margin-top: 71%;
+    }
+    .texto2 p{
+    font-size: 110%;
+    }
+    .primer_boton{
+        margin-top: 13%;
+       
+       
+    }
+    .letra_boton button{
+        font-size: 115%;
+    }
+    .imagen2{
+        width: 60%;
+        text-align: right;
+        margin-right: 5.5%;
+    }
+    .imagen2 img{
+        width: 92%;
+        height: auto;
+    }
 }
+/*-----------------SEPTIMO CORTE-----------------------*/
+@media screen and (max-width:755px){
+    .parche1_responsive{
+        height: 80px;
+        width: 100%;
+        background-color: #0054AA;
+    }
+    .cabecera_beneficios{
+    display: flex;
+    flex-direction: column;
+    }
+    .contenedor1{
+        margin-top:-70%;
+        padding-top:0;
+    }
+    .contenedor2{
+        margin-top: 55%;
+    }
+}
+/*-----------------OCTAVO CORTE-----------------------*/
+@media screen and (max-width:675px){
+    .parche1_responsive{
+        height: 100px;
+    }
+    .contenedor1{
+        margin-top:-60%;
+        padding-top:0;
+    }
+    .contenedor2{
+        margin-top: 60%;
+        margin-right: 20%;
+        bottom: 160px;
+    }
+    .imagen2{
+        display: none;
+    }
+    .texto2{
+        width: 100%;
+        margin-right: 10%;
+    }
+    .texto2 p{
+        color: #FFB932;
+        text-align: center;
+        font-size: 130%;
+    }
+    .primer_boton{
+        padding:3% 8%;
+        margin-top: -10%;
+        margin-left: 32%;
+    }
+    .letra_boton button{
+        font-size: 105%;
+        font-weight: 600;
+        color: #0054AA;
+    }
+}
+@media screen and (max-width:595px){
+    .parche1_responsive{
+        height: 200px;
+    }
+    .contenedor1{
+        margin-top:-80%;
+        padding-top:0;
+    }
 }
