@@ -10,38 +10,69 @@
     <title>Document</title>
 </head>
 <body onload="onMyLoad()">
-        <div class="menuHorizontal">
-            <button type="button" class="logoMenu"><img class="logoClerni" src="../utils/images/CLERNI.svg"></button>
-            <button type="button"><a href="../../index.html">Inicio</a></button>
-            <button type="button"><a href="../pages/metodologia.html">Metodología</a></button>
-            <button type="button"><a href="../pages/beneficios.html">Beneficios</a></button>
-            <button type="button"onclick="materialDeApoyo()"><a href='../pages/materialApoyo.html'>Material de apoyo</a></button>
-            <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
-        </div>
+       <!--------------------------------------------MENU----------------------------------------------------->
+    <header class="contenedor_menu">
+      <img id="logo" src="../utils/images/CLERNI.svg">
+      <input type="checkbox" id="boton_menu" value="1" onchange="myFunctionMenu()"/>
+      <label for="boton_menu"><img src="../utils/images/menu.svg"></label>
+      <nav class="menu_r" id="menu_r">
+          <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../pages/verometodologia.html">Metodología</a></li>
+              <li><a href="../pages/beneficios.html">Beneficios</a></li>
+              <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+              <li><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+          </ul>
+      </nav>
+      <nav class="menu" id="menu">
+          <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../pages/verometodologia.html">Metodología</a></li>
+              <li><a href="../pages/beneficios.html">Beneficios</a></li>
+              <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+              <li id="iniciar_sesion"><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+          </ul>
+      </nav>
+  </header>
+  <script src="../utils/js/menu.js"></script>
+  <!---------------------------------------- FIN DEL MENU -------------------------------------------------->
         <div class="titulo"><h1>¡ Contáctanos !</h1></div>
-        <form class="formulario" action="mailto:135mariapaula@gmail.com" method="post" enctype="text/plain">
-        <p>Nombre*: <input class="espacios" type="text" name="nombre"size="110" autocomplete="off"></p>
-        <p>Correo electrónico*: <input class="espacios" type="email" size="97" autocomplete="off"></p>
-        <p>Indicativo del país*: 
-                <select class="espacios" id="indicativo">
-                    <option class="selecionar"></option>
-                </select>
-                Número celular*:<input class="espacios" type="number" autocomplete="off">
-            
-        </p>
+        <form class="formulario" action="https://formspree.io/f/xbjqkvvl" method="post">
+          <p>Nombre*: 
+            <input class="espacios nombre" type="text" name="name" autocomplete="off">
+          </p>
+          <p>Correo electrónico*: 
+            <input class="espacios correo" name="_replyto" type="email" autocomplete="off">
+          </p>
+          <div class="indicativo_celular letra espaciomargen">
+            <div>
+              <p>Indicativo del país*:</p>
+              <select name="select" class="espacios" id="indicativo">
+                      <option class="selecionar"></option>
+              </select>
+            </div>
+            <div>
+              <p>Número celular*:</p>
+              <input name="phone" class="espacios" id="celular" type="number" autocomplete="off">
+            </div>
+              
+          </div>
         <p>¿Estas interesado en algún servicio?</p>
-        <div class="seleccionar">
-          <div><input type="radio">Niños/adolecentes</div>
+        <div class="seleccionar espaciomargen">
+          <div><input name="servicio" type="radio">Niños/adolecentes</div>
           <div><input type="radio">Adultos</div>
           <div><input type="radio">Instituciones educativas</div>
           <div><input type="radio">Empresarial</div>
         </div>
         <p>¿Quiéres dejarnos un mensaje?</p>
-        <div><input class="espacios" type="text" name="nombre" size="80"></div>
+        <div class="espaciomargen">
+          <input class="espacios mensaje" type="text" name="message" size="80"  autocomplete="off"></div>
         <div class="botones">
           <button class="boton_redireccionar">¿Ya tienes una cuenta? Entra aquí</button>
           <button type="submit" class="boton_enviar">Enviar</button>
         </div>
+        <input type="hidden" name="_subject" value="Website contact" />
+        <input type="text" name="_gotcha" style="display:none" />
       </form>
       
       <script src="../utils/js/formulario_registro.js"></script>

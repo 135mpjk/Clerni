@@ -4,6 +4,7 @@ html, body {
     display: flex;
     width: 100%;
     flex-direction: column;
+    font-family: "roboto-regular";
 }
 /*Contenedor general*/
 .contenedorGeneral{
@@ -20,29 +21,32 @@ html, body {
 }
 .logo{
     margin: 20px;
-    border: solid 3px black;
+    margin-right: 200px;
 }
 .logo img {
-    width: 600px;
-    height: 250px;
+    width: 500px;
+    height: 200px;
 }
 .decidelo {
     display: block;
-    font-size: 80px;
+    font-size: 75px;
+    line-height: 10px;
 }
+
 .empieza {
-    width: 300px;
-    height: 100px;
+    width: 250px;
+    height: 70px;
     background-color: #85CAF1;
     border-radius: 200px;
+    color: black;
 }
 .contenedorInicio{
     display: flex;
     justify-content: center;
     position: relative;
     z-index: 1;
-    border: solid 3px black;
     padding: 30px;
+    color: whitesmoke;
 }
 /*personas*/
 .personas {
@@ -57,10 +61,17 @@ html, body {
 }
 /*video*/
 .contenedorVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 3px black;
-    font-size: 50px;
-    position: absolute;
-    z-index: 2;
+    font-size: 70px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    color: #85CAF1;
+    line-height: 20px;
+    margin-top: 200px;
 }
 .frase{
     font-weight: bold;
@@ -71,15 +82,20 @@ html, body {
 /*globo*/
 .globo {
     display: flex;
-    width: 75%;
-    position: relative;
+    width: 70%;
+    position: absolute;
     z-index: 0;
     justify-content: center;
 }
 .globo img{
-    width: 75%;
+    width: 70%;
 }
-
+.video{
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+    margin-left: 200px;
+}
 /*puntos*/
 .puntos img{
     width: 70%;
@@ -110,7 +126,7 @@ html, body {
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     font-size: 70px;
     font-weight: bold;
     text-align: center;
@@ -121,45 +137,44 @@ html, body {
 /*Contenedor opiniones */
 .contenedorTarjetas{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border: solid 3px black;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 .tarjetas img{
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
     border-radius: 20px;    
 }
 .tarjetas{
     background-color: whitesmoke;
-    border: solid 2px black;
     align-items: center;
     margin: 50px;
     box-shadow: 15px 15px 0px 3px #85CAF1;
     padding: 50px;
 }
 .opinion{
-    width: 400px;
+    width: 300px;
 } 
-
+.abajo{
+    margin-top: 500px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .olaFinal {
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 0;
 }
 .olaFinal img{
     width: 100%;
 }
-footer{
-    background-color: black;
-    color: whitesmoke;
-    padding: 15px;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-}
-/**/
+
+
 
 

@@ -1,10 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .titulo h1{
     color:#0054AA ;
     font-family:poppins-bold;
     text-align: center;
     
 }
-.formulario p{
+.formulario p, .letra{
     color:#004184 ;
     font-family:roboto-bold;
     font-size: 18px;
@@ -23,7 +27,14 @@
     margin-left: 2%;
     color: black;
     margin-right: 13%;
+    height: 16px;
     
+}
+.nombre{
+    width: 75%;
+}
+.correo{
+    width: 67%;
 }
 .espacios option{
     background-color: white;
@@ -40,11 +51,34 @@
     font-family:roboto-bold;
     font-size: 18px;
 }
-
+.indicativo_celular{
+    display: flex;
+    width: 100%;
+}
+.indicativo_celular div{
+    display:flex;
+    width: 50%;
+}
+.indicativo_celular div p{
+    margin:0;
+    padding:0;
+    width: 30%;
+}
+#indicativo{
+    height: 20px;
+}
+#celular{
+    height: 20px;
+    margin-left: -30px;
+}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+.mensaje{
+    width: 80%;
+    height: 60px;
 }
 .botones{
     position:absolute; 
@@ -79,3 +113,105 @@ input[type=number]::-webkit-outer-spin-button {
     right:2%;
     bottom: 70%; 
 }
+@media screen and (max-width:1275px){
+    .formulario{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .formulario p{
+        padding-left: 16%;
+    }
+    .formulario .espaciomargen{
+        padding-left: 16%;
+    }
+    .correo{
+        width: 75%;
+    }
+    .indicativo_celular{
+        display:block;
+    }
+    .indicativo_celular div{
+        margin-top:5%; 
+        width: 100%; 
+    }
+    .indicativo_celular div p{
+        width: 20%;
+    }
+    #celular{
+        width: 25%;
+        margin-left: 0;
+    }
+    .seleccionar{
+        display: block;
+    }
+    .seleccionar div{
+        margin-top: 2%; 
+    }
+    .mensaje{
+        width: 80%;
+        height: 60px;
+        margin-bottom: 8%;
+    }
+    .botones{
+        position:relative; 
+        margin: 0;
+    }
+    .boton_enviar{
+        margin-bottom:3%;
+    }
+    .boton_redireccionar{
+        border: none;
+        background-color: #FFB932;
+        width: 25%;
+        height: 60px;
+        color: #004184;
+        font-family:roboto-bold;
+        font-size: 15px;
+        border-radius: 30px;
+        padding-left:1.5%;
+        padding-right: 1.5%;
+        margin-bottom: -1%;
+        z-index: 5;
+        position:absolute;  
+        right:2%;
+        bottom: 70%; 
+    }
+}
+/*@media screen and (max-width:1px){
+    .formulario{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
+    }
+    
+    .correo{
+        width: 68%;
+    }
+    .indicativo_celular{
+        display: flex;
+        width: 100%;
+        margin-top:1.5%;
+    }
+    .indicativo_celular div p{
+        width: 30%;
+    }
+    #celular{
+        height: 20px;
+        margin: 0;
+        margin-left:-5%;
+        
+    }
+    .indicativo_celular div p{
+        margin:0;
+        padding:0;
+        width: 30%;
+    }
+    .indicativo_celular div{
+        margin:0;
+        padding:0;
+        width: 100%;
+    }
+}*/

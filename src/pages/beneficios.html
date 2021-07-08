@@ -10,15 +10,33 @@
     <title>Beneficios</title>
 </head>
 <body>
+    <!--------------------------------------------MENU----------------------------------------------------->
+    <header class="contenedor_menu">
+        <img id="logo" src="../utils/images/CLERNI.svg">
+        <input type="checkbox" id="boton_menu" value="1" onchange="myFunctionMenu()"/>
+        <label for="boton_menu"><img src="../utils/images/menu.svg"></label>
+        <nav class="menu_r" id="menu_r">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li id="iniciar_sesion"><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../utils/js/menu.js"></script>
+    <!---------------------------------------- FIN DEL MENU -------------------------------------------------->
 
-    <div class="menuHorizontal">
-        <button type="button" class="logoMenu"><img class="logoClerni" src="../utils/images/CLERNI.svg"></button>
-        <button type="button"><a href="../../index.html">Inicio</a></button>
-        <button type="button"><a href="../pages/verometodologia.html">Metodología</a></button>
-        <button type="button"><a href="../pages/beneficios.html">Beneficios</a></button>
-        <button type="button"onclick="materialDeApoyo()"><a href='../pages/materialApoyo.html'>Material de apoyo</a></button>
-        <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
-    </div>
     <div class="cabecera_beneficios">
     <div class="titulo"><svg  viewBox="0 0 1291 1364" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="1291" height="1219" fill="#0054AA"/>
@@ -113,12 +131,18 @@
         <div class="circulos derecha"><img src="../utils/images/beneficios/circulo_4.png"></div>
     </div>
             <div class="abajo_beneficios">
+                <div class="fondo_responsive2"><svg viewBox="0 0 1253 583" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1252.82 1.12839C950.806 -3.97802 854.5 67.9031 714 79.9487C440 103.44 131 -86.3443 0.00109863 169.7V484.203H1252.82V1.12839Z" fill="#FFB932"/>
+                    <path d="M1252.82 35.0577C950.805 29.2656 854.499 110.799 713.999 124.462C439.999 151.108 130.999 -64.1607 0.00012207 226.265V582.999H1252.82V35.0577Z" fill="#0054AA"/>
+                    </svg>
+                </div>
                 <div class="titulo2"><svg viewBox="0 0 1211 578" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M568.012 327.441C1098.36 301.371 900.839 78.4572 1211 84.1055V578H0C0 578 37.6671 353.511 568.012 327.441Z" fill="#FFB932"/>
                     <path d="M596.165 360.74C1134.33 339.262 924.37 172.842 1211 177.08V578H22C22 578 57.9965 382.218 596.165 360.74Z" fill="#0054AA"/>
                     <rect x="168" y="15" width="250" height="542" rx="45" fill="#0054AA"/>
                     </svg>
                     </div>
+                    
                     <div class="contenedor3">
                         <div class="imagenpagos"><img src="../utils/images/beneficios/prueba2_cel.svg"></div>
                         <div class="textopagos">       
@@ -235,6 +259,7 @@
 </div>
 
 <script src="../utils/js/modals_beneficios.js"></script>
+
                             <!-- </p>
                                 <div class="botones_pagos"><button><img src="../utils/images/beneficios/paypal.jpg"></button>
                                     <button><img src="../utils/images/beneficios/nequi.jpg"></button>
