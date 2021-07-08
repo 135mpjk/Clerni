@@ -101,7 +101,7 @@
     border-radius: 20px;
     width: 70%;
     margin-left: 10%;
-    color: #0054AA;
+    color: #677481;
     font-size: 28px;
     font-family: roboto-medium;
 }
@@ -113,7 +113,7 @@
     margin-left: 10%;
 }
 .imagenIntro{/*Imagen de la primera pagina*/
-    width: 34.6%;
+    width: 35%;
     height: 100%;
     box-shadow: 5px 5px 15px 5px #000000;
 }

@@ -1,0 +1,171 @@
+/*TODO EL DOCUMENTO*/
+.parteInferior_Total{/* Contenedor padre total */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.infoDetro_OlaInferior{ /*Contenedor padre de cosas que van con z-index 3 (es decir encima de la ola)*/
+    position: absolute;
+    display: none;
+    z-index: 3;
+}
+.infoDetro_OlaInferior img{ /*Ola inferior*/
+    width: 70%;
+    z-index: 3;
+}
+.ola_index_inferior{ /*Ola inferior*/
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+/*NUESTRO OBJETIVO*/
+.tituloNuestoObj{
+    padding: 3%;
+}
+.iimaRepreObjetivo{
+    opacity: 0;
+    display: none;
+    position: Absolute;
+}
+.NuestroObjetivo{
+    margin: 5%;
+    margin-top: 14%;
+}
+.textoNuestroObje{
+    font-family: roboto-medium;
+    font-size: 45px;
+    margin: 0;
+}
+.nu1{
+    margin-right: 15%;
+}
+.nu2{
+    margin-left: 15%;
+}
+.tituloNuestoObj:hover{
+    opacity: 0;
+}
+.tituloNuestoObj:hover ~ img{
+    opacity: 1;
+    transition: 3s;
+    display: inline-flex;
+    position: inherit;
+}
+/*NUMERO DE ESTUDIANTES*/
+.valorEstudiantes{ /*Contenedor padre numero de estudiantes*/
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 15px;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.columValores{ /*Contenedor hijo numero de estudiantes*/
+    flex-direction: column;
+}
+.numeral{
+    font-size: 50px;
+    font-family: roboto-bold;
+    margin: 0;
+}
+.textoNumeral{
+    font-size: 25px;
+    font-family: poppins;
+    margin-top: 5%;
+}
+/*USUARIOS*/
+.OpinionesPerso{/*Contenedor padre tarjeta usuarios*/
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 30px;
+    row-gap: 15px;
+    padding-left: 6%;
+    font-family: roboto-light;
+    font-size: 20px;
+    background-color: #0054AA;
+}
+.person1 img, .person2 img, .person3 img{ /*Imagenes de las tarjetas usuarios*/
+    width: 100%;
+    border-radius: 20%;
+}
+.person1, .person2, .person3{ /*Contenedor hijo tarjeta usuarios*/
+    background: #FBFAFA;
+    border: 2px solid #56B6EC;
+    box-shadow: 15px 15px 0px 3px #85CAF1;
+    text-align: justify;
+    padding: 10%;
+    width: 55%;
+}
+.person2{ /*Contenedor hijo tarjeta usuarios persona del medio*/
+    width: 60%;
+    font-size: 18px;
+}
+.contenidoDentro_Ola{
+    position: absolute;
+    z-index: 3;
+}
+/*ANIMACION*/
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.ocultar{
+    opacity: 0;
+}
+.animar{
+    animation: aparecer 1.3s;
+}
+/*RESPONSIVE*/
+@media screen and (min-width:1600px) {
+    .NuestroObjetivo{
+        margin-top: 0%;
+    }
+}
+@media screen and (min-width:1001px) and (max-width:1594px) {
+    .OpinionesPerso{/*Contenedor padre tarjeta usuarios*/
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 20px;
+        padding: 3%;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 6%;
+    }
+    .person1, .person2, .person3{
+        display: flex;
+    }
+    .piedePagina{
+        margin-top: 16%;
+    }
+}
+@media screen and (min-width:764px) and (max-width:1000px) {
+    .OpinionesPerso{/*Contenedor padre tarjeta usuarios*/
+        grid-template-columns: 1fr;
+        margin-left: 0%;
+        font-size: 20px;
+        width: 30%;
+    }
+    .person1, .person2, .person3{
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
