@@ -4,51 +4,123 @@ html, body{
     background-color: #FBFAFA;
     width: 100%;
 }
-/* Menu horizontal estilos*/
-.menuHorizontal{
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    display: flex;
+.contenedor_menu{
     width: 100%;
-    justify-content: space-around;
+    height: 63px;
     background-color: #0054AA;
-    color: #FBFAFA;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.8px solid #85CAF1;
+  
 }
-button{ /*Botones*/
-    width: 18%;
-    background: none;
-    border: none;
+.contenedor_menu #logo{
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+}
+#boton_menu{
+    display: none;
+}
+.contenedor_menu label{
+    display: none;
+    width: 43px;
+    height: 43px;
+    padding: 10px;
+}
+.contenedor_menu label:hover{
     cursor: pointer;
-    padding: 1%;
 }
-button:hover, button:active{
-    background-color: #85CAF1;
-    transition: .4s;
+.menu_r{
+    display: none;
 }
-a{ /*Botones*/
+
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding:0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li a{
+    display: block;
+    padding: 19px 35px 0px 35px;
     color: #FBFAFA;
-    font-family:roboto-medium;
-    font-size: 18px;
-    text-decoration-line: none
+    font-family: "roboto-medium";
+    text-decoration: none;
+    font-size: 17px;
 }
-.iniciarSesion{ /*Boton, iniciar sesion*/
+.menu li a:hover{
+    text-decoration: underline 2px#85CAF1;
+}
+
+#iniciar_sesion a{
     color: #FFB932;
-    font-size: 22px;
-    font-family: roboto-medium;
+    font-size: 25px;
+    padding-right: 45px;
+    padding-top: 14px;
 }
-.iniciarSesion:hover, .iniciarSesion:active{
-    background-color: #fdc75a;
-    color: #0054AA;
+
+
+@media (max-width:1140px){
+    .menu{
+        display: none;
+    }
+    .menu_r1{
+        display: block;
+        position: absolute;
+        z-index: 5;
+    }
+    .menu_r ul{
+        margin: 0;
+        list-style: none;
+        padding:0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .menu_r li a{
+        display: block;
+        padding: 15px 20px;
+        color: #020202;
+        font-family: sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .menu_r li a:hover{
+        background-color:#76bfe9;
+    }
+    .contenedor_menu{
+        display:flex;
+        justify-content: flex-end;
+    }
+    
+    .contenedor_menu label{
+        display: block;
+        margin-left: auto;
+    }
+    .menu_r{
+        position: absolute;
+        background-color:#85CAF1;
+        width: 70%;
+        margin-top: 63px;
+        font-weight: 100;
+    }
+    .menu_r ul{
+        flex-direction: column;
+    }
+    .menu_r li{
+        border-top: 1.5px solid #76bfe9;
+    }
+    .menu_r li a{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
-/* Agregar la imagen del logo y cambiar tamaño */
-.logoMenu{
-    margin-top: 1%;
-    margin-right: 0%;
-    width: 17%;
-}
+
+
 /*colores*/
 /*COLORES DEFINIDOS*/
 .azul{

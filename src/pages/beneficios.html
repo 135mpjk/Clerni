@@ -10,15 +10,33 @@
     <title>Beneficios</title>
 </head>
 <body>
+    <!--------------------------------------------MENU----------------------------------------------------->
+    <header class="contenedor_menu">
+        <img id="logo" src="../utils/images/CLERNI.svg">
+        <input type="checkbox" id="boton_menu" value="1" onchange="myFunctionMenu()"/>
+        <label for="boton_menu"><img src="../utils/images/menu.svg"></label>
+        <nav class="menu_r" id="menu_r">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li id="iniciar_sesion"><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../utils/js/menu.js"></script>
+    <!---------------------------------------- FIN DEL MENU -------------------------------------------------->
 
-    <div class="menuHorizontal">
-        <button type="button" class="logoMenu"><img class="logoClerni" src="../utils/images/CLERNI.svg"></button>
-        <button type="button"><a href="../index.html">Inicio</a></button>
-        <button type="button"><a href="../pages/verometodologia.html">Metodología</a></button>
-        <button type="button"><a href="../pages/beneficios.html">Beneficios</a></button>
-        <button type="button"onclick="materialDeApoyo()"><a href='../pages/materialApoyo.html'>Material de apoyo</a></button>
-        <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
-    </div>
     <div class="cabecera_beneficios">
     <div class="titulo"><svg  viewBox="0 0 1291 1364" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="1291" height="1219" fill="#0054AA"/>
@@ -240,6 +258,7 @@
 </div>
 
 <script src="../utils/js/modals_beneficios.js"></script>
+
                             <!-- </p>
                                 <div class="botones_pagos"><button><img src="../utils/images/beneficios/paypal.jpg"></button>
                                     <button><img src="../utils/images/beneficios/nequi.jpg"></button>

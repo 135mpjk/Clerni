@@ -12,18 +12,32 @@
     <script src="./src/utils/js/contador.js"></script>
 </head>
 <body onload="">
-    <div class="">
-        <div class="">
-            <div class="menuHorizontal">
-                <button type="button" class="logoMenu"><img class="logoClerni" src="./src/utils/images/CLERNI.svg"></button>
-                <button type="button"><a href="./index.html">Inicio</a></button>
-                <button type="button"><a href="./src/pages/metodologia.html">Metodología</a></button>
-                <button type="button"><a href="./src/pages/beneficios.html">Beneficios</a></button>
-                <button type="button"onclick="materialDeApoyo()"><a href='./src/pages/materialApoyo.html'>Material de apoyo</a></button>
-                <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
-            </div>
-        </div>
-    </div>
+            <!--------------------------------------------MENU----------------------------------------------------->
+    <header class="contenedor_menu">
+        <img id="logo" src="../utils/images/CLERNI.svg">
+        <input type="checkbox" id="boton_menu" value="1" onchange="myFunctionMenu()"/>
+        <label for="boton_menu"><img src="../utils/images/menu.svg"></label>
+        <nav class="menu_r" id="menu_r">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li id="iniciar_sesion"><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../utils/js/menu.js"></script>
+    <!---------------------------------------- FIN DEL MENU -------------------------------------------------->
 
 
 
