@@ -6,6 +6,184 @@
     justify-content: center;
     text-align: center;
 }
+
+/*-----------------CONTENEDOR OLA DE ARRIBA HASTA LA IMAGEN--------------------*/
+.ola_superior{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.ola_superior_svg{
+    display: flex;
+    width: 100%;
+}
+
+.contenedor1{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 4.5%;
+}
+.imagen_logo{
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4%;
+}
+.imagen_logo img{
+    width: 68%;
+    height: auto;
+}
+.texto_decidelo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+
+}
+.texto_decidelo h1{
+    width: 60%;
+    color: #FBFAFA;
+    font-size: 178%;
+    font-family:poppins;
+    margin: 0;
+    padding:0;
+}
+.primer_boton a{
+    justify-self: flex-start;
+    margin: 0;
+    padding:0;
+}
+.primer_boton{
+    background-color:#85CAF1;
+    border-radius:60px;
+    padding:2.2% 3%;
+    width: 30%;
+    transform: translate(0%, 50%);
+}
+.letra_boton button{
+    font-size: 120%;
+    font-weight: 600;
+    color: rgb(17, 17, 17);
+    border: none;
+    margin: 0;
+}
+.imagen_personas{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content:center;
+    align-items: center;
+    margin-top:22.9%;
+}
+.imagen_personas img{
+    width:92%;
+    height: auto;
+}
+.abajo_beneficios{
+    position: relative;
+    justify-content:flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.globo_svg{
+    display: flex;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+/*-------------------SECCION GLOBO-VIDEO------------------------*/
+.contenedor3{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-top: 25%;
+}
+/*------------------------TEXTO DENTRO DEL GLOBO-----------------------*/
+.texto_video{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin-left: 25%;
+}
+.texto_video h1{
+    width: 70%;
+    color: #85CAF1;
+    font-size: 205%;
+    font-family:poppins;
+    margin: 0;
+    padding:0;
+    margin-right: auto;
+    letter-spacing: 1.5px;
+}
+.tamaño{
+    width: 40%;
+}
+/*------------------------FIN DE TEXTO DENTRO DEL GLOBO-----------------------*/
+.contenedor_video{
+    width: 55%;
+}
+
+.frase h1{
+    width: 55%;
+    color: rgb(17, 17, 17);
+    font-size: 120%;
+    font-family: roboto-light-Italic;
+    text-align: end;
+    font-weight: bold;
+    margin: 0;
+    padding:0;
+}
+
+.video{
+    position: absolute;
+    left: 40%;
+    right: 60%;
+    width: 22%;
+    height: 100%;
+    background-color: rgb(167, 167, 167);
+    margin-left: -305;
+    margin-right: auto;
+}
+.texto_llamadas{
+    position: absolute;
+    display: flex;
+    width: 96%;
+    height: auto;
+    justify-content: center;
+    padding-left: 4%;
+    margin-top: 62%;
+}
+.texto_llamadas h1{
+    text-align: center;
+    color: rgb(17, 17, 17);
+    font-size: 140%;
+    font-family:roboto-light;
+    margin: 0;
+    padding:0;
+    width: 48%;
+    letter-spacing: 0.52px;
+}
+.texto_llamadas h1 strong{
+    font-family:roboto-bold;
+    font-weight: bolder;
+}
+
+
+
 .infoDetro_OlaInferior{ /*Contenedor padre de cosas que van con z-index 3 (es decir encima de la ola)*/
     position: absolute;
     display: none;
@@ -22,7 +200,7 @@
 }
 /*NUESTRO OBJETIVO*/
 .tituloNuestoObj{
-    padding: 3%;
+    padding: 5%;
 }
 .iimaRepreObjetivo{
     opacity: 0;
@@ -31,7 +209,7 @@
 }
 .NuestroObjetivo{
     margin: 5%;
-    margin-top: 14%;
+    margin-top: 20%;
 }
 .textoNuestroObje{
     font-family: roboto-medium;

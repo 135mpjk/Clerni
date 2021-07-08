@@ -12,19 +12,72 @@
     <script src="./src/utils/js/contador.js"></script>
 </head>
 <body onload="">
-    <div class="">
-        <div class="">
-            <div class="menuHorizontal">
-                <button type="button" class="logoMenu"><img class="logoClerni" src="./src/utils/images/CLERNI.svg"></button>
-                <button type="button"><a href="./index.html">Inicio</a></button>
-                <button type="button"><a href="./src/pages/metodologia.html">Metodología</a></button>
-                <button type="button"><a href="./src/pages/beneficios.html">Beneficios</a></button>
-                <button type="button"onclick="materialDeApoyo()"><a href='./src/pages/materialApoyo.html'>Material de apoyo</a></button>
-                <button type="button" class="iniciarSesion" href="../pages/materialApoyo.html" onclick="">Iniciar sesión</button>
-            </div>
+    <!--------------------------------------------MENU----------------------------------------------------->
+    <header class="contenedor_menu">
+        <img id="logo" src="./src/utils/images/CLERNI.svg">
+        <input type="checkbox" id="boton_menu" value="1" onchange="myFunctionMenu()"/>
+        <label for="boton_menu"><img src="../utils/images/menu.svg"></label>
+        <nav class="menu_r" id="menu_r">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li id="iniciar_sesion"><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="../utils/js/menu.js"></script>
+    <!---------------------------------------- FIN DEL MENU -------------------------------------------------->
+    <div class="ola_superior">
+        <div class="ola_superior_svg">
+            <svg viewBox="0 0 1289 418" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M729 411.255C869.417 422.064 994.768 422.913 1288.99 390.78V40.1221H0V332.939C64.5498 308.036 136.207 294.41 265.5 316.967C394.793 339.524 588.583 400.445 729 411.255Z" fill="#FFB932"/>
+            <path d="M729 371.132C869.417 381.942 994.768 382.791 1288.99 350.657V0H0V292.817C64.5498 267.914 136.207 254.288 265.5 276.845C394.793 299.401 588.583 360.322 729 371.132Z" fill="#0054AA"/>
+            </svg>
         </div>
+        <div class="contenedor1">
+                <div class="imagen_logo"><img src="./src/utils/images/index/logo_clerni.svg"></div>
+                <div class="texto_decidelo">
+                        <h1>¡Decídelo! Aprende inglés hablando</h1>
+                        <a class="letra_boton" href="../pages/formulario_registro.html"><button type="button" class="primer_boton">Empieza ahora</button></a>
+                </div>    
+        </div>
+        <div class="imagen_personas"><img src="./src/utils/images/index/imagen_personas.svg"></div>
     </div>
-
+                <div class="abajo_beneficios">
+                    <div class="globo_svg"><svg viewBox="0 0 604 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="52.1967" cy="529.444" rx="52.1432" ry="46.5565" fill="#0054AA"/>
+                        <path d="M438.565 10.0828C221.628 -46.4599 97.7473 157.348 167.736 296.481C237.725 435.615 158.862 424.273 221.628 424.273C284.394 424.273 347.863 435.569 494.547 377.413C641.231 319.256 655.503 66.6255 438.565 10.0828Z" fill="#0054AA"/>
+                        <ellipse cx="79.1995" cy="425.157" rx="27.0028" ry="26.0716" fill="#FFB932"/>
+                        </svg>
+                        
+                        </div>
+                        
+                        <div class="contenedor3">
+                                <div class="texto_video"><h1>Descubre más</h1><h1 class="tamaño">sobre</h1><h1 class="tamaño">CLERNI</h1></div>
+                                <div class="contenedor_video">
+                                        <div class="frase"><h1>“Todo logro empieza con la decisión de intentarlo”.</h1><h1>-Gail Devers </h1></div>
+                                        <div class="video"></div>
+                                </div>    
+                            
+                        </div>
+                        <div class="texto_llamadas">
+                            <h1>Recibe una <strong>llamada de 10min</strong> en inglés sobre un tema de tu interés y practica fluidez, vocabulario, tiempos verbales,
+                                 agilidad de respuesta y expresión oral.
+                            </h1>
+                        </div>
+                    
+                </div>
 
 
 
