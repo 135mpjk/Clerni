@@ -4,7 +4,7 @@ html, body{
     background-color: #FBFAFA;
     width: 100%;
 }
-/* Menu horizontal estilos, Nota: cambiar los colores */
+/* Menu horizontal estilos*/
 .menuHorizontal{
     align-items: center;
     justify-content: center;
@@ -40,6 +40,7 @@ a{
     width: 17%;
 }
 /*colores*/
+/*COLORES DEFINIDOS*/
 .azul{
     color: #0054AA;
 }
@@ -55,7 +56,7 @@ a{
 .gris{
     color: #E5E5E5;
 }
-.piedePagina{
+.piedePagina{ /*Footer*/
     display: flex;
     padding: 1%;
     justify-content: space-around;
@@ -92,19 +93,48 @@ a{
     font-family: "poppins-bold";
     src: url("../fonts/poppins/Poppins-Bold.woff");
 }
+
 @media screen and (min-width:300px) and (max-width:500px){
     
 }
 @media screen and (min-width:760px) and (max-width:893px){
-    .piedePagina{
+    .piedePagina{ /*Footer*/
         font-size: 10px;
+    }
+    .logoMenu{ /*Espacio del logo*/
+        margin: 0;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    .logoMenu img{ /*Imagen logo*/
+        width: 90%;
+    }
+    a{ /*Menu*/
+        font-size: 14px;
+    }
+    .iniciarSesion{ /*Boton Inicio sesion del menu*/
+        font-size: 18px;
     }
 }
 @media screen and (min-width:300px) and (max-width:759px){
-    .piedePagina{
+    .piedePagina{ /*Footer*/
         text-align: center;
         font-size: 10px;
         flex-direction: column;
         padding: 0;
+    }
+    .logoMenu{ /*Espacio del logo*/
+        margin: 0;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    .logoMenu img{ /*Imagen logo*/
+        width: 90%;
+    }
+    a{ /*Menu*/
+        font-size: 14px;
+    }
+    .iniciarSesion{ /*Boton Inicio sesion del menu*/
+        font-size: 18px;
     }
 }
