@@ -196,7 +196,8 @@ html, body {
     width: 100%;
 }
 /*---------------------------RESPONSIVE-------------------*/
-@media screen and (min-width:750px) and (max-width:900px){
+/*---------750px a 950px-------------*/
+@media screen and (min-width:750px) and (max-width:950px){
     /*Cabecera*/
     .contenedorInicio{
         padding: 20px;
@@ -232,7 +233,8 @@ html, body {
         margin-left: 25%;
     }
 }
-@media screen and (min-width:950px) and (max-width:1300px){
+/*---------950px a 1300px-------------*/
+@media screen and (min-width:951px) and (max-width:1300px){
         /*Cabecera*/
         .contenedorInicio{
             padding: 40px;
@@ -268,5 +270,44 @@ html, body {
         .opinion {
             font-size: 21px;
         }
+
+}
+/*---------1301px a 1700px-------------*/
+@media screen and (min-width:1301px) and (max-width:1700px){
+    /*Cabecera*/
+    .contenedorInicio{
+        padding: 40px;
+    }
+    .logo img{
+        width: 400px;
+        height: 180px;
+        margin-right: 10px;
+    }
+    .decidelo{
+        font-size: 40px;
+    }
+    .empieza{
+        width: 300px;
+        height: 80px;
+    }
+    .frase {
+        font-size: 40px;
+    }
+    /*Tamaño video*/
+    .video{
+        width: 450px;
+        height: 350px;
+        margin-left: 25%;
+    }
+    /*Contenedor estudiantes*/
+    .abajo {
+        margin-top: 37%;
+    }
+    .numeros {
+        font-size: 40px;
+    }
+    .opinion {
+        font-size: 28px;
+    }
 
 }
