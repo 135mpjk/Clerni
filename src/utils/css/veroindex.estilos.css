@@ -184,7 +184,7 @@
 
 
 .contenidoDentro_Ola{
-    margin-top: 36%;
+    margin-top: -48%;
     padding: 0;
 }
 .infoDetro_OlaInferior{ /*Contenedor padre de cosas que van con z-index 3 (es decir encima de la ola)*/
@@ -216,6 +216,7 @@
 .NuestroObjetivo{
     margin: 5%;
     margin-top: 20%;
+    margin-bottom: 0;
 }
 .textoNuestroObje{
     font-family: roboto-medium;
@@ -273,6 +274,7 @@
     padding-left: 6%;
     font-family: roboto-light;
     font-size: 20px;
+    margin-top: 10%;
     
 }
 .person1 img, .person2 img, .person3 img{ /*Imagenes de las tarjetas usuarios*/
@@ -286,11 +288,25 @@
     box-shadow: 15px 15px 0px 0.5px #85CAF1;
     text-align: justify;
     padding: 10%;
-    width: 56%;
+    width: 60%;
+}
+.person1 {
+    margin-right: 0;
 }
 .person2{ /*Contenedor hijo tarjeta usuarios persona del medio*/
-    width: 60%;
+    width: 23%;
+    height: 36%;
     font-size: 18px;
+    position: absolute;
+    left: 35%;
+    padding: 3%;
+    top: 60.5%;
+}
+.person2 p{
+    width: 100%;
+}
+.person3{
+    margin-left: 105%;
 }
 .contenidoDentro_Ola{
     position: absolute;
@@ -321,7 +337,13 @@
 .personas_responsive{
     display: none;
 }
-
+.parche2{
+    margin-top: 68%;
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: #0054AA;
+}
 /*RESPONSIVE*/
 
 @media screen and (min-width:100px) and (max-width:770px) {
@@ -405,32 +427,66 @@
         margin-top: 10%;
     }
     .contenidoDentro_Ola{
-        margin-top: 60px;
-        padding-top: 100px;
+        margin-top: -100%;
+        padding-top: 0px;
+    }
+    .valorEstudiantes{
+        margin-top: 8%;
     }
     .textoNumeral{
-        font-size: 20px;
+        font-size: 130%;
+    }
+    .tituloNuestoObj{
+        padding: 0;
     }
     .OpinionesPerso{/*Contenedor padre tarjeta usuarios*/
         grid-template-columns: 1fr;
-        font-size: 20px;
-        padding: 3%;
-        padding-top: 0;
-        padding-right: 0;
-        padding-left: 20%;
+        font-size: 20%;
+        padding:0;
         background: transparent;
-        margin-top: 0;
+        margin:0;
     }
     .person1, .person2, .person3{
         display: flex;
-        width: 55%;
-        height: 85%;
-        padding: 5%;
+        width: 45%;
+        height: 80%;
+        padding: 2%;
+        position:absolute;
+    }
+    .person1{
+        display: flex;
+        width: 45%;
+        height: 80%;
+        left: -10%;
+        margin-left: 5%;
+    }
+    .person1 p{
+        font-size: 17px;
+    }
+    .person3 p{
+        font-size: 16px;
     }
     .person2{
-        width: 55%;
-        height: 90%;
+        display: flex;
+        width: 48%;
+        height: 100%;
+        top: 200%;
+        left: 25%;
     }
+    .person2 p{
+        font-size: 90%;
+    }
+    .person3{
+        display: flex;
+        width: 45%;
+        height: 80%;
+        left: 60%;
+        margin-left: -5%;
+    }
+    .person3 p{
+        font-size: 16px;
+    }
+    
     .parche{
         display: flex;
         width: 100%;
@@ -439,9 +495,13 @@
     .parche2{
         background: #0054AA;
         width: 100%;
-        height:820px;
+        height:180px;
         margin-top:40%;
         margin-bottom: -20%;
+    }
+    #piepagina_index{
+        top: 500%;
+        margin-top: 20%;
     }
     
 }
@@ -460,8 +520,7 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-    top: 388%;
-    
+    top: 440%;
 }
 
 
