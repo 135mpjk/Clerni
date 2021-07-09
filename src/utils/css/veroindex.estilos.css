@@ -183,9 +183,6 @@
 }
 
 
-.parteInferior_Total{
-   
-}
 .contenidoDentro_Ola{
     margin-top: 36%;
     padding: 0;
@@ -209,7 +206,7 @@
 }
 /*NUESTRO OBJETIVO*/
 .tituloNuestoObj{
-    padding: 5%;
+    padding: 10%;
 }
 .iimaRepreObjetivo{
     opacity: 0;
