@@ -11,6 +11,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href="../utils/css/sliderandmodals.css">
     <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/metodologia.estilos.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../utils/css/glogalStyles.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 </head>
@@ -43,7 +44,7 @@
     <!---------------------------------------- FIN DEL MENU -------------------------------------------------->
     <section class="metodologiaSection"><!--Toda la parte editable de la pagina-->
         <div class="nuestraMetodologia"> <!--1ra parte "Nuestra metodologia"-->
-            <h2 class="blanco tituloNuestraMetodologia">Nuestra metodología</h2>
+            <h2 class="blanco tituloNuestraMetodologia"  data-aos="fade-up-left"  data-aos-duration="3000">Nuestra metodología</h2>
             <div class="explicacionMetodologia">
                 <div class="grupo1Im">
                     <div class="iconosIntroduc">
@@ -82,7 +83,7 @@
                     </svg></div>
         </div>
         <div class="PlanesAprendizaje"> <!--2da parte "Planes de aprendizaje", incluye slider y modales-->
-            <h3 class="azul tituloNuestroPlan">¿Cual plan se ajusta a mi aprendizaje?</h3>
+            <h3 class="azul tituloNuestroPlan" data-aos="flip-up"  data-aos-duration="3000">¿Cual plan se ajusta a mi aprendizaje?</h3>
     
     
     
@@ -157,7 +158,7 @@
             </div>
         </div>
         <div class="nuestroEquipo" id="equipo">
-            <h3 class="azul tituloNuestraMetodologia">Nuestro equipo</h3>
+            <h3 class="azul tituloNuestraMetodologia" >Nuestro equipo</h3>
             <div class="personasEquipo">
                 <div class="grupo1Equipo">
                     <div class="CardPersonajes1">
@@ -308,7 +309,7 @@
                             Además, de verte retado con diferentes actividades para potencializar tu agilidad al 
                             responder en inglés.
                     </div>
-                    <button class="boton_quieresabermas"> ¿Quiere saber </br> más? </button>
+                    <a href="./formulario_registro.html"><button class="boton_quieresabermas">¿Quiere saber </br> más? </button></a>
                 </div>
 
         <!---->
@@ -328,8 +329,7 @@
                                 <path d="M603 450 C1166 450 850 285 1286 290 V695 H0 C-50 850 0 490 603 450 Z" fill="#85CAF1"/>
                                 <path d="M733 500 C1104 500 900 335 1486 340 V695 H23 C0 850 0 500 733 500 Z" fill="#0054AA"/>
                             </svg>
-                            <button class="boton_quieresabermas"> ¿Quiere saber </br> más? </button>
-    
+                            <a href="./formulario_registro.html"><button class="boton_quieresabermas">¿Quiere saber </br> más? </button></a>
                         </div>
     
                     </div>
@@ -374,8 +374,7 @@
                             organización. Además de buscar desde la primera clase crear un ambiente seguro para 
                             potencializar la confianza con cada estudiante.
                         </div>
-                        <button class="boton_quieresabermas"> ¿Quiere saber </br> más? </button>
-
+                        <a href="./formulario_registro.html"><button class="boton_quieresabermas">¿Quiere saber </br> más? </button></a>
                 </div>
     <!---->
 
@@ -517,9 +516,13 @@
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 <script src="../utils/js/metodologia.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
     <!-- </div> -->
-     <!---------------------- PIE DE PAGINA -------------------->
-     <div>
+    <!---------------------- PIE DE PAGINA -------------------->
+    <div>
         <footer class="piedePagina">
             <div class="columnas_piedePagina">
                 <div class="redes_sociales">

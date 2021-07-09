@@ -8,6 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./src/utils/css/glogalStyles.css'>
     <link rel="stylesheet" type="text/css" media="screen" href="./src/utils/css/veroindex.estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src='.utils/js/materialApoyo.js'></script> <!--JS de material de apoyo-->
     <script src="./src/utils/js/contador.js"></script>
 </head>
@@ -49,7 +50,7 @@
         <div class="contenedor1">
                 <div class="imagen_logo"><img src="./src/utils/images/index/logo_clerni.svg"></div>
                 <div class="texto_decidelo">
-                        <h1>¡Decídelo! Aprende inglés hablando</h1>
+                        <h1 data-aos="fade-up-right">¡Decídelo! Aprende inglés hablando</h1>
                         <a class="letra_boton" href="../pages/formulario_registro.html"><button type="button" class="primer_boton">Empieza ahora</button></a>
                 </div>    
         </div>
@@ -165,6 +166,9 @@
         <!---------------------- FIN DEL PIE DE PAGINA -------------------->
         
     
-    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

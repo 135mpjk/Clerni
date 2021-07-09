@@ -33,6 +33,10 @@ html, body{
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 .menu ul{
     margin: 0;
