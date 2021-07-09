@@ -6,6 +6,187 @@
     justify-content: center;
     text-align: center;
 }
+
+/*-----------------CONTENEDOR OLA DE ARRIBA HASTA LA IMAGEN--------------------*/
+.ola_superior{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.ola_superior_svg{
+    display: flex;
+    width: 100%;
+}
+
+.contenedor1{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 4.5%;
+}
+.imagen_logo{
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4%;
+}
+.imagen_logo img{
+    width: 68%;
+    height: auto;
+}
+.texto_decidelo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+
+}
+.texto_decidelo h1{
+    width: 60%;
+    color: #FBFAFA;
+    font-size: 178%;
+    font-family:poppins;
+    margin: 0;
+    padding:0;
+}
+.primer_boton a{
+    justify-self: flex-start;
+    margin: 0;
+    padding:0;
+}
+.primer_boton{
+    background-color:#85CAF1;
+    border-radius:60px;
+    padding:2.2% 3%;
+    width: 30%;
+    transform: translate(0%, 50%);
+}
+.letra_boton button{
+    font-size: 120%;
+    font-weight: 600;
+    color: rgb(17, 17, 17);
+    border: none;
+    margin: 0;
+}
+.imagen_personas{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content:center;
+    align-items: center;
+    margin-top:22.9%;
+}
+.imagen_personas img{
+    width:92%;
+    height: auto;
+}
+.abajo_beneficios{
+    position: relative;
+    justify-content:flex-start;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.globo_svg{
+    display: flex;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+/*-------------------SECCION GLOBO-VIDEO------------------------*/
+.contenedor3{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-top: 25%;
+}
+/*------------------------TEXTO DENTRO DEL GLOBO-----------------------*/
+.texto_video{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    margin-left: 25%;
+}
+.texto_video h1{
+    width: 70%;
+    color: #85CAF1;
+    font-size: 205%;
+    font-family:poppins;
+    margin: 0;
+    padding:0;
+    margin-right: auto;
+    letter-spacing: 1.5px;
+}
+.tamaño{
+    width: 40%;
+}
+/*------------------------FIN DE TEXTO DENTRO DEL GLOBO-----------------------*/
+.contenedor_video{
+    width: 55%;
+}
+
+.frase h1{
+    width: 55%;
+    color: rgb(17, 17, 17);
+    font-size: 120%;
+    font-family: roboto-light-Italic;
+    text-align: end;
+    font-weight: bold;
+    margin: 0;
+    padding:0;
+}
+
+.video iframe{
+    position: absolute;
+    left: 38%;
+    right: 62%;
+    width: 28%;
+    height: 136%;
+    margin-left: -305;
+    margin-right: auto;
+    border-radius: 15px;
+}
+.texto_llamadas{
+    position: absolute;
+    display: flex;
+    width: 96%;
+    height: auto;
+    justify-content: center;
+    padding-left: 4%;
+    margin-top: 62%;
+}
+.texto_llamadas h1{
+    text-align: center;
+    color: rgb(17, 17, 17);
+    font-size: 140%;
+    font-family:roboto-light;
+    margin: 0;
+    padding:0;
+    width: 48%;
+    letter-spacing: 0.52px;
+}
+.texto_llamadas h1 strong{
+    font-family:roboto-bold;
+    font-weight: bolder;
+}
+
+
+.contenidoDentro_Ola{
+    margin-top: -48%;
+    padding: 0;
+}
 .infoDetro_OlaInferior{ /*Contenedor padre de cosas que van con z-index 3 (es decir encima de la ola)*/
     position: absolute;
     display: none;
@@ -19,10 +200,13 @@
     position: relative;
     z-index: 0;
     width: 100%;
+    height: 20vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 /*NUESTRO OBJETIVO*/
 .tituloNuestoObj{
-    padding: 3%;
+    padding: 10%;
 }
 .iimaRepreObjetivo{
     opacity: 0;
@@ -31,7 +215,8 @@
 }
 .NuestroObjetivo{
     margin: 5%;
-    margin-top: 14%;
+    margin-top: 20%;
+    margin-bottom: 0;
 }
 .textoNuestroObje{
     font-family: roboto-medium;
@@ -89,27 +274,44 @@
     padding-left: 6%;
     font-family: roboto-light;
     font-size: 20px;
-    background-color: #0054AA;
+    margin-top: 10%;
+    
 }
 .person1 img, .person2 img, .person3 img{ /*Imagenes de las tarjetas usuarios*/
     width: 100%;
     border-radius: 20%;
+    
 }
 .person1, .person2, .person3{ /*Contenedor hijo tarjeta usuarios*/
     background: #FBFAFA;
     border: 2px solid #56B6EC;
-    box-shadow: 15px 15px 0px 3px #85CAF1;
+    box-shadow: 15px 15px 0px 0.5px #85CAF1;
     text-align: justify;
     padding: 10%;
-    width: 55%;
+    width: 60%;
+}
+.person1 {
+    margin-right: 0;
 }
 .person2{ /*Contenedor hijo tarjeta usuarios persona del medio*/
-    width: 60%;
+    width: 23%;
+    height: 36%;
     font-size: 18px;
+    position: absolute;
+    left: 35%;
+    padding: 3%;
+    top: 60.5%;
+}
+.person2 p{
+    width: 100%;
+}
+.person3{
+    margin-left: 105%;
 }
 .contenidoDentro_Ola{
     position: absolute;
     z-index: 3;
+    margin-bottom: 0;
 }
 /*ANIMACION*/
 @keyframes aparecer {
@@ -128,30 +330,183 @@
 .animar{
     animation: aparecer 1.3s;
 }
-/*RESPONSIVE*/
-@media screen and (min-width:1600px) {
-    .NuestroObjetivo{
-        margin-top: 0%;
-    }
+.parche{
+    display: none;
 }
-@media screen and (min-width:1001px) and (max-width:1594px) {
+
+.personas_responsive{
+    display: none;
+}
+.parche2{
+    margin-top: 68%;
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: #0054AA;
+}
+/*RESPONSIVE*/
+
+@media screen and (min-width:100px) and (max-width:770px) {
+    .parche_arriba{
+        display:flex;
+        width: 100%;
+        height:200px;
+        background-color: #0054AA;
+        position: absolute;
+    }
+    .personas_responsive{
+        display:flex;
+    }
+    .personas_responsive img{
+        width: 85%;
+    }
+    .display{
+        display: none;
+    }
+    .ola_superior_svg{
+        margin-top: 8%;
+    }
+    .texto_decidelo h1{
+        font-size: 150%;  
+    }
+    .primer_boton{
+        padding:3% 3.5%;
+        width: 45%;
+    }
+    .letra_boton button{
+        font-size: 120%;
+    }
+    .contenedor3{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: 25%;
+    }
+    /*------------------------TEXTO DENTRO DEL GLOBO-----------------------*/
+    .texto_video{
+        width: 45%;
+        margin-left: 25%;
+    }
+    .texto_video h1{
+        width: 80%;
+        font-size: 150%;
+       
+    }
+    .tamaño{
+        width: 40%;
+    }
+    .contenedor_video{
+        width: 55%;
+    }
+    .frase{
+        display: none;
+    }
+    
+    .video iframe{
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        right: 62%;
+        width: 35%;
+        height: 142%;
+    }
+    .texto_llamadas{
+        width: 96%;
+        height: auto;
+        justify-content: center;
+        padding-left: 4%;
+        margin-top: 62%;
+    }
+    .texto_llamadas h1{
+        font-size: 120%; 
+    }
+    /*---------------RESPONSIVE PARTE INFERIOR---------------------*/
+    .parteInferior_Total{
+        margin-top: 10%;
+    }
+    .contenidoDentro_Ola{
+        margin-top: -100%;
+        padding-top: 0px;
+    }
+    .valorEstudiantes{
+        margin-top: 8%;
+    }
+    .textoNumeral{
+        font-size: 130%;
+    }
+    .tituloNuestoObj{
+        padding: 0;
+    }
     .OpinionesPerso{/*Contenedor padre tarjeta usuarios*/
-        grid-template-columns: 1fr 1fr 1fr;
-        font-size: 20px;
-        padding: 3%;
-        padding-top: 0;
-        padding-right: 0;
-        padding-left: 6%;
+        grid-template-columns: 1fr;
+        font-size: 20%;
+        padding:0;
+        background: transparent;
+        margin:0;
     }
     .person1, .person2, .person3{
         display: flex;
+        width: 45%;
+        height: 80%;
+        padding: 2%;
+        position:absolute;
     }
-    .piedePagina{
-        margin-top: 16%;
+    .person1{
+        display: flex;
+        width: 45%;
+        height: 80%;
+        left: -10%;
+        margin-left: 5%;
     }
+    .person1 p{
+        font-size: 17px;
+    }
+    .person3 p{
+        font-size: 16px;
+    }
+    .person2{
+        display: flex;
+        width: 48%;
+        height: 100%;
+        top: 200%;
+        left: 25%;
+    }
+    .person2 p{
+        font-size: 90%;
+    }
+    .person3{
+        display: flex;
+        width: 45%;
+        height: 80%;
+        left: 60%;
+        margin-left: -5%;
+    }
+    .person3 p{
+        font-size: 16px;
+    }
+    
+    .parche{
+        display: flex;
+        width: 100%;
+        margin-top:0%;
+    }
+    .parche2{
+        background: #0054AA;
+        width: 100%;
+        height:180px;
+        margin-top:40%;
+        margin-bottom: -20%;
+    }
+    #piepagina_index{
+        top: 500%;
+        margin-top: 20%;
+    }
+    
 }
-@media screen and (min-width:764px) and (max-width:1000px) {
-    .OpinionesPerso{/*Contenedor padre tarjeta usuarios*/
+/*@media screen and (min-width:764px) and (max-width:1000px) {
+    .OpinionesPerso{
         grid-template-columns: 1fr;
         margin-left: 0%;
         font-size: 20px;
@@ -160,8 +515,13 @@
     .person1, .person2, .person3{
         display: flex;
     }
+}*/
+#piepagina_index{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 440%;
 }
-
 
 
 

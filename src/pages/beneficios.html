@@ -17,8 +17,8 @@
         <label for="boton_menu"><img src="../utils/images/menu.svg"></label>
         <nav class="menu_r" id="menu_r">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../pages/metodologia.html">Metodología</a></li>
                 <li><a href="../pages/beneficios.html">Beneficios</a></li>
                 <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
                 <li><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
@@ -26,8 +26,8 @@
         </nav>
         <nav class="menu" id="menu">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/verometodologia.html">Metodología</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../pages/metodologia.html">Metodología</a></li>
                 <li><a href="../pages/beneficios.html">Beneficios</a></li>
                 <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
                 <li id="iniciar_sesion"><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
@@ -36,7 +36,6 @@
     </header>
     <script src="../utils/js/menu.js"></script>
     <!---------------------------------------- FIN DEL MENU -------------------------------------------------->
-
     <div class="cabecera_beneficios">
     <div class="titulo"><svg  viewBox="0 0 1291 1364" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="1291" height="1219" fill="#0054AA"/>
@@ -143,7 +142,7 @@
                     </svg>
                     </div>
                     
-                    <div class="contenedor3">
+                    <div class="contenedor3" id="metodos_pago_menu">
                         <div class="imagenpagos"><img src="../utils/images/beneficios/prueba2_cel.svg"></div>
                         <div class="textopagos">       
                                     <h1>¡Pruébalo ahora!</h1>
@@ -268,12 +267,41 @@
                         </div>
                     </div>
             </div>-->
+            <!---------------------- PIE DE PAGINA -------------------->
+            <div>
             <footer class="piedePagina">
-                <h4>Bogotá D.C., Colombia</h4>
-                <h4>Carrera 70 C #48 - 28 Oficina: C-21</h4>
-                <h4>Télefono: +57 304 669 9930</h4>
-                <h4>E-mail: contacto@clerni.com</h4>
-                <h4>©Derechos reservados </h4>
+                <div class="columnas_piedePagina">
+                    <div class="redes_sociales">
+                    <a href="https://www.instagram.com/clernieducation/"><img src="../utils/images/instagram.svg"></a>
+                    <a href="https://www.facebook.com/ClerniEducation/"><img src="../utils/images/facebook.svg"></a>
+                    <a href="https://www.youtube.com/channel/UCC1G5O1scdkAtids1iMII7Q"><img src="../utils/images/youtube.svg"></a>
+                    </div>
+                    <h4>Bogotá D.C., Colombia</h4>
+                    <h4>Carrera 70 C #48 - 28 Oficina: C-21</h4>
+                    <h4>Télefono: +57 304 669 9930</h4>
+                    <h4>E-mail: contacto@clerni.com</h4>
+                </div>
+                <div class="columnas_piedePagina">
+                    <a href="./beneficios.html"><h4>Beneficios</h4></a>
+                    <a href="./beneficios.html#metodos_pago_menu"><h4>Métodos de pago</h4></a>
+                    <a href="./materialApoyo.html"><h4>Material de apoyo</h4></a>
+                    
+                </div>
+                <div class="columnas_piedePagina">
+                    <a href="./verometodologia.html"><h4>Metodología</h4></a>
+                    <a href="./verometodologia.html#planes_menu"><h4>Planes de aprendizaje</h4></a>
+                    <a href="./verometodologia.html#tipos_menu"><h4>Tipos de conversación</h4></a>
+                    <a href="./verometodologia.html#equipo"><h4>Equípo</h4></a>
+                </div>
+                
+                <div class="columnas_piedePagina">
+                    <a href="./formulario_registro.html"><h4>Regístrese</h4></a>
+                    <a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/"><h4>Iniciar sesión</h4></a>
+                </div>
             </footer>
+            <div class="derechos"><h4>©Derechos reservados</h4></div>
+            </div>
+            <!---------------------- FIN DEL PIE DE PAGINA -------------------->
+            
 </body>
 </html>

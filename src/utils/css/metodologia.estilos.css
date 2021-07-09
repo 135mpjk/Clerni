@@ -1,5 +1,4 @@
 .metodologiaSection{
-    
 }
 .primeraOla{
     z-index: 0;
@@ -48,14 +47,14 @@
 }
 .textoMetodo1{
     font-family: roboto-regular;
-    font-size: 20px;
+    font-size: 18px;
 }
 .tituloNuestraMetodologia{
     text-align: center;
     justify-content: center;
     font-family: poppins;
     font-size: 40px;
-    margin-top: 8%;
+    margin-top: 4%;
     position: absolute;
 }
 
@@ -131,7 +130,7 @@
 }
 .descripParticipante{
     font-family: roboto-regular;
-    font-size: 20px;
+    font-size: 17px;
 }
 .nombreParticipante, .rangoParticipante, .descripParticipante{
     margin: 6%;

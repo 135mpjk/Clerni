@@ -1,3 +1,4 @@
+/*Cambios generales*/
 html, body {
     margin: 0;
     padding: 0;
@@ -11,6 +12,15 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+/*---------------------------Contenedor de la cabecera--------------------------*/
+.contenedorInicio{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    color: whitesmoke;
+}
 .cabecera_olas {
     width: 100%;
     position: absolute;
@@ -19,6 +29,7 @@ html, body {
 .cabecera_olas img{
     width: 100%;
 }
+/*logo*/
 .logo{
     margin: 20px;
     margin-right: 200px;
@@ -38,16 +49,12 @@ html, body {
     height: 70px;
     background-color: #85CAF1;
     border-radius: 200px;
+<<<<<<< HEAD
     color: black;
+=======
+>>>>>>> origin/Katerin
 }
-.contenedorInicio{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    padding: 30px;
-    color: whitesmoke;
-}
+
 /*personas*/
 .personas {
     display: flex;
@@ -59,25 +66,27 @@ html, body {
 .personas img{
     width: 90%;
 }
+/*---------------------------Contenedor de la globo--------------------------*/
 /*video*/
 .contenedorVideo {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 3px black;
-    font-size: 70px;
     position: relative;
     z-index: 1;
+<<<<<<< HEAD
     font-weight: bold;
     color: #85CAF1;
     line-height: 20px;
     margin-top: 200px;
+=======
+    margin: 20%;
+>>>>>>> origin/Katerin
 }
 .frase{
     font-weight: bold;
-    border: solid 3px black;
     text-align: right;
-    font-size: 50px;
+    font-size: 40px;
 }
 /*globo*/
 .globo {
@@ -91,37 +100,59 @@ html, body {
     width: 70%;
 }
 .video{
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 450px;
     background-color: coral;
-    margin-left: 200px;
+    margin-left: 20%;
+    border-radius: 5%;
 }
+/*------------------------objetivo-----------------------*/
+/*.tituloNuestoObj{
+    padding: 3%;
+}
+.iimaRepreObjetivo{
+    opacity: 0;
+    display: none;
+    position: Absolute;
+}
+.NuestroObjetivo{
+    margin: 5%;
+    margin-top: 14%;
+}
+.textoNuestroObje{
+    font-family: roboto-medium;
+    font-size: 45px;
+    margin: 0;
+}
+.nu1{
+    margin-right: 15%;
+}
+.nu2{
+    margin-left: 15%;
+}
+.tituloNuestoObj:hover{
+    opacity: 0;
+}
+.tituloNuestoObj:hover ~ img{
+    opacity: 1;
+    transition: 3s;
+    display: inline-flex;
+    position: inherit;
+}*/
+/*-----------------------Contenedor final----------------*/
 /*puntos*/
-.puntos img{
-    width: 70%;
-}
-/**/
-.descripcion {
-    font-size: 50px;
-    justify-content: center;
-    text-align: center;
-    line-height: 5px;
-}
-
-.objetivo {
-    font-size: 80px;
-    justify-content: center;
-    text-align: center;
-    line-height: 5px;
-    font-weight: bold;
-    color: #85CAF1;
+.puntos{
     position: absolute;
-    z-index: 2;
+    z-index: 1;
+    width: 100%;
 }
-.a {
-    color: darkblue;
+.puntos img{
+    width: 100%;
 }
-/**/
+/*estadisticas*/
+.num{
+    margin: 5%;
+}
 .numeros{
     display: flex;
     justify-content: center;
@@ -132,7 +163,7 @@ html, body {
     text-align: center;
     align-items: center;
     color: #85CAF1;
-
+    margin-top: 25%;
 }
 /*Contenedor opiniones */
 .contenedorTarjetas{
@@ -142,29 +173,39 @@ html, body {
     border: solid 3px black;
     position: absolute;
     z-index: 3;
+
 }
+/*Opiniones*/
 .tarjetas img{
+<<<<<<< HEAD
     width: 300px;
     height: 250px;
+=======
+    width: 100%;
+    height: 100%;
+>>>>>>> origin/Katerin
     border-radius: 20px;    
 }
 .tarjetas{
     background-color: whitesmoke;
     align-items: center;
-    margin: 50px;
+    margin: 5%;
     box-shadow: 15px 15px 0px 3px #85CAF1;
-    padding: 50px;
+    padding: 3%;
 }
 .opinion{
+<<<<<<< HEAD
     width: 300px;
+=======
+    font-size: 25px;
+>>>>>>> origin/Katerin
 } 
 .abajo{
-    margin-top: 500px;
+    margin-top: 40%;
     position: relative;
     z-index: 1;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 .olaFinal {
     width: 100%;
@@ -174,7 +215,133 @@ html, body {
 .olaFinal img{
     width: 100%;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
+=======
+/*RESPONSIVE*/
+@media screen and (min-width:750px) and (max-width:800px){
+=======
+/*---------------------------RESPONSIVE-------------------*/
+/*---------750px a 950px-------------*/
+@media screen and (min-width:750px) and (max-width:950px){
+>>>>>>> origin/Katerin
+    /*Cabecera*/
+    .contenedorInicio{
+        padding: 20px;
+    }
+    .logo img{
+        width: 200px;
+        height: 90px;
+        margin-right: 10px;
+    }
+    .decidelo{
+        font-size: 20px;
+    }
+    .empieza{
+        width: 150px;
+        height: 40px;
+    }
+    .frase {
+        font-size: 20px;
+    }
+    /*Contenedor estudiantes*/
+    .abajo {
+        margin-top: 37%;
+    }
+    .numeros {
+        font-size: 25px;
+    }
+    .opinion {
+        font-size: 11px;
+    }
+<<<<<<< HEAD
+>>>>>>> origin/Katerin
+=======
+    .video{
+        width: 250px;
+        height: 175px;
+        margin-left: 25%;
+    }
+}
+/*---------950px a 1300px-------------*/
+@media screen and (min-width:951px) and (max-width:1300px){
+        /*Cabecera*/
+        .contenedorInicio{
+            padding: 40px;
+        }
+        .logo img{
+            width: 300px;
+            height: 140px;
+            margin-right: 10px;
+        }
+        .decidelo{
+            font-size: 30px;
+        }
+        .empieza{
+            width: 200px;
+            height: 60px;
+        }
+        .frase {
+            font-size: 30px;
+        }
+        /*Tamaño video*/
+        .video{
+            width: 350px;
+            height: 250px;
+            margin-left: 25%;
+        }
+        /*Contenedor estudiantes*/
+        .abajo {
+            margin-top: 37%;
+        }
+        .numeros {
+            font-size: 30px;
+        }
+        .opinion {
+            font-size: 21px;
+        }
+>>>>>>> origin/Katerin
 
+}
+/*---------1301px a 1700px-------------*/
+@media screen and (min-width:1301px) and (max-width:1700px){
+    /*Cabecera*/
+    .contenedorInicio{
+        padding: 40px;
+    }
+    .logo img{
+        width: 400px;
+        height: 180px;
+        margin-right: 10px;
+    }
+    .decidelo{
+        font-size: 40px;
+    }
+    .empieza{
+        width: 300px;
+        height: 80px;
+    }
+    .frase {
+        font-size: 40px;
+    }
+    /*Tamaño video*/
+    .video{
+        width: 450px;
+        height: 350px;
+        margin-left: 25%;
+    }
+    /*Contenedor estudiantes*/
+    .abajo {
+        margin-top: 37%;
+    }
+    .numeros {
+        font-size: 40px;
+    }
+    .opinion {
+        font-size: 28px;
+    }
+
+}
