@@ -19,10 +19,10 @@
         <label for="boton_menu"><img src="../utils/images/menu.svg"></label>
         <nav class="menu_r" id="menu_r">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/verometodologia.html">Metodología</a></li>
-                <li><a href="../pages/beneficios.html">Beneficios</a></li>
-                <li><a onclick="materialDeApoyo()" href="../pages/materialApoyo.html">Material de apoyo</a></li>
+                <li><a href="./veroIndex.html">Inicio</a></li>
+                <li><a href="./src/pages/verometodologia.html">Metodología</a></li>
+                <li><a href="./src/pages/beneficios.html">Beneficios</a></li>
+                <li><a onclick="materialDeApoyo()" href="./src/pages/materialApoyo.html">Material de apoyo</a></li>
                 <li><a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/">Iniciar sesión</a></li>
             </ul>
         </nav>
@@ -45,6 +45,7 @@
             <path d="M729 371.132C869.417 381.942 994.768 382.791 1288.99 350.657V0H0V292.817C64.5498 267.914 136.207 254.288 265.5 276.845C394.793 299.401 588.583 360.322 729 371.132Z" fill="#0054AA"/>
             </svg>
         </div>
+        <div class="parche_arriba"></div>
         <div class="contenedor1">
                 <div class="imagen_logo"><img src="./src/utils/images/index/logo_clerni.svg"></div>
                 <div class="texto_decidelo">
@@ -52,7 +53,8 @@
                         <a class="letra_boton" href="../pages/formulario_registro.html"><button type="button" class="primer_boton">Empieza ahora</button></a>
                 </div>    
         </div>
-        <div class="imagen_personas"><img src="./src/utils/images/index/imagen_personas.svg"></div>
+        <div class="imagen_personas personas_responsive"><img src="./src/utils/images/index/personas_responsive.svg"></div>
+        <div class="imagen_personas display"><img src="./src/utils/images/index/imagen_personas.svg"></div>
     </div>
                 <div class="abajo_beneficios">
                     <div class="globo_svg"><svg viewBox="0 0 604 576" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +69,7 @@
                                 <div class="texto_video"><h1>Descubre más</h1><h1 class="tamaño">sobre</h1><h1 class="tamaño">CLERNI</h1></div>
                                 <div class="contenedor_video">
                                         <div class="frase"><h1>“Todo logro empieza con la decisión de intentarlo”.</h1><h1>-Gail Devers </h1></div>
-                                        <div class="video"></div>
+                                        <div class="video"><iframe src="https://www.youtube.com/embed/wUrLxy6LSXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                                 </div>    
                             
                         </div>
@@ -78,64 +80,6 @@
                         </div>
                     
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -189,13 +133,49 @@
                 <path d="M849.414 276.928C179.314 346.095 394.615 55.6844 0 77.1356V1270H1607V462.419C1607 462.419 1519.51 207.76 849.414 276.928Z" fill="#0054AA"/>
             </svg>
         </div>
+        <div class="parche2"></div>
+        <div class="parche"><svg height="720" viewBox="0 0 1288 1212" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M729 1045.89C426.5 948.511 224.5 1278.98 0 1199.55V0H1288V277.813V861.733C1026.6 850.372 1031.5 1143.26 729 1045.89Z" fill="#FFB932"/>
+            <path d="M729 1013.96C426.5 919.555 224.5 1239.93 0 1162.93V0H1288V269.332V835.426C1026.6 824.412 1031.5 1108.36 729 1013.96Z" fill="#0054AA"/>
+            </svg></div>
     </div>
-    <footer class="piedePagina">
-        <h4>Bogotá D.C., Colombia</h4>
-        <h4>Carrera 70 C #48 - 28 Oficina: C-21</h4>
-        <h4>Télefono: +57 304 669 9930</h4>
-        <h4>E-mail: contacto@clerni.com</h4>
-        <h4>©Derechos reservados </h4>
-    </footer>
+    <!---------------------- PIE DE PAGINA -------------------->
+    <div id="piepagina_index">
+        <footer class="piedePagina">
+            <div class="columnas_piedePagina">
+                <div class="redes_sociales">
+                <a href="https://www.instagram.com/clernieducation/"><img src="./src/utils/images/instagram.svg"></a>
+                <a href="https://www.facebook.com/ClerniEducation/"><img src="./src/utils/images/facebook.svg"></a>
+                <a href="https://www.youtube.com/channel/UCC1G5O1scdkAtids1iMII7Q"><img src="./src/utils/images/youtube.svg"></a>
+                </div>
+                <h4>Bogotá D.C., Colombia</h4>
+                <h4>Carrera 70 C #48 - 28 Oficina: C-21</h4>
+                <h4>Télefono: +57 304 669 9930</h4>
+                <h4>E-mail: contacto@clerni.com</h4>
+            </div>
+            <div class="columnas_piedePagina">
+                <a href="./beneficios.html"><h4>Beneficios</h4></a>
+                <a href="./beneficios.html#metodos_pago_menu"><h4>Métodos de pago</h4></a>
+                <a href="./materialApoyo.html"><h4>Material de apoyo</h4></a>
+                
+            </div>
+            <div class="columnas_piedePagina">
+                <a href="./verometodologia.html"><h4>Metodología</h4></a>
+                <a href="./verometodologia.html#planes_menu"><h4>Planes de aprendizaje</h4></a>
+                <a href="./verometodologia.html#tipos_menu"><h4>Tipos de conversación</h4></a>
+                <a href="./verometodologia.html#equipo"><h4>Equípo</h4></a>
+            </div>
+            
+            <div class="columnas_piedePagina">
+                <a href="./formulario_registro.html"><h4>Regístrese</h4></a>
+                <a href="http://127.0.0.1:8081/scriptcase/app/clerni/secu_Login/"><h4>Iniciar sesión</h4></a>
+            </div>
+        </footer>
+        <div class="derechos"><h4>©Derechos reservados</h4></div>
+        </div>
+        <!---------------------- FIN DEL PIE DE PAGINA -------------------->
+        
+    
+    
 </body>
 </html>

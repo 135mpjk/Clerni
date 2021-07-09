@@ -140,12 +140,39 @@ html, body{
 }
 .piedePagina{ /*Footer*/
     display: flex;
-    padding: 1%;
-    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom:0;
+    padding-left: 5%;
+    padding-right: 10%;
+    justify-content: space-between;
     background-color: rgb(41, 38, 38);
-    color: rgb(233, 229, 229);
+    color: rgb(226, 223, 223);
     font-family: roboto-medium;
     font-size: 13px;
+    margin: 0;
+}
+.redes_sociales{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.columnas_piedePagina a h4{
+    color: rgb(226, 223, 223);
+    font-family: roboto-medium;
+    font-size: 13px;
+    text-decoration: none;
+}
+.derechos h4{
+    margin: 0;
+    padding: 1.5% 0;
+    background-color: rgb(41, 38, 38);
+    color: rgb(226, 223, 223);
+    font-family: roboto-medium;
+    font-size: 15px;
+    text-align: center;
 }
 @font-face{
     font-family: "roboto-light-Italic";
@@ -187,20 +214,7 @@ html, body{
     .piedePagina{ /*Footer*/
         font-size: 10px;
     }
-    .logoMenu{ /*Espacio del logo*/
-        margin: 0;
-        margin-top: 1%;
-        margin-left: 2%;
-    }
-    .logoMenu img{ /*Imagen logo*/
-        width: 90%;
-    }
-    a{ /*Menu*/
-        font-size: 14px;
-    }
-    .iniciarSesion{ /*Boton Inicio sesion del menu*/
-        font-size: 18px;
-    }
+   
 }
 @media screen and (min-width:300px) and (max-width:759px){
     .piedePagina{ /*Footer*/
@@ -209,18 +223,5 @@ html, body{
         flex-direction: column;
         padding: 0;
     }
-    .logoMenu{ /*Espacio del logo*/
-        margin: 0;
-        margin-top: 1%;
-        margin-left: 2%;
-    }
-    .logoMenu img{ /*Imagen logo*/
-        width: 90%;
-    }
-    a{ /*Menu*/
-        font-size: 14px;
-    }
-    .iniciarSesion{ /*Boton Inicio sesion del menu*/
-        font-size: 18px;
-    }
+    
 }

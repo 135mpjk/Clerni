@@ -148,15 +148,15 @@
     padding:0;
 }
 
-.video{
+.video iframe{
     position: absolute;
-    left: 40%;
-    right: 60%;
-    width: 22%;
-    height: 100%;
-    background-color: rgb(167, 167, 167);
+    left: 38%;
+    right: 62%;
+    width: 28%;
+    height: 136%;
     margin-left: -305;
     margin-right: auto;
+    border-radius: 15px;
 }
 .texto_llamadas{
     position: absolute;
@@ -183,7 +183,13 @@
 }
 
 
-
+.parteInferior_Total{
+   
+}
+.contenidoDentro_Ola{
+    margin-top: 36%;
+    padding: 0;
+}
 .infoDetro_OlaInferior{ /*Contenedor padre de cosas que van con z-index 3 (es decir encima de la ola)*/
     position: absolute;
     display: none;
@@ -197,6 +203,9 @@
     position: relative;
     z-index: 0;
     width: 100%;
+    height: 20vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 /*NUESTRO OBJETIVO*/
 .tituloNuestoObj{
@@ -267,19 +276,20 @@
     padding-left: 6%;
     font-family: roboto-light;
     font-size: 20px;
-    background-color: #0054AA;
+    
 }
 .person1 img, .person2 img, .person3 img{ /*Imagenes de las tarjetas usuarios*/
     width: 100%;
     border-radius: 20%;
+    
 }
 .person1, .person2, .person3{ /*Contenedor hijo tarjeta usuarios*/
     background: #FBFAFA;
     border: 2px solid #56B6EC;
-    box-shadow: 15px 15px 0px 3px #85CAF1;
+    box-shadow: 15px 15px 0px 0.5px #85CAF1;
     text-align: justify;
     padding: 10%;
-    width: 55%;
+    width: 56%;
 }
 .person2{ /*Contenedor hijo tarjeta usuarios persona del medio*/
     width: 60%;
@@ -288,6 +298,7 @@
 .contenidoDentro_Ola{
     position: absolute;
     z-index: 3;
+    margin-bottom: 0;
 }
 /*ANIMACION*/
 @keyframes aparecer {
@@ -306,30 +317,139 @@
 .animar{
     animation: aparecer 1.3s;
 }
-/*RESPONSIVE*/
-@media screen and (min-width:1600px) {
-    .NuestroObjetivo{
-        margin-top: 0%;
-    }
+.parche{
+    display: none;
 }
-@media screen and (min-width:1001px) and (max-width:1594px) {
+
+.personas_responsive{
+    display: none;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width:100px) and (max-width:770px) {
+    .parche_arriba{
+        display:flex;
+        width: 100%;
+        height:200px;
+        background-color: #0054AA;
+        position: absolute;
+    }
+    .personas_responsive{
+        display:flex;
+    }
+    .personas_responsive img{
+        width: 85%;
+    }
+    .display{
+        display: none;
+    }
+    .ola_superior_svg{
+        margin-top: 8%;
+    }
+    .texto_decidelo h1{
+        font-size: 150%;  
+    }
+    .primer_boton{
+        padding:3% 3.5%;
+        width: 45%;
+    }
+    .letra_boton button{
+        font-size: 120%;
+    }
+    .contenedor3{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: 25%;
+    }
+    /*------------------------TEXTO DENTRO DEL GLOBO-----------------------*/
+    .texto_video{
+        width: 45%;
+        margin-left: 25%;
+    }
+    .texto_video h1{
+        width: 80%;
+        font-size: 150%;
+       
+    }
+    .tamaño{
+        width: 40%;
+    }
+    .contenedor_video{
+        width: 55%;
+    }
+    .frase{
+        display: none;
+    }
+    
+    .video iframe{
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        right: 62%;
+        width: 35%;
+        height: 142%;
+    }
+    .texto_llamadas{
+        width: 96%;
+        height: auto;
+        justify-content: center;
+        padding-left: 4%;
+        margin-top: 62%;
+    }
+    .texto_llamadas h1{
+        font-size: 120%; 
+    }
+    /*---------------RESPONSIVE PARTE INFERIOR---------------------*/
+    .parteInferior_Total{
+        margin-top: 10%;
+    }
+    .contenidoDentro_Ola{
+        margin-top: 60px;
+        padding-top: 100px;
+    }
+    .textoNumeral{
+        font-size: 20px;
+    }
     .OpinionesPerso{/*Contenedor padre tarjeta usuarios*/
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         font-size: 20px;
         padding: 3%;
         padding-top: 0;
         padding-right: 0;
-        padding-left: 6%;
+        padding-left: 20%;
+        background: transparent;
+        margin-top: 0;
     }
     .person1, .person2, .person3{
         display: flex;
+        width: 55%;
+        height: 85%;
+        padding: 5%;
     }
-    .piedePagina{
-        margin-top: 16%;
+    .person2{
+        width: 55%;
+        height: 90%;
     }
+    .parche{
+        display: flex;
+        width: 100%;
+        margin-top:0%;
+    }
+    .parche2{
+        background: #0054AA;
+        width: 100%;
+        height:820px;
+        margin-top:40%;
+        margin-bottom: -20%;
+    }
+    
 }
-@media screen and (min-width:764px) and (max-width:1000px) {
-    .OpinionesPerso{/*Contenedor padre tarjeta usuarios*/
+/*@media screen and (min-width:764px) and (max-width:1000px) {
+    .OpinionesPerso{
         grid-template-columns: 1fr;
         margin-left: 0%;
         font-size: 20px;
@@ -338,8 +458,14 @@
     .person1, .person2, .person3{
         display: flex;
     }
+}*/
+#piepagina_index{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 388%;
+    
 }
-
 
 
 
