@@ -764,9 +764,12 @@ html, body{
     }
     .primer_boton{
         margin-top: 13%;
-       
-       
     }
+
+    .boton_bancos:hover{
+        cursor: pointer ;
+    }
+    
     .letra_boton button{
         font-size: 115%;
     }
