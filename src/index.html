@@ -8,6 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../src/utils/css/glogalStyles.css'>
     <link rel="stylesheet" href="../src/utils/css/index.estilos.css">
     <script src='./js/materialApoyo.js'></script> <!--JS de material de apoyo-->
+    <script src='../src/utils/js/numerosContador.js'></script>
 </head>
 <body onload="">
     <div class="">
@@ -32,7 +33,7 @@
             <div class="decidelo">
                 <p> ¡Decídelo! Aprende ingles</p>
                 <p> hablando</p>
-                <button type="button" class="empieza"><a href="../src/pages/materialApoyo.html">Empieza ahora</a></button>
+                <button type="button" class="empieza" id="boton"><a href="../src/pages/materialApoyo.html">Empieza ahora</a></button>
             </div>
         </section> 
         <div class="personas">
@@ -40,8 +41,7 @@
         </div>
 
         <div class="frase">
-            <p>"Todo logro empieza con la decisión de intentarlo"</p>
-            <p>-Gail Devers</p>
+            <p>"Todo logro empieza con la decisión de intentarlo" -Gail Devers</p>
         </div>
         <div class="globo">
             <img src="../src/utils/images/index/Group 67.svg" alt="cargando">        
@@ -49,8 +49,7 @@
 
         <section class="contenedorVideo">
             <div class="video">
-               <img src="../src/utils/images/index/portadadevideo.jpg" alt="cargando">
-            </div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wUrLxy6LSXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
         </section>
         <!--<i class="ri-e-bike-fill"></i><div class="NuestroObjetivo"><div class="tituloNuestoObj">
             <h3 class="textoNuestroObje azul nu1">Nuestro </h3>
@@ -78,17 +77,18 @@
             <img src="../src/utils/images/index/Group 71.svg" alt="">
         </div>
             <div class="num">
-                <p>1.300</p>
+                <div class="cont" id="numero">1600</div>
                 <p>Llamadas</p>   
             </div>
             <div class="num">
-                <p>50</p> 
+                <div class="cantidad" >50</div>
                 <p>Estudiantes activos</p>
             </div>
-            <div class="num">
-                <p>6</p>
+            <div class="num ">
+                <div class="cantidad">6</div>
                 <p>Países</p>
             </div>
+
         </section>  
         <section class="contenedorTarjetas">
             <div class="tarjetas">

@@ -38,7 +38,6 @@ html, body {
     height: 70px;
     background-color: #85CAF1;
     border-radius: 200px;
-    color: black;
 }
 .contenedorInicio{
     display: flex;
@@ -70,9 +69,8 @@ html, body {
 }
 .frase{
     font-weight: bold;
-    border: solid 3px black;
     text-align: right;
-    font-size: 50px;
+    font-size: 40px;
 }
 /*globo*/
 .globo {
@@ -86,10 +84,11 @@ html, body {
     width: 70%;
 }
 .video{
-    width: 200px;
-    height: 200px;
+    width:600px;
+    height: 450px;
     background-color: coral;
-    margin-left: 200px;
+    margin-left: 20%;
+    border-radius: 5%;
 }
 /*puntos*/
 .puntos{
@@ -149,6 +148,7 @@ html, body {
     color: #85CAF1;
     margin-top: 25%;
 }
+
 /*Contenedor opiniones */
 .contenedorTarjetas{
     display: flex;
@@ -189,4 +189,36 @@ html, body {
 .olaFinal img{
     width: 100%;
 }
+/*RESPONSIVE*/
+@media screen and (min-width:750px) and (max-width:800px){
+    /*Cabecera*/
+    .contenedorInicio{
+        padding: 20px;
+    }
+    .logo img{
+        width: 200px;
+        height: 90px;
+        margin-right: 10px;
+    }
+    .decidelo{
+        font-size: 20px;
+    }
+    .empieza{
+        width: 150px;
+        height: 40px;
+    }
+    .frase {
+        font-size: 20px;
+    }
+    /*Contenedor estudiantes*/
+    .abajo {
+        margin-top: 37%;
+    }
+    .numeros {
+        font-size: 25px;
+    }
+    .opinion {
+        font-size: 11px;
+    }
 
+}
