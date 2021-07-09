@@ -1,3 +1,4 @@
+/*Cambios generales*/
 html, body {
     margin: 0;
     padding: 0;
@@ -11,6 +12,15 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+/*---------------------------Contenedor de la cabecera--------------------------*/
+.contenedorInicio{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    color: whitesmoke;
+}
 .cabecera_olas {
     width: 100%;
     position: absolute;
@@ -19,6 +29,7 @@ html, body {
 .cabecera_olas img{
     width: 100%;
 }
+/*logo*/
 .logo{
     margin: 20px;
     margin-right: 200px;
@@ -39,14 +50,7 @@ html, body {
     background-color: #85CAF1;
     border-radius: 200px;
 }
-.contenedorInicio{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    padding: 30px;
-    color: whitesmoke;
-}
+
 /*personas*/
 .personas {
     display: flex;
@@ -58,6 +62,7 @@ html, body {
 .personas img{
     width: 90%;
 }
+/*---------------------------Contenedor de la globo--------------------------*/
 /*video*/
 .contenedorVideo {
     display: flex;
@@ -84,22 +89,13 @@ html, body {
     width: 70%;
 }
 .video{
-    width:600px;
+    width: 600px;
     height: 450px;
     background-color: coral;
     margin-left: 20%;
     border-radius: 5%;
 }
-/*puntos*/
-.puntos{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-}
-.puntos img{
-    width: 100%;
-}
-/*objetivo*/
+/*------------------------objetivo-----------------------*/
 /*.tituloNuestoObj{
     padding: 3%;
 }
@@ -132,7 +128,17 @@ html, body {
     display: inline-flex;
     position: inherit;
 }*/
-/**/
+/*-----------------------Contenedor final----------------*/
+/*puntos*/
+.puntos{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.puntos img{
+    width: 100%;
+}
+/*estadisticas*/
 .num{
     margin: 5%;
 }
@@ -148,7 +154,6 @@ html, body {
     color: #85CAF1;
     margin-top: 25%;
 }
-
 /*Contenedor opiniones */
 .contenedorTarjetas{
     display: flex;
@@ -159,6 +164,7 @@ html, body {
     z-index: 3;
 
 }
+/*Opiniones*/
 .tarjetas img{
     width: 100%;
     height: 100%;
@@ -189,8 +195,8 @@ html, body {
 .olaFinal img{
     width: 100%;
 }
-/*RESPONSIVE*/
-@media screen and (min-width:750px) and (max-width:800px){
+/*---------------------------RESPONSIVE-------------------*/
+@media screen and (min-width:750px) and (max-width:900px){
     /*Cabecera*/
     .contenedorInicio{
         padding: 20px;
@@ -220,5 +226,47 @@ html, body {
     .opinion {
         font-size: 11px;
     }
+    .video{
+        width: 250px;
+        height: 175px;
+        margin-left: 25%;
+    }
+}
+@media screen and (min-width:950px) and (max-width:1300px){
+        /*Cabecera*/
+        .contenedorInicio{
+            padding: 40px;
+        }
+        .logo img{
+            width: 300px;
+            height: 140px;
+            margin-right: 10px;
+        }
+        .decidelo{
+            font-size: 30px;
+        }
+        .empieza{
+            width: 200px;
+            height: 60px;
+        }
+        .frase {
+            font-size: 30px;
+        }
+        /*Tamaño video*/
+        .video{
+            width: 350px;
+            height: 250px;
+            margin-left: 25%;
+        }
+        /*Contenedor estudiantes*/
+        .abajo {
+            margin-top: 37%;
+        }
+        .numeros {
+            font-size: 30px;
+        }
+        .opinion {
+            font-size: 21px;
+        }
 
 }
